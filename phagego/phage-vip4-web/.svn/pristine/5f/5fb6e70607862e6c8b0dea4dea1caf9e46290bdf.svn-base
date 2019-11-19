@@ -1,0 +1,299 @@
+package front
+
+import (
+	"fmt"
+	"github.com/astaxie/beego"
+	"github.com/astaxie/beego/orm"
+	"math"
+	"phagego/frameweb-v2/controllers/sysmanage"
+	"phagego/frameweb-v2/models"
+	. "phagego/phage-vip4-web/models/common"
+	"strings"
+	"sync"
+	"time"
+)
+
+type VipCenterController struct {
+	sysmanage.BaseController
+}
+
+func (this *VipCenterController) Prepare() {
+	this.EnableXSRF = false
+}
+
+func (this *VipCenterController) Get() {
+	name := this.GetString("name")
+	var mll MemberLevelLog
+	o := orm.NewOrm()
+	//会员可领取的vip等级
+	_ = o.QueryTable(new(MemberLevelLog)).Filter("Account", name).OrderBy("-Level").One(&mll)
+	var colorlevel []Level
+	_, _ = o.QueryTable(new(Level)).Filter("VipLevel__lte", mll.Level).Filter("VipLevel__gt", 0).All(&colorlevel)
+	//判断会员奖品是否已经领取
+	var mlls []MemberLevelLog
+	_, _ = o.QueryTable(new(MemberLevelLog)).Filter("Account", name).OrderBy("Level").All(&mlls)
+	//会员不可领取的vip等级
+	var wblevel []Level
+	_, _ = o.QueryTable(new(Level)).Filter("VipLevel__gt", mll.Level).All(&wblevel)
+	//取会员总信息用于前台展示
+	var mt MemberTotal
+	_ = o.QueryTable(new(MemberTotal)).Filter("Account", name).One(&mt)
+	//会员当前VIP等级信息
+	var level Level
+	_ = o.QueryTable(new(Level)).Filter("VipLevel", mt.Level).One(&level)
+
+	//下一个VIP等级
+	var lev Level
+	_ = o.QueryTable(new(Level)).Filter("VipLevel", mt.Level+1).One(&lev)
+
+	//当前投注所占百分比
+	var bili float64
+	bili = float64(mt.Bet) / float64(lev.TotalBet)
+	zs := math.Ceil(bili * 100)
+	//距离下一级所需的投注占的百分比
+	zs1 := 100 - zs
+	//快速导航
+	var quciknav []models.QuickNav
+	_, _ = o.QueryTable(new(models.QuickNav)).OrderBy("Seq").Limit(4).All(&quciknav)
+	//计算会员VIP天数
+	subDays := int(time.Now().Sub(mt.CreateDate).Hours()) / 24
+
+	this.Data["subdays"] = subDays
+	this.Data["nav"] = quciknav
+	this.Data["fontmt"] = mt
+	this.Data["bili"] = zs
+	this.Data["bili1"] = zs1
+	this.Data["mlls"] = mlls
+	this.Data["level"] = level
+	this.Data["colorlevel"] = colorlevel
+	this.Data["wblevel"] = wblevel
+	this.Data["blance"] = lev.TotalBet - mt.Bet
+	this.Data["nextlevel"] = lev.VipLevel
+	this.TplName = "front/vipcenter.html"
+}
+
+func (this *VipCenterController) Post() {
+	var code int
+	var msg string
+	defer sysmanage.Retjson(this.Ctx, &msg, &code)
+	id := this.GetString("id")
+	o := orm.NewOrm()
+	var mll MemberLevelLog
+	//判断会员是否已经领取彩金
+	_ = o.QueryTable(new(MemberLevelLog)).Filter("Id", id).One(&mll)
+	if mll.EnAble == 1 {
+		msg = "您已经成功领取彩金了~"
+		return
+	}
+
+	var rewardlog RewardLog
+	rewardlog.Account = mll.Account
+	rewardlog.GiftName = fmt.Sprintf("VIP%d晋级奖励", mll.Level)
+	rewardlog.GiftContent = fmt.Sprintf("%d", mll.LevelGift)
+	var lock sync.RWMutex
+	lock.Lock()
+	_, err := rewardlog.Create()
+	lock.Unlock()
+	if err != nil {
+		beego.Error("生成中奖记录失败", err)
+		msg = "系统异常，请刷新后重试"
+		return
+	} else {
+		_, err := o.QueryTable(new(MemberLevelLog)).Filter("Id", id).Update(orm.Params{"Enable": 1})
+		if err != nil {
+			beego.Error("更新晋级礼物失败", err)
+		}
+	}
+	code = 1
+	msg = fmt.Sprintf("恭喜您获VIP%d晋级奖励%d元", mll.Level, mll.LevelGift)
+}
+
+func (this *VipCenterController) QueryPrivilege() {
+	name := this.GetString("name")
+	this.Data["name"] = name
+	this.TplName = "front/vipdetail.html"
+}
+
+func (this *VipCenterController) ChangeTip() {
+	account := this.GetStrings("account")
+	o := orm.NewOrm()
+	var mt MemberTotal
+	_ = o.QueryTable(new(MemberTotal)).Filter("Account", account).One(&mt)
+	if mt.Tip == 0 {
+		_, _ = o.QueryTable(new(MemberTotal)).Filter("Account", account).Update(orm.Params{"Tip": 1})
+	}
+	this.Ctx.Output.JSON("", false, false)
+}
+
+func (this *VipCenterController) Mission() {
+	this.AllowCross()
+	var msg string
+	var code int
+	data := make(map[string]interface{})
+	account := this.GetString("account")
+	level := this.GetString("level")
+	defer retjson(&this.Controller, &msg, &code, &data)
+	if account == "" {
+		msg = "会员账号不能为空"
+		return
+	}
+	if level == "" {
+		msg = "VIP等级不能为空"
+		return
+	}
+	o := orm.NewOrm()
+	//任务
+	timenow := time.Now().Format("2006-01-02 15:04:05")
+	//查找开启的活动
+	var ms []Mission
+	_, e := o.QueryTable(new(Mission)).Filter("StartTime__lte", timenow).Filter("EndTime__gte", timenow).All(&ms)
+	if e != nil {
+		beego.Error("get Mission fault", e)
+		msg = "系统异常(1),请刷新后尝试"
+		return
+	}
+	var missionids []int64
+	for _, v := range ms {
+		missionids = append(missionids, v.Id)
+	}
+	//查询开启活动的详情
+	var missiondetails []MissionDetail
+	_, err := o.QueryTable(new(MissionDetail)).Filter("MissionId__in", missionids).Filter("MinLevel__lte", level).Filter("MaxLevel__gte", level).All(&missiondetails)
+	if err != nil {
+		beego.Error("get missdiondetails fault", err)
+		msg = "系统异常(3),请刷新后尝试"
+		return
+	}
+	//只查询匹配的活动
+	var mds []int64
+	for _, v := range missiondetails {
+		mds = append(mds, v.MissionId)
+	}
+	var mss []Mission
+	_, err0 := o.QueryTable(new(Mission)).Filter("Id__in", mds).All(&mss)
+	if err0 != nil {
+		beego.Error("query Mission fault(1)", err)
+		msg = "系统异常(4),请刷新后尝试"
+		return
+	}
+	//查询会员的中奖记录
+	var rewardlogs []MissionReview
+	_, err1 := o.QueryTable(new(MissionReview)).Filter("Account", account).Filter("MissionId__in", missionids).Filter("MinLevel__lte", level).Filter("MaxLevel__gte", level).OrderBy("-CreateDate").All(&rewardlogs)
+	if err1 != nil {
+		beego.Error("get RewardLog fault", err1)
+		msg = "系统异常(5),请刷新后尝试"
+		return
+	}
+	//前台展示数据
+	type result struct {
+		MissionId             int64
+		MissionDescribe       string
+		MissionDetailId       int64
+		MissionDetailDescribe string
+		MinLevel              int64
+		MaxLevel              int64
+		Integral              int64
+		Remark                string
+		CreateDate            time.Time
+		Status                int
+	}
+	var array []result
+	for _, v := range mss {
+		r := result{}
+		for _, j := range missiondetails {
+			r.MissionId = v.Id
+			r.MissionDetailId = j.Id
+			r.MinLevel = j.MinLevel
+			r.MaxLevel = j.MaxLevel
+			r.Integral = v.Integral
+			r.MissionDescribe = v.Describe
+			r.MissionDetailDescribe = j.Award
+			if len(rewardlogs) == 0 {
+				r.Status = -1
+			} else {
+				r.Status = -1
+				for _, k := range rewardlogs {
+					if k.MissionId == v.Id && k.MissionDetailId == j.Id {
+						r.Status = k.Status
+						r.Remark = k.Remark
+						r.CreateDate = k.CreateDate
+						break
+					}
+				}
+			}
+		}
+		array = append(array, r)
+	}
+	code = 1
+	msg = "查询成功"
+	data["result"] = array
+}
+
+func (this *VipCenterController) CreateMissionReview() {
+	this.AllowCross()
+	var code int
+	var msg string
+	defer sysmanage.Retjson(this.Ctx, &msg, &code)
+	account := this.GetString("account")
+	missionId, _ := this.GetInt64("missionid")
+	missionDetailId, _ := this.GetInt64("missioindetailid")
+	minLevel, _ := this.GetInt64("minlevel")
+	maxLevel, _ := this.GetInt64("maxlevel")
+	integral, _ := this.GetInt64("integral")
+	if account == "" {
+		msg = "会员账号不能为空"
+		return
+	}
+	if missionId == 0 || missionDetailId == 0 || minLevel == 0 || maxLevel == 0 {
+		msg = "系统异常请刷新后重试"
+		return
+	}
+	o := orm.NewOrm()
+	exist := o.QueryTable(new(MissionReview)).Filter("Account", account).Filter("MissionId", missionId).Filter("MissionDetailId", missionDetailId).Filter("MinLevel", minLevel).Filter("MaxLevel", maxLevel).Filter("Status__in", 1, 0).Exist()
+	if exist {
+		msg = "您的申请已经提交的了,请耐心等待专员的审核"
+		return
+	}
+	var mr MissionReview
+	mr.Account = account
+	mr.MissionId = missionId
+	mr.MissionDetailId = missionDetailId
+	mr.MinLevel = minLevel
+	mr.MaxLevel = maxLevel
+	mr.Integral = integral
+	_, err1 := mr.Create()
+	if err1 != nil {
+		beego.Error("create MissionReview fault", err1)
+		msg = "系统异常请刷新后重试(2)"
+		return
+	}
+	code = 1
+	msg = "已提交成功,专员审核通过后会为您派奖"
+}
+
+func (this *VipCenterController) Remark() {
+	var code int
+	var msg string
+	defer sysmanage.Retjson(this.Ctx, &msg, &code)
+	id, _ := this.GetInt64("id")
+	content := strings.TrimSpace(this.GetString("content"))
+	mr := MissionReview{Id: id}
+	mr.Remark = content
+	_, e := mr.Update("Remark")
+	if e != nil {
+		beego.Error("update MissionReview Remark fault", e)
+		msg = "备注更新失败"
+		return
+	}
+	code = 1
+	msg = "备注更新成功"
+}
+
+func retjson(c *beego.Controller, msg *string, code *int, data ...interface{}) {
+	ret := make(map[string]interface{})
+	ret["code"] = code
+	ret["msg"] = msg
+	ret["data"] = data
+	c.Data["json"] = &ret
+	c.ServeJSON()
+}

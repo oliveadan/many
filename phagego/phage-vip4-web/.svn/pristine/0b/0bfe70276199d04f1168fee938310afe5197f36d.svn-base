@@ -1,0 +1,104 @@
+package front
+
+import (
+	"fmt"
+	"github.com/astaxie/beego"
+	"github.com/astaxie/beego/orm"
+	"math"
+	"phagego/frameweb-v2/controllers/sysmanage"
+	. "phagego/phage-vip4-web/models/common"
+	"sync"
+)
+
+type VipCenterController struct {
+	sysmanage.BaseController
+}
+
+func (this *VipCenterController) Prepare() {
+	this.EnableXSRF = false
+}
+
+func (this *VipCenterController) Get() {
+	name := this.GetString("name")
+	var mll MemberLevelLog
+	o := orm.NewOrm()
+	//会员可领取的vip等级
+	_ = o.QueryTable(new(MemberLevelLog)).Filter("Account", name).OrderBy("-Level").One(&mll)
+	var colorlevel []Level
+	_, _ = o.QueryTable(new(Level)).Filter("VipLevel__lte", mll.Level).Filter("VipLevel__gt",0).All(&colorlevel)
+	//判断会员奖品是否已经领取
+	var mlls []MemberLevelLog
+	_, _ = o.QueryTable(new(MemberLevelLog)).Filter("Account", name).OrderBy("Level").All(&mlls)
+	//会员不可领取的vip等级
+	var wblevel []Level
+	_, _ = o.QueryTable(new(Level)).Filter("VipLevel__gt", mll.Level).All(&wblevel)
+	//取会员总信息用于前台展示
+	var mt MemberTotal
+	_ = o.QueryTable(new(MemberTotal)).Filter("Account", name).One(&mt)
+	//会员当前VIP等级信息
+	var level Level
+	_ = o.QueryTable(new(Level)).Filter("VipLevel", mt.Level).One(&level)
+
+	//下一个VIP等级
+	var lev Level
+	_ = o.QueryTable(new(Level)).Filter("VipLevel", mt.Level+1).One(&lev)
+
+	//当前投注所占百分比
+	var bili float64
+	bili = float64(mt.Bet) / float64(lev.TotalBet)
+	zs := math.Ceil(bili*100)
+	//距离下一级所需的投注占的百分比
+	zs1:= 100 -zs
+	this.Data["fontmt"] = mt
+	this.Data["bili"] = zs
+	this.Data["bili1"] = zs1
+	this.Data["mlls"] = mlls
+	this.Data["level"] = level
+	this.Data["colorlevel"] = colorlevel
+	this.Data["wblevel"] = wblevel
+	this.Data["blance"] = lev.TotalBet - mt.Bet
+	this.Data["nextlevel"] = lev.VipLevel
+	this.TplName = "front/vipcenter.html"
+}
+
+func (this *VipCenterController) Post() {
+	var code int
+	var msg string
+	defer sysmanage.Retjson(this.Ctx, &msg, &code)
+	id := this.GetString("id")
+	o := orm.NewOrm()
+	var mll MemberLevelLog
+	//判断会员是否已经领取彩金
+	_ = o.QueryTable(new(MemberLevelLog)).Filter("Id", id).One(&mll)
+	if mll.EnAble == 1 {
+		msg = "您已经成功领取彩金了~"
+		return
+	}
+
+	var rewardlog RewardLog
+	rewardlog.Account = mll.Account
+	rewardlog.GiftName = fmt.Sprintf("VIP%d晋级奖励", mll.Level)
+	rewardlog.GiftContent = fmt.Sprintf("%d", mll.LevelGift)
+	var lock sync.RWMutex
+	lock.Lock()
+	_, err := rewardlog.Create()
+	lock.Unlock()
+	if err != nil {
+		beego.Error("生成中奖记录失败", err)
+		msg = "系统异常，请刷新后重试"
+		return
+	} else {
+		_, err := o.QueryTable(new(MemberLevelLog)).Filter("Id", id).Update(orm.Params{"Enable": 1})
+		if err != nil {
+			beego.Error("更新晋级礼物失败", err)
+		}
+	}
+	code = 1
+	msg = fmt.Sprintf("恭喜您获VIP%d晋级奖励%d元", mll.Level, mll.LevelGift)
+}
+
+func (this *VipCenterController) QueryPrivilege()  {
+	 name  := this.GetString("name")
+	 this.Data["name"] = name
+	 this.TplName = "front/vipdetail.html"
+}

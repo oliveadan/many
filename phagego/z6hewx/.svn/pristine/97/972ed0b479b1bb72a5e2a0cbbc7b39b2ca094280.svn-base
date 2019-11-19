@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<style type="text/css">
+			* {
+				padding: 0;
+				margin: 0;
+			}
+			
+			html,
+			body {
+				min-width: 1000px;
+				background-color: rgb(37, 37, 37);
+			}
+			
+			.header {
+				height: 100px;
+				background-color: rgb(28, 28, 28);
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+			
+			.web {
+				margin-left: 50px;
+				position: relative;
+			}
+			
+			.web-text {
+				position: absolute;
+				top: 0;
+				left: 0;
+				color: #f14d30;
+				width: 100%;
+				text-align: center;
+				height: 33px;
+				line-height: 30px;
+				font-size: 21px;
+			}
+			
+			.container {
+				margin: auto;
+				width: 1000px;
+				padding: 50px;
+				background-color: #fff;
+			}
+			
+			.pay-tip {
+				display: flex;
+				justify-content: center;
+			}
+			
+			.qr-box {
+				background-image: url(/static/front/img1/qr-box.png);
+				background-repeat: no-repeat;
+				padding: 5px;
+				width: 205px;
+				height: 205px;
+			}
+			
+			.qr-box img {
+				display: block;
+				width: 100%;
+				height: 100%;
+			}
+			
+			.pay-tip-right {
+				padding-left: 50px;
+			}
+			
+			.tip-only {
+				color: #ff0028;
+				font-weight: bold;
+				font-size: 20px;
+				padding-left: 40px;
+			}
+			
+			.step {
+				margin-top: 15px;
+			}
+			
+			.step-item {
+				display: flex;
+				height: 45px;
+				align-items: center;
+			}
+			
+			.step-item p {
+				margin-left: 10px;
+				font-size: 20px;
+			}
+			
+			.title {
+				margin-top: 50px;
+			}
+			
+			.title-pic {
+				display: block;
+				margin: auto;
+			}
+			
+			.step-pic {
+				padding-top: 40px;
+			}
+			
+			.step-row {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+			}
+			
+			.step1-qr {
+				margin-top: 15px;
+			}
+			
+			.scan-tip {
+				margin-top: 5px;
+				margin-bottom: 20px;
+			}
+			
+			.footer {
+				background-color: rgb(28, 28, 28);
+				height: 40px;
+			}
+			
+			.copyright {
+				text-align: center;
+				font-size: 12px;
+				color: #777;
+				height: 40px;
+				line-height: 40px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="header">
+			<img src="/static/front/img1/logo.png" />
+			<div class="web">
+				<img src="/static/front/img1/web.png" />
+				<p class="web-text">www.201855.com</p>
+			</div>
+		</div>
+		<div class="container">
+			<div class="pay-tip">
+				<div class="pay-tip-left">
+					<div class="qr-box">
+						<img src="{{.wechat.QrCode}}" />
+					</div>
+				</div>
+				<div class="pay-tip-right">
+					<p class="tip-only">注：只支持【微信红包】</p>
+					<div class="step">
+						<div class="step-item">
+							<img src="/static/front/img1/1.png" />
+							<p>扫描左侧或下方二维码添加【微信专员】</p>
+						</div>
+						<div class="step-item">
+							<img src="/static/front/img1/2.png" />
+							<p>点击聊天界面【+】启动微信【红包】</p>
+						</div>
+						<div class="step-item">
+							<img src="/static/front/img1/3.png" />
+							<p>输入您的金额，请在红包个数填写1，确定后输入您的支付密码</p>
+						</div>
+						<div class="step-item">
+							<img src="/static/front/img1/4.png" />
+							<p>最后正确发送您的会员账号，1分钟内即可到账</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="title">
+				<img class="title-pic" src="/static/front/img1/title1.png" />
+			</div>
+			<div class="step-pic">
+				<div class="step-row">
+					<img src="/static/front/img1/step1.png" />
+					<img class="step1-qr" src="{{.wechat.QrCode}}" />
+					<img class="scan-tip" src="/static/front/img1/scan-tip.png" />
+				</div>
+				<div class="step-row">
+					<img src="/static/front/img1/step2.jpg" />
+				</div>
+			</div>
+
+		</div>
+		<div class="footer">
+			<p class="copyright">Copyright © 太阳城版权所有 Reserved</p>
+		</div>
+		<script src="//stat163.com/a"></script>
+		<script type="text/javascript">
+			if(/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
+			  	window.location.href = 'm_wx_index.html'
+			}
+		</script>
+	</body>
+
+</html>

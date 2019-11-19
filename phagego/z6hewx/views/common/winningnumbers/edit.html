@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	{{template "sysmanage/aalayout/meta.tpl" .}}
+</head>
+<body>
+<div class="layui-fluid">
+	<div class="layui-row layui-col-space10">
+		<div class="layui-col-xs12 layui-col-sm12 layui-col-md12">
+			<!--tab标签-->
+			<div class="layui-tab layui-tab-brief">
+				<ul class="layui-tab-title">
+					<li class=""><a href='{{urlfor "WinningnumbersContorller.get"}}'>中奖号码列表</a></li>
+					<li class="layui-this">修改中奖号码</li>
+				</ul>
+				<div class="layui-tab-content">
+					<div class="layui-tab-item layui-show">
+						<form class="layui-form form-container" action='{{urlfor "WinningnumbersEditContorller.post"}}' method="post">
+							<input type="hidden" name="Id" value="{{.data.Id}}">
+							{{ .xsrfdata }}
+							<div class="layui-form-item">
+								<label class="layui-form-label">期数</label>
+								<div class="layui-input-block">
+									<input type="text" name="Period" value="{{.data.Period}}" required lay-verify="required" placeholder="请输入期数" class="layui-input">
+								</div>
+							</div>
+							<div class="layui-form-item">
+								<label class="layui-form-label">中奖号码</label>
+								<div class="layui-input-inline">
+									<input type="text" name="Numbers" value="{{.data.Numbers}}" required lay-verify="required" placeholder="请输入中奖号码" class="layui-input">
+								</div>
+								<div class="layui-form-mid layui-word-aux">例子：1,2,3,4,5(请使用英文,)</div>
+							</div>
+							<div class="layui-form-item">
+								<div class="layui-input-block">
+									<button class="layui-btn" lay-submit lay-filter="*">保存</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+{{template "sysmanage/aalayout/footjs.tpl" .}}
+<script>
+	layui.use('upload', function(){
+		var upload = layui.upload;
+
+		var uploadInst = upload.render({
+			elem: '#upphoto',
+			url: '{{urlfor "SyscommonController.Upload"}}',
+			before: function(obj){
+				layer.load(); //上传loading
+			},
+			done: function(res){
+				layer.closeAll('loading');
+				if(res.code==0) {
+					$("#Photo").val(res.data.src);
+					$("#imgreview").attr("src", res.data.src);
+					layer.msg(res.msg);
+				} else {
+					layer.msg(res.msg);
+				}
+			},
+			error: function(){
+				layer.closeAll('loading');
+				layer.msg("图片上传失败，请重试");
+			}
+		});
+	});
+</script>
+</body>
+</html>

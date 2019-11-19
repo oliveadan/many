@@ -1,0 +1,54 @@
+2019/11/14 15:06:42.274 [I] [beecache.go:27]  Init cache success!! 
+2019/11/14 15:06:42.276 [I] [db.go:49]  Auto create db 
+2019/11/14 15:06:42.379 [I] [projectdata.go:18]  Init project data 
+2019/11/14 15:06:42.644 [I] [asm_amd64.s:1337]  http server Running on http://:8084
+2019/11/14 15:06:42.644 [I] [asm_amd64.s:1337]  Admin server Running on :8088
+2019/11/17 11:47:34.133 [I] [beecache.go:27]  Init cache success!! 
+2019/11/17 11:47:34.135 [I] [db.go:49]  Auto create db 
+2019/11/17 11:47:34.293 [I] [projectdata.go:18]  Init project data 
+2019/11/17 11:47:34.430 [I] [asm_amd64.s:1337]  http server Running on http://:8084
+2019/11/17 11:47:34.430 [I] [asm_amd64.s:1337]  Admin server Running on :8088
+2019/11/17 11:48:00.256 [I] [beecache.go:27]  Init cache success!! 
+2019/11/17 11:48:00.258 [I] [db.go:49]  Auto create db 
+2019/11/17 11:48:00.287 [I] [projectdata.go:18]  Init project data 
+2019/11/17 11:48:00.481 [I] [asm_amd64.s:1337]  Admin server Running on :8088
+2019/11/17 11:48:00.481 [I] [asm_amd64.s:1337]  http server Running on http://:8084
+2019/11/17 11:48:00.484 [C] [asm_amd64.s:1337]  ListenAndServe:  listen tcp :8084: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted.
+2019/11/17 11:48:00.484 [C] [asm_amd64.s:1337]  Admin ListenAndServe:  listen tcp :8088: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted. 38468
+2019/11/17 11:49:08.384 [I] [beecache.go:27]  Init cache success!! 
+2019/11/17 11:49:08.387 [I] [db.go:49]  Auto create db 
+2019/11/17 11:49:08.402 [I] [projectdata.go:18]  Init project data 
+2019/11/17 11:49:08.545 [I] [asm_amd64.s:1337]  Admin server Running on :8088
+2019/11/17 11:49:08.545 [I] [asm_amd64.s:1337]  http server Running on http://:8084
+2019/11/17 11:49:17.545 [I] [beecache.go:27]  Init cache success!! 
+2019/11/17 11:49:17.547 [I] [db.go:49]  Auto create db 
+2019/11/17 11:49:17.564 [I] [projectdata.go:18]  Init project data 
+2019/11/17 11:49:17.714 [I] [asm_amd64.s:1337]  http server Running on http://:8084
+2019/11/17 11:49:17.714 [I] [asm_amd64.s:1337]  Admin server Running on :8088
+2019/11/17 11:58:14.794 [I] [beecache.go:27]  Init cache success!! 
+2019/11/17 11:58:14.796 [I] [db.go:49]  Auto create db 
+2019/11/17 11:58:14.815 [I] [projectdata.go:18]  Init project data 
+2019/11/17 11:58:14.979 [I] [asm_amd64.s:1337]  Admin server Running on :8088
+2019/11/17 11:58:14.979 [I] [asm_amd64.s:1337]  http server Running on http://:8084
+2019/11/17 12:27:12.767 [I] [beecache.go:27]  Init cache success!! 
+2019/11/17 12:27:12.769 [I] [db.go:49]  Auto create db 
+2019/11/17 12:27:12.788 [I] [projectdata.go:18]  Init project data 
+2019/11/17 12:27:12.942 [I] [asm_amd64.s:1337]  http server Running on http://:8084
+2019/11/17 12:27:12.942 [I] [asm_amd64.s:1337]  Admin server Running on :8088
+2019/11/17 12:28:20.134 [I] [beecache.go:27]  Init cache success!! 
+2019/11/17 12:28:20.136 [I] [db.go:49]  Auto create db 
+2019/11/17 12:28:20.155 [I] [projectdata.go:18]  Init project data 
+2019/11/17 12:28:20.311 [I] [asm_amd64.s:1337]  http server Running on http://:8084
+2019/11/17 12:28:20.311 [I] [asm_amd64.s:1337]  Admin server Running on :8088
+2019/11/17 13:53:54.423 [I] [beecache.go:27]  Init cache success!! 
+2019/11/17 13:53:54.424 [I] [db.go:49]  Auto create db 
+2019/11/17 13:53:54.442 [I] [projectdata.go:18]  Init project data 
+2019/11/17 13:53:54.554 [I] [asm_amd64.s:1337]  http server Running on http://:8084
+2019/11/17 13:53:54.554 [I] [asm_amd64.s:1337]  Admin server Running on :8088
+2019/11/17 13:54:42.385 [W] [login.go:21]  LoginController Get from ip: ::1 
+2019/11/17 13:54:43.999 [W] [login.go:114]  LoginController Post from ip: ::1 username: admin 
+2019/11/19 12:16:02.187 [I] [beecache.go:27]  Init cache success!! 
+2019/11/19 12:16:02.188 [I] [db.go:49]  Auto create db 
+2019/11/19 12:16:02.801 [I] [projectdata.go:18]  Init project data 
+2019/11/19 12:16:03.454 [I] [asm_amd64.s:1337]  http server Running on http://:8084
+2019/11/19 12:16:03.454 [I] [asm_amd64.s:1337]  Admin server Running on :8088

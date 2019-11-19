@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+{{template "sysmanage/aalayout/meta.tpl" .}}
+</head>
+<body>
+<div class="layui-fluid">
+    <div class="layui-row layui-col-space10">
+        <div class="layui-col-xs12 layui-col-sm12 layui-col-md12">
+            <!--tab标签-->
+            <div class="layui-tab layui-tab-brief">
+                <ul class="layui-tab-title">
+                    <li class="layui-this">编辑客服查可看字段</li>
+                </ul>
+                <div class="layui-tab-content">
+                    <form class="layui-form form-container" action='{{urlfor "CustomerEditController.post"}}' method="post">
+                    {{ .xsrfdata }}
+                        <input name="adminid" value="{{.adminid}}" style="display: none">
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">分层</label>
+                            <div class="layui-input-block">
+                                <select name="hierarchy" lay-verify="required" lay-search>
+                                {{range $i, $m := .checks}}
+                                    <option value="{{$m.Hierarchy}}"
+                                            {{if eq $m.Hierarchy $.hierarchy}}selected="selected"{{end}}>{{$m.Hierarchy}}</option>
+                                {{end}}
+                                </select>
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">权限</label>
+                            <div class="layui-input-block">
+                                <input type="checkbox" name="Account" title="会员账号"
+                                       {{if eq .checkpermission.Account 1 }}checked{{end}}
+                                       value="1"  lay-skin="primary">
+                                <input type="checkbox" name="Idd" title="Id"
+                                       {{if eq .checkpermission.Idd 1 }}checked{{end}}
+                                       value="1"  lay-skin="primary">
+                                <input type="checkbox" name="Name" title="会员姓名"
+                                       {{if eq .checkpermission.Name 1 }}checked{{end}}
+                                       value="1"  lay-skin="primary">
+                                <input type="checkbox" name="Agent" title="代理商"
+                                       {{if eq .checkpermission.Agent 1 }}checked{{end}}
+                                       value="1"  lay-skin="primary">
+                                <input type="checkbox" name="LoginInformation" title="类别"
+                                       {{if eq .checkpermission.LoginInformation 1 }}checked{{end}}
+                                       value="1"  lay-skin="primary">
+                                <input type="checkbox" name="RegisterDate" title="登录时间"
+                                       {{if eq .checkpermission.RegisterDate 1 }}checked{{end}}
+                                       value="1"  lay-skin="primary">
+                                <input type="checkbox" name="Mobile" title="手机号码"
+                                       {{if eq .checkpermission.Mobile 1 }}checked{{end}}
+                                       value="1"  lay-skin="primary">
+                                <input type="checkbox" name="Email" title="电子邮箱"
+                                       {{if eq .checkpermission.Email 1 }}checked{{end}}
+                                       value="1"  lay-skin="primary">
+                                <input type="checkbox" name="Qq" title="QQ号码"
+                                       {{if eq .checkpermission.Qq 1 }}checked{{end}}
+                                       value="1"  lay-skin="primary">
+                                <input type="checkbox" name="Wechat" title="微信号码"
+                                       {{if eq .checkpermission.Wechat 1 }}checked{{end}}
+                                       value="1"  lay-skin="primary">
+                                <input type="checkbox" name="PasswordHint" title="密码提示问题"
+                                       {{if eq .checkpermission.PasswordHint 1 }}checked{{end}}
+                                       value="1"  lay-skin="primary">
+                                <input type="checkbox" name="PasswordAnswer" title="密码提示答案"
+                                       {{if eq .checkpermission.PasswordAnswer 1 }}checked{{end}}
+                                       value="1"  lay-skin="primary">
+                                <input type="checkbox" name="WithdrawalPassword" title="取款密码"
+                                       {{if eq .checkpermission.WithdrawalPassword 1 }}checked{{end}}
+                                       value="1"  lay-skin="primary">
+                                <input type="checkbox" name="OpenBank" title="开户银行"
+                                       {{if eq .checkpermission.OpenBank 1 }}checked{{end}}
+                                       value="1"  lay-skin="primary">
+                                <input type="checkbox" name="BankAccount" title="银行账户"
+                                       {{if eq .checkpermission.BankAccount 1 }}checked{{end}}
+                                       value="1"  lay-skin="primary">
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <div class="layui-input-block">
+                                <button class="layui-btn" lay-submit lay-filter="*">保存</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+{{template "sysmanage/aalayout/footjs.tpl" .}}
+</body>
+</html>

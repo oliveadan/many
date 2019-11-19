@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>VIP查询中心</title>
+    <link rel="shortcut icon" href="../../static/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../../static/front/css/bootstrap.css"/>
+    <link rel="stylesheet" href="../../static/front/css/vipCenter.css"/>
+    <script src="../../static/front/js/jquery-3.3.1.min.js"></script>
+</head>
+
+<body>
+<div id="vipFather" class="container">
+    <div class="row">
+        <div class="title col-md-12 row ">
+            <div class="col-md-4 col-xs-2 text-left">
+                <span onclick="back()" class="icon glyphicon glyphicon-menu-left" aria-hidden="true"></span>
+            </div>
+            <div class="col-md-4 col-xs-8 text-center">
+                <span class="icon icont">会员中心</span>
+                <a href='{{urlfor "VipCenterController.QueryPrivilege"}}?name={{.fontmt.Account}}'>
+                    <span class="det glyphicon glyphicon-question-sign" aria-hidden="true"></span>
+                </a>
+            </div>
+            <div class="col-md-4 col-xs-2">
+            </div>
+        </div>
+        <div class="bigLog col-md-12">
+            <img src="{{.level.Bgimg}}" alt="">
+        </div>
+        <div class="lvTitle text-center">
+            <div class="welcome text-center ">
+                欢迎回来，<span id="userName">{{.fontmt.Account}}</span>
+                <span class="timet">(您已加入VIP<span style="color: red">{{.subdays}}</span>天)</span>
+            </div>
+        </div>
+        <div class="vipTitle">
+            <hr>
+            <div class="vipN text-center">
+                <div class="nowLv">
+                    <div class="LVnum">VIP{{.fontmt.Level}} </div>
+                    <!-- <div>当前等级</div> -->
+                </div>
+                <div class="vipN text-center">
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-success progress-bar-striped active"
+                             role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"
+                             style="width:{{.bili}}%">
+                            {{.fontmt.Bet}}
+                        </div>
+                        <div class="progress-bar progress-bar-danger progress-bar-striped active" role="progressbar"
+                             aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:{{.bili1}}%">
+                        </div>
+                    </div>
+                </div>
+                <div class="nextLv">
+                    <div class="LVnum">VIP{{.nextlevel}}</div>
+                    <spn style="color:white">{{.blance}}</spn>
+                </div>
+            </div>
+            <div class="demot"><span>提示：每日VIP12点30分更新</span></div>
+            <div id="adone" class="ad">
+                <div class="row">
+                </div>
+            </div>
+        </div>
+        <div class="vipList col-lg-12 row">
+            {{range $i,$v := .colorlevel}}
+                <div class="divimg col-md-3 col-xs-3 dropdown">
+                    <a class="dropdown-toggle" type="button" id="dropdownMenu{{numberAdd $i 1}}" data-toggle="dropdown"
+                       aria-haspopup="true" aria-expanded="true" href="javascript:void(0);"
+                       onclick="drop({{numberAdd $i 1}})"><img
+                                src="{{$v.Colorimg}}" alt="loading..."/></a>
+                    <div class="vipNum">{{.VipName}}</div>
+                    {{range $h,$l := $.mlls}}
+                        {{if eq $v.VipLevel $l.Level }}
+                            {{if eq 0 $l.EnAble}}
+                                <div id="{{$l.Id}}" onclick="GetGift({{$l.Id}})" class="getAward light">领取奖励</div>
+                            {{else}}
+                                <div class="getAward over">已领取</div>
+                            {{end}}
+                        {{end}}
+                    {{end}}
+                </div>
+            {{end}}
+            {{range $u,$l := .wblevel}}
+                <div class="divimg col-md-3 col-xs-3">
+                    <img src="{{$l.Wbimg}}" alt="loading..."/>
+                    <div class="vipNum">{{.VipName}}</div>
+                    <div class="getAward1">未达到</div>
+                </div>
+            {{end}}
+            <div class="ad">
+                <div id="lastrow" class="row">
+                    <div class="abc">
+
+                    </div>
+                </div>
+            </div>
+            <div id="adtwo" class="ad">
+                <div id="ctr" class="row text-center">
+                    <div id="colOne" class="col-sm-12">
+                        {{range $i,$v := .nav}}
+                            <a id="aOne" href="{{$v.WebSite}}" class="btn btn-warning btn-lg"
+                               target="_blank">{{$v.Name}}</a>
+                        {{end}}
+                    </div>
+                </div>
+                <div class="row">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="app"></div>
+</div>
+<script src="/static/front/js/jquery-3.3.1.min.js"></script>
+<script src="/static/front/js/bootstrap.js"></script>
+<script src="/static/back/layer-v3.1.1/layer.js"></script>
+<script>
+    $(function () {
+        var enable = {{.fontmt.KeepEnable}};
+        var account = {{.fontmt.Account}};
+        var tip = {{.fontmt.Tip}};
+        if (tip == 0) {
+            if (enable == 1) {
+                layer.open({
+                    title: 'VIP提示',
+                    content: '很遗憾,您保级失败.',
+                    btn: ['确定'],
+                    yes: function () {
+                        $.ajax({
+                            url: {{urlfor "VipCenterController.ChangeTip"}},
+                            type: "POST",
+                            data: {"account": account},
+                            success: function (info) {
+                                layer.closeAll();
+                            },
+                            error: function (info) {
+                                layer.msg(info.responseText || '请求异常', {icon: 2});
+                            }
+                        });
+                    }
+                });
+            }
+            if (enable == 0) {
+                layer.open({
+                    title: 'VIP提示',
+                    content: '恭喜您保级成功。',
+                    yes: function () {
+                        $.ajax({
+                            url: {{urlfor "VipCenterController.ChangeTip"}},
+                            type: "POST",
+                            data: {"account": account},
+                            success: function (info) {
+                                layer.closeAll();
+                            },
+                            error: function (info) {
+                                layer.msg(info.responseText || '请求异常', {icon: 2});
+                            }
+                        });
+                    }
+                });
+            }
+        }
+    })
+</script>
+<script>
+    function GetGift(id) {
+        s = "#" + id;
+        $.ajax({
+            url: {{urlfor "VipCenterController.Post"}},
+            type: "post",
+            data: {"id": id},
+            success: function (info) {
+                if (info.code === 1) {
+                    $(s).css("opacity", "0.5");
+                    $(s).css("color", "#fff");
+                    $(s).css('background', '#542921');
+                    $(s).html("已领取");
+                }
+                layer.msg(info.msg);
+            },
+        });
+    }
+
+    function back() {
+        layer.open({
+            shade: false,
+            content: '确定要退出吗？',
+            btn: ['确定', '取消'],
+            yes: function () {
+                location.href = '{{urlfor "FrontIndexController.get"}}';
+            }
+        })
+    }
+</script>
+<script>
+    var ac = {{.fontmt.Account}};
+
+    function drop(a) {
+        var ac = {{.fontmt.Account}};
+        $.ajax({
+            url: '/api/mission',
+            type: "POST",
+            data: {
+                account:{{.fontmt.Account}},
+                // level:{{.fontmt.Level}},
+                level: a,
+            },
+            success: function (info) {
+                var res = info.data[0].result;
+                var Html1 = ''; //勋章内容1
+                var Html2 = ''; //勋章内容2
+                var Html3 = ''; //勋章内容3
+                var Html4 = ''; //勋章内容4
+                var Html5 = ''; //勋章内容5
+                var Html3a = ''; //勋章内容6
+                var Html3b = ''; //勋章内容7
+                var Html3c = ''; //勋章内容8
+                var Html3d = ''; //勋章内容9
+                var rHtml = ''; //立即申请按钮
+                var mHtml = ''; //再次申请按钮
+                var aHtml = ''; //html内容
+                var asHtml = ''; //html内容+
+                var allHtml = ''; //全部html内容
+                var int = ''; //Integral
+                var max = ''; //MaxLevel
+                var min = ''; //MinLevel
+                var des = ''; //MissionDescribe
+                var det = ''; //MissionDetailDescribe
+                var did = ''; //MissionDetailId
+                var mid = ''; //MissionId
+                var rmk = ''; //Remark
+                var sts = ''; //Statusy
+                var cd = ''; //CreateDate
+                if (res.length != 0) {
+                    for (var i = 0; i < res.length; i++) {
+                        des = res[i].MissionDescribe;
+                        det = res[i].MissionDetailDescribe;
+                        did = res[i].MissionDetailId;
+                        mid = res[i].MissionId;
+                        max = res[i].MaxLevel;
+                        min = res[i].MinLevel;
+                        int = res[i].Integral;
+                        sts = res[i].Status;
+                        rmk = res[i].Remark;
+                        cd = res[i].CreateDate;
+                        var cd1 = cd.slice(0, 10);
+                        var cd2 = cd.substr(11, 5);
+
+                        Html1 = '<div class="task' + a + ' dropdown-menu" aria-labelledby="' + 'dropdownMenu' + a + '">' + '<div class="taskname">' + '<span>' + '</span>' + 'VIP' + a + '任务内容' + '</div>';
+
+                        Html2 = '<div class="taskson">' + '<div class="ss2">' + '<span class="sp1">' + des + '</span>';
+
+                        Html3 = '<span class="sp1">' + det + '</span>';
+
+                        aHtml = Html2 + Html3;
+
+                        rHtml = '<button id="' + 'bo' + i + '" class="btnssa btn" onclick="gets(' + a + ',\'' + ac + '\',' + mid + ',' + did + ',' + min + ',' + max + ',' + int + ')">' + '立即申请' + '</button>';
+
+                        mHtml = '<button id="' + 'bz' + i + '" class="btnssa btn" onclick="get(' + i + ',\'' + ac + '\',' + mid + ',' + did + ',' + min + ',' + max + ',' + int + ')">' + '再次申请' + '</button>';
+
+                        Html3b = '<button class="btnssb btn">' + '申请中' + '</button>';
+                        Html3c = '<button class="btnssc btn">' + '申请成功' + '</button>';
+                        Html3d = '<span class="sp3">您于北京时间' + cd1 + '-' + cd2 + '申请奖励失败' + '</span>';
+                        Html3a = '<span class="sp3">' + '客服回复：' + rmk + '</span>';
+
+                        if (sts == -1) {
+                            aHtml = aHtml + rHtml;
+                        } else if (sts == 0) {
+                            aHtml = aHtml + Html3b
+                        } else if (sts == 1) {
+                            aHtml = aHtml + Html3a + Html3c
+                        } else if (sts == 2) {
+                            aHtml = aHtml + Html3d + Html3a + mHtml;
+                        }
+
+                        Html4 = '</div>' + '</div>';
+                        aHtml = aHtml + Html4;
+                        asHtml += aHtml;
+                        Html5 = '</div>';
+                        allHtml = Html1 + asHtml + Html5;
+                    }
+                    $('.divimg').append(allHtml);
+                    $('#remark').append(rmk);
+                }
+            }
+
+        });
+    }
+
+    $.ajax({
+        url: '/api/mission',
+        type: "POST",
+        data: {
+            account:{{.fontmt.Account}},
+            level:{{.fontmt.Level}},
+        },
+        success: function (info) {
+            var res = info.data[0].result;
+            var Html1 = ''; //勋章内容1
+            var Html2 = ''; //勋章内容2
+            var Html3 = ''; //勋章内容3
+            var Html4 = ''; //勋章内容4
+            var Html5 = ''; //勋章内容5
+            var Html3a = ''; //勋章内容6
+            var Html3b = ''; //勋章内容7
+            var Html3c = ''; //勋章内容8
+            var Html3d = ''; //勋章内容9
+            var rHtml = ''; //立即申请按钮
+            var mHtml = ''; //再次申请按钮
+            var aHtml = ''; //html内容
+            var asHtml = ''; //html内容+
+            var allHtml = ''; //全部html内容
+            var int = ''; //Integral
+            var max = ''; //MaxLevel
+            var min = ''; //MinLevel
+            var des = ''; //MissionDescribe
+            var det = ''; //MissionDetailDescribe
+            var did = ''; //MissionDetailId
+            var mid = ''; //MissionId
+            var rmk = ''; //Remark
+            var sts = ''; //Status
+            var cd = ''; //CreateDate
+            if (res.length == 0) {
+
+            } else {
+                for (var i = 0; i < res.length; i++) {
+                    des = res[i].MissionDescribe;
+                    det = res[i].MissionDetailDescribe;
+                    did = res[i].MissionDetailId;
+                    mid = res[i].MissionId;
+                    max = res[i].MaxLevel;
+                    min = res[i].MinLevel;
+                    int = res[i].Integral;
+                    sts = res[i].Status;
+                    rmk = res[i].Remark;
+                    cd = res[i].CreateDate;
+                    var cd1 = cd.slice(0, 10);
+                    var cd2 = cd.substr(11, 5);
+
+                    Html1 = '<div class="task-last">' + '<div class="taskname">' + '<span>' + '</span>' + '当前VIP等级任务内容' + '</div>';
+
+                    Html2 = '<div class="taskson">' + '<div class="ss2">' + '<span class="sp1">' + des + '</span>';
+
+                    Html3 = '<span class="sp2">' + det + '</span>' + '<div class="btf">';
+
+                    aHtml = Html2 + Html3;
+
+                    rHtml = '<button id="' + 'bo' + i + '" class="btnssa btn" onclick="get(' + i + ',\'' + ac + '\',' + mid + ',' + did + ',' + min + ',' + max + ',' + int + ')">' + '立即申请' + '</button>';
+
+                    mHtml = '<button id="' + 'bz' + i + '" class="btnssa btn" onclick="get(' + i + ',\'' + ac + '\',' + mid + ',' + did + ',' + min + ',' + max + ',' + int + ')">' + '再次申请' + '</button>';
+
+                    Html3b = '<button class="btnssb btn">' + '申请中' + '</button>';
+                    Html3c = '<button class="btnssc btn">' + '申请成功' + '</button>';
+                    Html3d = '<span class="sp3">您于北京时间' + cd1 + '-' + cd2 + '申请奖励失败' + '</span>';
+                    Html3a = '<span class="sp3">' + '客服回复：' + rmk + '</span>';
+
+                    if (sts == -1) {
+                        aHtml = aHtml + rHtml;
+                    } else if (sts == 0) {
+                        aHtml = aHtml + Html3b
+                    } else if (sts == 1) {
+                        aHtml = aHtml + Html3a + Html3c
+                    } else if (sts == 2) {
+                        aHtml = aHtml + Html3d + Html3a + mHtml;
+                    }
+                    Html4 = '</div>' + '</div>' + '</div>';
+                    aHtml = aHtml + Html4;
+                    asHtml += aHtml;
+                    Html5 = '</div>';
+                    allHtml = Html1 + asHtml + Html5;
+                }
+                $('.abc').append(allHtml);
+                $('#remark').append(rmk);
+            }
+        }
+    });
+
+    function gets(a, b, c, d, e, f, g) {
+        $.ajax({
+            url: '/createmissionreview',
+            type: "POST",
+            data: {
+                account: b,
+                missionid: c,
+                missioindetailid: d,
+                minlevel: e,
+                maxlevel: f,
+                Integral: g
+            },
+            success: function (info) {
+                if (info.code == 1) {
+                }
+                layer.msg(info.msg);
+            },
+        });
+    }
+
+    function get(a, b, c, d, e, f, g) {
+        $.ajax({
+            url: '/createmissionreview',
+            type: "POST",
+            data: {
+                account: b,
+                missionid: c,
+                missioindetailid: d,
+                minlevel: e,
+                maxlevel: f,
+                Integral: g
+            },
+            success: function (info) {
+
+                if (info.code == 1) {
+
+                }
+                layer.msg(info.msg);
+            },
+        });
+        setTimeout(function () {
+            history.go(0);
+        }, 1000)
+    }
+
+</script>
+<script>
+    var t = {{.getGiftTime}};
+    var int;
+    function getRTime(){
+        if(t<=0) {
+            window.clearInterval(int);
+            location.href = location.href;
+        }
+        var d=Math.floor(t/60/60/24);
+        var h=Math.floor(t/60/60%24);
+        var m=Math.floor(t/60%60);
+        var s=Math.floor(t%60);
+
+        var countDownMsg = "";
+        if(d>0) {
+            countDownMsg += d + "天";
+        }
+        if(h>0) {
+            countDownMsg += h + "时";
+        }
+        if(m>0) {
+            countDownMsg += m + "分";
+        }
+        if(s>0) {
+            countDownMsg += s + "秒";
+        } else {
+            countDownMsg += "00秒";
+        }
+        document.getElementById("count-down").innerHTML = "倒计时：" + countDownMsg;
+        t = t-1;
+    }
+    if(t > 0) {
+        int = setInterval(getRTime,1000);
+    }
+</script>
+<script>
+     function getTimeGift() {
+         $.ajax({
+             url: '/gettimegift',
+             type: "POST",
+             data: {
+                 account: {{.fontmt.Account}},
+             },
+             success: function (info) {
+                 if(info.code===1){
+                     setTimeout(function () {
+                         location.href = info.url || location.href;
+                     }, 1000);
+                 }
+                 layer.msg(info.msg);
+             },
+         });
+     }
+</script>
+</body>
+</html>

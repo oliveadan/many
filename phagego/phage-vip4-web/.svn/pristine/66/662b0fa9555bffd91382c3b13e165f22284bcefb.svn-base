@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>VIP查询中心</title>
+    <link rel="shortcut icon" href="/static/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/static/front/css/bootstrap.css"/>
+    <link rel="stylesheet" href="/static/front/css/vipCenter.css"/>
+    <style></style>
+</head>
+
+<body>
+<div class="container">
+    <div class="row">
+        <div class="title col-md-12 row ">
+            <div class="col-md-4 col-xs-2 text-left">
+                <span onclick="back()" class="icon glyphicon glyphicon-menu-left" aria-hidden="true"></span>
+            </div>
+            <div class="col-md-4 col-xs-8 text-center">
+                <span class="icon">会员中心</span>
+            </div>
+            <div class="col-md-4 col-xs-2">
+            </div>
+        </div>
+        <div class="bigLog col-md-12">
+            <img src="{{.level.Bgimg}}" alt="">
+        </div>
+        <div class="lvTitle text-center">
+            <div class="welcome text-center ">
+                欢迎回来，<span id="userName">{{.fontmt.Account}}</span>
+                <a href='{{urlfor "VipCenterController.QueryPrivilege"}}?name={{.fontmt.Account}}'>
+                    <span class="det glyphicon glyphicon-question-sign" aria-hidden="true"></span>
+                </a>
+            </div>
+        </div>
+        <div class="vipTitle">
+            <hr>
+            <div class="vipN text-center">
+                <div class="nowLv">
+                    <div class="LVnum">VIP{{.fontmt.Level}} </div>
+                    <!-- <div>当前等级</div> -->
+                </div>
+                <div class="vipN text-center">
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-success progress-bar-striped active"
+                             role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"
+                             style="width:{{.bili}}%">
+                            {{.fontmt.Bet}}
+                        </div>
+                        <div class="progress-bar progress-bar-danger progress-bar-striped active" role="progressbar"
+                             aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:{{.bili1}}%">
+                            {{.blance}}
+                        </div>
+                    </div>
+                </div>
+                <div class="nextLv">
+                    <div class="LVnum">VIP{{.nextlevel}}</div>
+                </div>
+            </div>
+            <div class="ad">
+                <div class="row text-center">
+                    <div class="col-sm-12">
+                        <a class="btn btn-warning btn-lg">红包</a>
+                        <a class="btn btn-warning btn-lg">免单</a>
+                        <a class="btn btn-warning btn-lg">积分</a>
+                        <a class="btn btn-warning btn-lg">签到</a>
+                    </div>
+                </div>
+                <div class="row">
+
+                </div>
+            </div>
+        </div>
+        <div class="vipList col-lg-12 row">
+            {{range $i,$v := .colorlevel}}
+                <div class="col-md-3 col-xs-3 ">
+                    <img src="{{$v.Colorimg}}" alt="loading..."/>
+                    <div class="vipNum">{{.VipName}}</div>
+                    {{range $h,$l := $.mlls}}
+                        {{if eq $v.VipLevel $l.Level }}
+                            {{if eq 0 $l.EnAble}}
+                                <div id="{{$l.Id}}" onclick="GetGift({{$l.Id}})" class="getAward light">领取奖励</div>
+                            {{else}}
+                                <div class="getAward over">已领取</div>
+                            {{end}}
+                        {{end}}
+                    {{end}}
+                </div>
+            {{end}}
+            {{range $u,$l := .wblevel}}
+                <div class="col-md-3 col-xs-3 ">
+                    <img src="{{$l.Wbimg}}" alt="loading..."/>
+                    <div class="vipNum">{{.VipName}}</div>
+                    <div class="getAward1">未达到</div>
+                </div>
+            {{end}}
+        </div>
+    </div>
+</div>
+<script src="/static/front/js/jquery-3.3.1.min.js"></script>
+<script src="/static/front/js/bootstrap.js"></script>
+<script src="/static/back/layer-v3.1.1/layer.js"></script>
+</body>
+{{/*<script>
+    $(function(){
+        var enable = ;
+        if (enable == 1){
+            layer.msg("很遗憾您保级失败");
+        }
+    })
+</script>*/}}
+<script>
+    function GetGift(id) {
+        s = "#" + id;
+        $.ajax({
+            url: {{urlfor "VipCenterController.Post"}},
+            type: "post",
+            data: {"id": id},
+            success: function (info) {
+                if (info.code === 1) {
+                    $(s).css("opacity", "0.5");
+                    $(s).css("color", "#fff");
+                    $(s).css('background', '#542921');
+                    $(s).html("已领取");
+                }
+                layer.msg(info.msg);
+            },
+        });
+    }
+
+    function back() {
+        layer.open({
+            shade: false,
+            content: '确定要退出吗？',
+            btn: ['确定', '取消'],
+            yes: function () {
+                location.href = '{{urlfor "FrontIndexController.get"}}';
+            }
+        })
+    }
+</script>
+</html>

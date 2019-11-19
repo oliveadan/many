@@ -1,0 +1,185 @@
+/*
+* @Author: Marte
+* @Date:   2017-10-27 21:10:03
+* @Last Modified by:   Marte
+* @Last Modified time: 2017-10-29 08:43:06
+*/
+.wa {
+    background: url(../images/shang.jpg);
+    padding-top: 1px;
+    background-size: cover 100%;
+    background-position: center;
+    padding-bottom: 10%;
+}
+
+.logo {
+    display: block;
+    margin: 0% auto;
+    float: none;
+    margin-top: 3%;
+}
+
+.erwei {
+    display: block;
+    margin: 1% auto;
+    float: none;
+    height: 300px;
+    width: 300px;
+    padding-left: 0;
+    padding-right: 0;
+
+}
+
+.footimg {
+    height: 150px;
+    width: 150px;
+}
+
+.pp {
+    float: none;
+    text-align: center;
+    font-size: 22px;
+    padding: 10px 20px;
+    background: #ffae00;
+    margin-top: 10px;
+    border-radius: 30px;
+    color: #fff;
+}
+
+
+.pp + .pp {
+    color: #0000ff;
+}
+
+.pp + .pp + .pp {
+    color: #fff;
+}
+
+.pp span {
+    color: #ff0000;
+    margin-right: 10px;
+}
+
+
+.dd {
+    background: rgba(255, 255, 255, 0.3);
+    float: none;
+    font-size: 18px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+    line-height: 1.5em;
+
+
+}
+
+
+.dd span {
+    display: block;
+    color: #ff0000;
+}
+
+
+.xia h1 {
+    font-size: 46px;
+    color: #fe8900;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 3%;
+}
+
+.xia ul li {
+    float: none;
+    margin: 0 auto;
+    font-size: 27px;
+    line-height: 2em;
+    border: 1px #d1d1d1 solid;
+    text-align: center;
+    padding: 0px;
+    margin-top: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.xia ul li span {
+
+    background: #e20000;
+    color: #fff;
+    padding: 0;
+
+}
+
+.footer {
+    width: 40%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 5%;
+}
+
+
+
+.footer p {
+    display: inline-block;
+    vertical-align: middle;
+
+    zoom: 1; /* Fix for IE7 */
+    *display: inline; /* Fix for IE7 */
+    width: 40%;
+    font-size: 20px;
+    line-height: 46px;
+}
+
+@media (max-width: 767px) {
+    .pp {
+        font-size: 16px;
+    }
+
+
+    .wa {
+        background: url(../images/shang.jpg);
+        padding-top: 1px;
+        background-size: 200% 100%;
+        background-position: center;
+        padding-bottom: 10%;
+    }
+
+    .xia ul li {
+        font-size: 18px;
+    }
+
+    .xia h1 {
+        font-size: 30px;
+        margin-top: 10%;
+        margin-bottom: 7%;
+    }
+
+    .dd {
+        background: rgba(255, 255, 255, 0.3);
+        float: none;
+        font-size: 16px;
+        text-align: center;
+        padding: 20px;
+        border-radius: 10px;
+        margin-top: 10px;
+        line-height: 1.5em;
+    }
+
+    .footer {
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+        margin-top: 5%;
+    }
+
+    .footer p {
+        width: 100%;
+        line-height: 1.5em;
+    }
+
+    .footer img {
+        width: 60%;
+    }
+
+}
+

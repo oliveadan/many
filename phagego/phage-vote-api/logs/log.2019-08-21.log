@@ -1,0 +1,562 @@
+2019/08/21 16:04:07.324 [E] [db.go:41] 数据库注册失败 register db Ping `default`, Error 1049: Unknown database 'phgaevote' 
+2019/08/21 16:04:07.325 [I] [beecache.go:27] Init cache success!! 
+2019/08/21 16:04:07.326 [I] [db.go:49] Auto create db 
+2019/08/21 16:04:52.714 [E] [db.go:41] 数据库注册失败 register db Ping `default`, Error 1049: Unknown database 'phgaevote' 
+2019/08/21 16:04:52.714 [I] [beecache.go:27] Init cache success!! 
+2019/08/21 16:04:52.715 [I] [db.go:49] Auto create db 
+2019/08/21 16:05:25.760 [I] [beecache.go:27] Init cache success!! 
+2019/08/21 16:05:25.762 [I] [db.go:49] Auto create db 
+2019/08/21 16:05:26.054 [I] [db.go:73] Init frame data 
+2019/08/21 16:05:26.115 [I] [projectdata.go:18] Init project data 
+2019/08/21 16:05:26.289 [I] [asm_amd64.s:2361] http server Running on http://:8111
+2019/08/21 16:05:44.440 [C] [asm_amd64.s:573] the request url is  /
+2019/08/21 16:05:44.440 [C] [asm_amd64.s:573] Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2019/08/21 16:05:44.440 [C] [asm_amd64.s:573] C:/Go/src/runtime/asm_amd64.s:573
+2019/08/21 16:05:44.440 [C] [asm_amd64.s:573] C:/Go/src/runtime/panic.go:502
+2019/08/21 16:05:44.440 [C] [asm_amd64.s:573] C:/Go/src/runtime/panic.go:63
+2019/08/21 16:05:44.440 [C] [asm_amd64.s:573] C:/Go/src/runtime/signal_windows.go:167
+2019/08/21 16:05:44.440 [C] [asm_amd64.s:573] C:/Go/src/html/template/template.go:95
+2019/08/21 16:05:44.440 [C] [asm_amd64.s:573] C:/Go/src/html/template/template.go:119
+2019/08/21 16:05:44.440 [C] [asm_amd64.s:573] D:/mygo/src/phagego/phage-vote-api/main.go:28
+2019/08/21 16:05:44.440 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/error.go:444
+2019/08/21 16:05:44.440 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/error.go:432
+2019/08/21 16:05:44.440 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/router.go:740
+2019/08/21 16:05:44.440 [C] [asm_amd64.s:573] C:/Go/src/net/http/server.go:2694
+2019/08/21 16:05:44.440 [C] [asm_amd64.s:573] C:/Go/src/net/http/server.go:1830
+2019/08/21 16:05:44.440 [C] [asm_amd64.s:573] C:/Go/src/runtime/asm_amd64.s:2361
+2019/08/21 16:05:44.924 [C] [asm_amd64.s:573] the request url is  /favicon.ico
+2019/08/21 16:05:44.924 [C] [asm_amd64.s:573] Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2019/08/21 16:05:44.924 [C] [asm_amd64.s:573] C:/Go/src/runtime/asm_amd64.s:573
+2019/08/21 16:05:44.924 [C] [asm_amd64.s:573] C:/Go/src/runtime/panic.go:502
+2019/08/21 16:05:44.924 [C] [asm_amd64.s:573] C:/Go/src/runtime/panic.go:63
+2019/08/21 16:05:44.924 [C] [asm_amd64.s:573] C:/Go/src/runtime/signal_windows.go:167
+2019/08/21 16:05:44.924 [C] [asm_amd64.s:573] C:/Go/src/html/template/template.go:95
+2019/08/21 16:05:44.924 [C] [asm_amd64.s:573] C:/Go/src/html/template/template.go:119
+2019/08/21 16:05:44.924 [C] [asm_amd64.s:573] D:/mygo/src/phagego/phage-vote-api/main.go:28
+2019/08/21 16:05:44.924 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/error.go:444
+2019/08/21 16:05:44.924 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/error.go:432
+2019/08/21 16:05:44.924 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/router.go:740
+2019/08/21 16:05:44.924 [C] [asm_amd64.s:573] C:/Go/src/net/http/server.go:2694
+2019/08/21 16:05:44.924 [C] [asm_amd64.s:573] C:/Go/src/net/http/server.go:1830
+2019/08/21 16:05:44.924 [C] [asm_amd64.s:573] C:/Go/src/runtime/asm_amd64.s:2361
+2019/08/21 16:07:35.668 [W] [login.go:21] LoginController Get from ip: ::1 
+2019/08/21 16:07:35.721 [D] [server.go:2694] ::1 - - [21/Aug/2019 04:07:35] "GET /as/login HTTP/1.1 200 0" 0.058000  Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 16:07:35.747 [D] [server.go:2694] ::1 - - [21/Aug/2019 04:07:35] "GET /captcha/Sd8ZAjsA3iS4Ght.png HTTP/1.1 200 0" 0.004000 http://localhost:8111/as/login Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 16:07:35.771 [D] [server.go:2694] ::1 - - [21/Aug/2019 04:07:35] "GET /static/layui/css/layui.css HTTP/1.1 200 0" 0.036000 http://localhost:8111/as/login Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 16:07:35.772 [D] [server.go:2694] ::1 - - [21/Aug/2019 04:07:35] "GET /static/layui/layui.js HTTP/1.1 200 0" 0.032000 http://localhost:8111/as/login Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 16:07:35.774 [D] [server.go:2694] ::1 - - [21/Aug/2019 04:07:35] "GET /static/back/css/common.css HTTP/1.1 200 0" 0.033000 http://localhost:8111/as/login Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 16:07:35.777 [D] [server.go:2694] ::1 - - [21/Aug/2019 04:07:35] "GET /static/back/js/md5.min.js HTTP/1.1 200 0" 0.012000 http://localhost:8111/as/login Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 16:07:35.779 [D] [server.go:2694] ::1 - - [21/Aug/2019 04:07:35] "GET /static/back/js/jsencrypt.min.js HTTP/1.1 200 0" 0.020000 http://localhost:8111/as/login Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 16:07:35.842 [D] [server.go:2694] ::1 - - [21/Aug/2019 04:07:35] "GET /static/layui/font/iconfont.woff?v=240 HTTP/1.1 200 0" 0.001000 http://localhost:8111/static/layui/css/layui.css Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 16:07:35.847 [D] [server.go:2694] ::1 - - [21/Aug/2019 04:07:35] "GET /static/layui/lay/modules/layer.js HTTP/1.1 200 0" 0.002000 http://localhost:8111/as/login Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 16:07:35.858 [D] [server.go:2694] ::1 - - [21/Aug/2019 04:07:35] "GET /static/layui/css/modules/layer/default/layer.css?v=3.1.1 HTTP/1.1 200 0" 0.003000 http://localhost:8111/as/login Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 16:07:35.859 [D] [server.go:2694] ::1 - - [21/Aug/2019 04:07:35] "GET /static/layui/lay/modules/jquery.js HTTP/1.1 200 0" 0.004000 http://localhost:8111/as/login Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 16:07:35.906 [D] [server.go:2694] ::1 - - [21/Aug/2019 04:07:35] "GET /static/layui/lay/modules/form.js HTTP/1.1 200 0" 0.002000 http://localhost:8111/as/login Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 16:07:35.912 [D] [server.go:2694] ::1 - - [21/Aug/2019 04:07:35] "GET /static/img/favicon.ico HTTP/1.1 200 0" 0.004000 http://localhost:8111/as/login Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 16:07:38.038 [D] [server.go:2694] ::1 - - [21/Aug/2019 04:07:38] "GET /static/layui/css/modules/layer/default/loading-0.gif HTTP/1.1 200 0" 0.001000 http://localhost:8111/static/layui/css/modules/layer/default/layer.css?v=3.1.1 Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 16:07:38.064 [W] [login.go:114] LoginController Post from ip: ::1 username: admin 
+2019/08/21 16:07:38.064 [D] [server.go:2694] ::1 - - [21/Aug/2019 04:07:38] "POST /as/login HTTP/1.1 200 0" 0.012000 http://localhost:8111/as/login Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 16:07:38.073 [D] [server.go:2694] ::1 - - [21/Aug/2019 04:07:38] "GET /static/layui/css/modules/layer/default/icon.png HTTP/1.1 200 0" 0.001000 http://localhost:8111/static/layui/css/modules/layer/default/layer.css?v=3.1.1 Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 16:07:39.102 [D] [server.go:2694] ::1 - - [21/Aug/2019 04:07:39] "GET /as/sys/base HTTP/1.1 200 0" 0.018000 http://localhost:8111/as/login Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 16:07:39.141 [D] [server.go:2694] ::1 - - [21/Aug/2019 04:07:39] "GET /static/layui/lay/modules/element.js HTTP/1.1 200 0" 0.004000 http://localhost:8111/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 16:07:39.156 [D] [server.go:2694] ::1 - - [21/Aug/2019 04:07:39] "GET /as/sys/index HTTP/1.1 200 0" 0.020000 http://localhost:8111/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 16:07:44.087 [D] [server.go:2694] ::1 - - [21/Aug/2019 04:07:44] "GET /as/sys/getauth HTTP/1.1 200 0" 0.016000 http://localhost:8111/as/sys/index Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 16:07:44.098 [D] [server.go:2694] ::1 - - [21/Aug/2019 04:07:44] "GET /static/back/js/admin.js?a=phagevoteapi HTTP/1.1 200 0" 0.002000 http://localhost:8111/as/sys/getauth Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 16:07:44.193 [D] [server.go:2694] ::1 - - [21/Aug/2019 04:07:44] "GET /static/layui/lay/modules/upload.js HTTP/1.1 200 0" 0.001000 http://localhost:8111/as/sys/getauth Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 16:08:01.043 [D] [server.go:2694] ::1 - - [21/Aug/2019 04:08:01] "GET /as/org/index HTTP/1.1 200 0" 0.014000 http://localhost:8111/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 16:08:01.585 [D] [server.go:2694] ::1 - - [21/Aug/2019 04:08:01] "GET /as/admin/index HTTP/1.1 200 0" 0.012000 http://localhost:8111/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 16:08:02.026 [D] [server.go:2694] ::1 - - [21/Aug/2019 04:08:02] "GET /as/site/index HTTP/1.1 200 0" 0.018000 http://localhost:8111/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 16:08:02.500 [D] [server.go:2694] ::1 - - [21/Aug/2019 04:08:02] "GET /as/qicknav/index HTTP/1.1 200 0" 0.014000 http://localhost:8111/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 16:08:02.968 [D] [server.go:2694] ::1 - - [21/Aug/2019 04:08:02] "GET /as/sys/index HTTP/1.1 200 0" 0.010000 http://localhost:8111/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 16:08:04.083 [D] [server.go:2694] ::1 - - [21/Aug/2019 04:08:04] "GET /as/org/index HTTP/1.1 200 0" 0.012000 http://localhost:8111/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 16:08:04.436 [D] [server.go:2694] ::1 - - [21/Aug/2019 04:08:04] "GET /as/admin/index HTTP/1.1 200 0" 0.012000 http://localhost:8111/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 16:08:04.772 [D] [server.go:2694] ::1 - - [21/Aug/2019 04:08:04] "GET /as/site/index HTTP/1.1 200 0" 0.020000 http://localhost:8111/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 16:08:05.031 [D] [server.go:2694] ::1 - - [21/Aug/2019 04:08:05] "GET /as/qicknav/index HTTP/1.1 200 0" 0.015000 http://localhost:8111/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 16:19:06.286 [D] [server.go:2694] ::1 - - [21/Aug/2019 04:19:06] "GET /as/sys/base HTTP/1.1 200 0" 0.017000 http://localhost:8111/as/login Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 16:19:06.302 [D] [server.go:2694] ::1 - - [21/Aug/2019 04:19:06] "GET /static/back/css/common.css HTTP/1.1 200 0" 0.000000 http://localhost:8111/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 16:19:06.305 [D] [server.go:2694] ::1 - - [21/Aug/2019 04:19:06] "GET /static/layui/layui.js HTTP/1.1 200 0" 0.000000 http://localhost:8111/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 16:19:06.307 [D] [server.go:2694] ::1 - - [21/Aug/2019 04:19:06] "GET /static/layui/css/layui.css HTTP/1.1 200 0" 0.006000 http://localhost:8111/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 16:19:06.330 [D] [server.go:2694] ::1 - - [21/Aug/2019 04:19:06] "GET /static/layui/font/iconfont.woff?v=240 HTTP/1.1 200 0" 0.001000 http://localhost:8111/static/layui/css/layui.css Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 16:19:06.330 [D] [server.go:2694] ::1 - - [21/Aug/2019 04:19:06] "GET /static/layui/lay/modules/element.js HTTP/1.1 200 0" 0.000000 http://localhost:8111/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 16:19:06.353 [D] [server.go:2694] ::1 - - [21/Aug/2019 04:19:06] "GET /as/sys/index HTTP/1.1 200 0" 0.029000 http://localhost:8111/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 16:19:06.389 [D] [server.go:2694] ::1 - - [21/Aug/2019 04:19:06] "GET /static/layui/lay/modules/jquery.js HTTP/1.1 200 0" 0.004000 http://localhost:8111/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 16:19:06.389 [D] [server.go:2694] ::1 - - [21/Aug/2019 04:19:06] "GET /static/back/css/common.css HTTP/1.1 200 0" 0.000000 http://localhost:8111/as/sys/index Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 16:19:06.390 [D] [server.go:2694] ::1 - - [21/Aug/2019 04:19:06] "GET /static/layui/css/layui.css HTTP/1.1 200 0" 0.001000 http://localhost:8111/as/sys/index Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 16:19:06.499 [D] [server.go:2694] ::1 - - [21/Aug/2019 04:19:06] "GET /static/img/favicon.ico HTTP/1.1 200 0" 0.001000 http://localhost:8111/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 16:19:34.063 [I] [beecache.go:27] Init cache success!! 
+2019/08/21 16:19:34.064 [I] [db.go:49] Auto create db 
+2019/08/21 16:19:34.072 [I] [projectdata.go:19] Init project data 
+2019/08/21 16:19:34.209 [I] [asm_amd64.s:2361] http server Running on http://:8111
+2019/08/21 16:19:41.114 [D] [server.go:2694] ::1 - - [21/Aug/2019 04:19:41] "GET /as/sys/base HTTP/1.1 200 0" 0.020000  Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 16:19:41.165 [D] [server.go:2694] ::1 - - [21/Aug/2019 04:19:41] "GET /as/sys/index HTTP/1.1 200 0" 0.020000 http://localhost:8111/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:25:22.367 [I] [beecache.go:27] Init cache success!! 
+2019/08/21 18:25:22.368 [I] [db.go:49] Auto create db 
+2019/08/21 18:25:22.402 [I] [projectdata.go:19] Init project data 
+2019/08/21 18:27:54.497 [I] [beecache.go:27] Init cache success!! 
+2019/08/21 18:27:54.498 [I] [db.go:49] Auto create db 
+2019/08/21 18:27:54.506 [I] [projectdata.go:19] Init project data 
+2019/08/21 18:27:54.639 [I] [asm_amd64.s:2361] http server Running on http://:8111
+2019/08/21 18:28:07.185 [C] [asm_amd64.s:573] the request url is  /
+2019/08/21 18:28:07.185 [C] [asm_amd64.s:573] Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2019/08/21 18:28:07.185 [C] [asm_amd64.s:573] C:/Go/src/runtime/asm_amd64.s:573
+2019/08/21 18:28:07.185 [C] [asm_amd64.s:573] C:/Go/src/runtime/panic.go:502
+2019/08/21 18:28:07.185 [C] [asm_amd64.s:573] C:/Go/src/runtime/panic.go:63
+2019/08/21 18:28:07.185 [C] [asm_amd64.s:573] C:/Go/src/runtime/signal_windows.go:167
+2019/08/21 18:28:07.185 [C] [asm_amd64.s:573] C:/Go/src/html/template/template.go:95
+2019/08/21 18:28:07.185 [C] [asm_amd64.s:573] C:/Go/src/html/template/template.go:119
+2019/08/21 18:28:07.185 [C] [asm_amd64.s:573] D:/mygo/src/phagego/phage-vote-api/main.go:28
+2019/08/21 18:28:07.185 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/error.go:444
+2019/08/21 18:28:07.185 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/error.go:432
+2019/08/21 18:28:07.185 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/router.go:740
+2019/08/21 18:28:07.185 [C] [asm_amd64.s:573] C:/Go/src/net/http/server.go:2694
+2019/08/21 18:28:07.185 [C] [asm_amd64.s:573] C:/Go/src/net/http/server.go:1830
+2019/08/21 18:28:07.185 [C] [asm_amd64.s:573] C:/Go/src/runtime/asm_amd64.s:2361
+2019/08/21 18:28:07.529 [C] [asm_amd64.s:573] the request url is  /favicon.ico
+2019/08/21 18:28:07.529 [C] [asm_amd64.s:573] Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2019/08/21 18:28:07.529 [C] [asm_amd64.s:573] C:/Go/src/runtime/asm_amd64.s:573
+2019/08/21 18:28:07.529 [C] [asm_amd64.s:573] C:/Go/src/runtime/panic.go:502
+2019/08/21 18:28:07.529 [C] [asm_amd64.s:573] C:/Go/src/runtime/panic.go:63
+2019/08/21 18:28:07.529 [C] [asm_amd64.s:573] C:/Go/src/runtime/signal_windows.go:167
+2019/08/21 18:28:07.529 [C] [asm_amd64.s:573] C:/Go/src/html/template/template.go:95
+2019/08/21 18:28:07.529 [C] [asm_amd64.s:573] C:/Go/src/html/template/template.go:119
+2019/08/21 18:28:07.529 [C] [asm_amd64.s:573] D:/mygo/src/phagego/phage-vote-api/main.go:28
+2019/08/21 18:28:07.529 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/error.go:444
+2019/08/21 18:28:07.529 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/error.go:432
+2019/08/21 18:28:07.529 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/router.go:740
+2019/08/21 18:28:07.529 [C] [asm_amd64.s:573] C:/Go/src/net/http/server.go:2694
+2019/08/21 18:28:07.529 [C] [asm_amd64.s:573] C:/Go/src/net/http/server.go:1830
+2019/08/21 18:28:07.529 [C] [asm_amd64.s:573] C:/Go/src/runtime/asm_amd64.s:2361
+2019/08/21 18:28:12.744 [W] [login.go:21] LoginController Get from ip: ::1 
+2019/08/21 18:28:12.753 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:28:12] "GET /as/login HTTP/1.1 200 0" 0.022000  Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:28:12.786 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:28:12] "GET /captcha/NcTQWftXMhPB5fZ.png HTTP/1.1 200 0" 0.007000 http://localhost:8111/as/login Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:28:14.107 [W] [login.go:114] LoginController Post from ip: ::1 username: admin 
+2019/08/21 18:28:14.107 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:28:14] "POST /as/login HTTP/1.1 200 0" 0.012000 http://localhost:8111/as/login Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:28:15.167 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:28:15] "GET /as/sys/base HTTP/1.1 200 0" 0.028000 http://localhost:8111/as/login Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:28:15.211 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:28:15] "GET /as/sys/index HTTP/1.1 200 0" 0.017000 http://localhost:8111/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:30:12.872 [C] [asm_amd64.s:573] the request url is  /as/votedetail
+2019/08/21 18:30:12.872 [C] [asm_amd64.s:573] Handler crashed with error <Ormer.QueryTable> table name: `phagego/phage-vote-api/models.Vote` not exists
+2019/08/21 18:30:12.872 [C] [asm_amd64.s:573] C:/Go/src/runtime/asm_amd64.s:573
+2019/08/21 18:30:12.873 [C] [asm_amd64.s:573] C:/Go/src/runtime/panic.go:502
+2019/08/21 18:30:12.873 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/orm/orm.go:436
+2019/08/21 18:30:12.873 [C] [asm_amd64.s:573] D:/mygo/src/phagego/phage-vote-api/models/vote.go:47
+2019/08/21 18:30:12.873 [C] [asm_amd64.s:573] D:/mygo/src/phagego/phage-vote-api/controllers/common/votedetail/votedetail.go:22
+2019/08/21 18:30:12.873 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/router.go:829
+2019/08/21 18:30:12.873 [C] [asm_amd64.s:573] C:/Go/src/net/http/server.go:2694
+2019/08/21 18:30:12.873 [C] [asm_amd64.s:573] C:/Go/src/net/http/server.go:1830
+2019/08/21 18:30:12.873 [C] [asm_amd64.s:573] C:/Go/src/runtime/asm_amd64.s:2361
+2019/08/21 18:31:16.397 [I] [beecache.go:27] Init cache success!! 
+2019/08/21 18:31:16.398 [I] [db.go:49] Auto create db 
+2019/08/21 18:31:16.434 [I] [projectdata.go:19] Init project data 
+2019/08/21 18:31:16.571 [I] [asm_amd64.s:2361] http server Running on http://:8111
+2019/08/21 18:31:18.965 [C] [asm_amd64.s:573] the request url is  /as/votedetail
+2019/08/21 18:31:18.965 [C] [asm_amd64.s:573] Handler crashed with error can't find templatefile in the path:views/common/votedetail/index.tpl
+2019/08/21 18:31:18.965 [C] [asm_amd64.s:573] C:/Go/src/runtime/asm_amd64.s:573
+2019/08/21 18:31:18.965 [C] [asm_amd64.s:573] C:/Go/src/runtime/panic.go:502
+2019/08/21 18:31:18.965 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/template.go:73
+2019/08/21 18:31:18.965 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/controller.go:263
+2019/08/21 18:31:18.965 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/controller.go:214
+2019/08/21 18:31:18.965 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/controller.go:194
+2019/08/21 18:31:18.965 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/router.go:859
+2019/08/21 18:31:18.965 [C] [asm_amd64.s:573] C:/Go/src/net/http/server.go:2694
+2019/08/21 18:31:18.965 [C] [asm_amd64.s:573] C:/Go/src/net/http/server.go:1830
+2019/08/21 18:31:18.965 [C] [asm_amd64.s:573] C:/Go/src/runtime/asm_amd64.s:2361
+2019/08/21 18:31:37.450 [I] [beecache.go:27] Init cache success!! 
+2019/08/21 18:31:37.451 [I] [db.go:49] Auto create db 
+2019/08/21 18:31:37.458 [I] [projectdata.go:19] Init project data 
+2019/08/21 18:31:37.579 [I] [asm_amd64.s:2361] http server Running on http://:8111
+2019/08/21 18:31:40.070 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:31:40] "GET /as/votedetail HTTP/1.1 200 0" 0.017000 http://localhost:8111/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:31:57.168 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:31:57] "GET /as/sys/base HTTP/1.1 200 0" 0.023000 http://localhost:8111/as/login Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:31:57.211 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:31:57] "GET /static/layui/layui.js HTTP/1.1 200 0" 0.003000 http://localhost:8111/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:31:57.213 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:31:57] "GET /static/back/css/common.css HTTP/1.1 200 0" 0.004000 http://localhost:8111/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:31:57.216 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:31:57] "GET /static/layui/css/layui.css HTTP/1.1 200 0" 0.008000 http://localhost:8111/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:31:57.238 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:31:57] "GET /as/sys/index HTTP/1.1 200 0" 0.017000 http://localhost:8111/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:31:57.240 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:31:57] "GET /static/layui/lay/modules/element.js HTTP/1.1 200 0" 0.001000 http://localhost:8111/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:31:57.258 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:31:57] "GET /static/layui/font/iconfont.woff?v=240 HTTP/1.1 200 0" 0.002000 http://localhost:8111/static/layui/css/layui.css Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:31:57.270 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:31:57] "GET /static/back/css/common.css HTTP/1.1 200 0" 0.001000 http://localhost:8111/as/sys/index Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:31:57.273 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:31:57] "GET /static/layui/css/layui.css HTTP/1.1 200 0" 0.004000 http://localhost:8111/as/sys/index Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:31:57.274 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:31:57] "GET /static/layui/lay/modules/jquery.js HTTP/1.1 200 0" 0.005000 http://localhost:8111/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:31:57.458 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:31:57] "GET /static/img/favicon.ico HTTP/1.1 200 0" 0.001000 http://localhost:8111/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:31:59.582 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:31:59] "GET /as/votedetail HTTP/1.1 200 0" 0.011000 http://localhost:8111/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:34:01.312 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:34:01] "GET /as/votedetail HTTP/1.1 200 0" 0.029000 http://localhost:8111/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:34:03.312 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:34:03] "GET /as/votedetail HTTP/1.1 200 0" 0.028000 http://localhost:8111/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:34:08.039 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:34:08] "GET /as/votedetail HTTP/1.1 200 0" 0.021000 http://localhost:8111/as/votedetail Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:34:27.441 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:34:27] "GET /as/sys/base HTTP/1.1 200 0" 0.017000 http://localhost:8111/as/login Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:34:27.497 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:34:27] "GET /static/back/css/common.css HTTP/1.1 200 0" 0.000000 http://localhost:8111/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:34:27.498 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:34:27] "GET /static/layui/layui.js HTTP/1.1 200 0" 0.000000 http://localhost:8111/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:34:27.504 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:34:27] "GET /static/layui/css/layui.css HTTP/1.1 200 0" 0.009000 http://localhost:8111/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:34:27.531 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:34:27] "GET /as/sys/index HTTP/1.1 200 0" 0.021000 http://localhost:8111/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:34:27.535 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:34:27] "GET /static/layui/lay/modules/element.js HTTP/1.1 200 0" 0.001000 http://localhost:8111/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:34:27.558 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:34:27] "GET /static/layui/font/iconfont.woff?v=240 HTTP/1.1 200 0" 0.001000 http://localhost:8111/static/layui/css/layui.css Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:34:27.571 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:34:27] "GET /static/layui/lay/modules/jquery.js HTTP/1.1 200 0" 0.003000 http://localhost:8111/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:34:27.575 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:34:27] "GET /static/back/css/common.css HTTP/1.1 200 0" 0.001000 http://localhost:8111/as/sys/index Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:34:27.581 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:34:27] "GET /static/layui/css/layui.css HTTP/1.1 200 0" 0.007000 http://localhost:8111/as/sys/index Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:34:27.766 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:34:27] "GET /static/img/favicon.ico HTTP/1.1 200 0" 0.000000 http://localhost:8111/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:34:29.063 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:34:29] "GET /as/votedetail HTTP/1.1 200 0" 0.015000 http://localhost:8111/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:34:29.993 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:34:29] "GET /as/votedetail HTTP/1.1 200 0" 0.018000 http://localhost:8111/as/votedetail Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:35:32.252 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:35:32] "GET /as/votedetail HTTP/1.1 200 0" 0.024000 http://localhost:8111/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:35:34.429 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:35:34] "POST /as/votedetail HTTP/1.1 405 0" 0.007000 http://localhost:8111/as/votedetail Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:35:48.836 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:35:48] "POST /as/votedetail HTTP/1.1 405 0" 0.013000 http://localhost:8111/as/votedetail Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:35:56.926 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:35:56] "GET /as/sys/base HTTP/1.1 200 0" 0.015000 http://localhost:8111/as/login Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:35:56.942 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:35:56] "GET /static/back/css/common.css HTTP/1.1 200 0" 0.000000 http://localhost:8111/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:35:56.944 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:35:56] "GET /static/layui/layui.js HTTP/1.1 200 0" 0.001000 http://localhost:8111/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:35:56.944 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:35:56] "GET /static/layui/css/layui.css HTTP/1.1 200 0" 0.003000 http://localhost:8111/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:35:56.960 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:35:56] "GET /static/layui/lay/modules/element.js HTTP/1.1 200 0" 0.001000 http://localhost:8111/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:35:56.960 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:35:56] "GET /static/layui/font/iconfont.woff?v=240 HTTP/1.1 200 0" 0.000000 http://localhost:8111/static/layui/css/layui.css Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:35:56.971 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:35:56] "GET /as/sys/index HTTP/1.1 200 0" 0.020000 http://localhost:8111/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:35:57.003 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:35:57] "GET /static/back/css/common.css HTTP/1.1 200 0" 0.000000 http://localhost:8111/as/sys/index Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:35:57.009 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:35:57] "GET /static/layui/lay/modules/jquery.js HTTP/1.1 200 0" 0.006000 http://localhost:8111/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:35:57.009 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:35:57] "GET /static/layui/css/layui.css HTTP/1.1 200 0" 0.006000 http://localhost:8111/as/sys/index Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:35:57.148 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:35:57] "GET /static/img/favicon.ico HTTP/1.1 200 0" 0.001000 http://localhost:8111/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:35:57.226 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:35:57] "GET /as/sys/base HTTP/1.1 200 0" 0.014000 http://localhost:8111/as/login Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:35:57.243 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:35:57] "GET /static/back/css/common.css HTTP/1.1 200 0" 0.001000 http://localhost:8111/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:35:57.243 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:35:57] "GET /static/layui/layui.js HTTP/1.1 200 0" 0.000000 http://localhost:8111/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:35:57.244 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:35:57] "GET /static/layui/css/layui.css HTTP/1.1 200 0" 0.003000 http://localhost:8111/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:35:57.259 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:35:57] "GET /static/layui/lay/modules/element.js HTTP/1.1 200 0" 0.000000 http://localhost:8111/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:35:57.267 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:35:57] "GET /static/layui/font/iconfont.woff?v=240 HTTP/1.1 200 0" 0.001000 http://localhost:8111/static/layui/css/layui.css Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:35:57.279 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:35:57] "GET /as/sys/index HTTP/1.1 200 0" 0.021000 http://localhost:8111/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:35:57.315 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:35:57] "GET /static/layui/lay/modules/jquery.js HTTP/1.1 200 0" 0.003000 http://localhost:8111/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:35:57.316 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:35:57] "GET /static/back/css/common.css HTTP/1.1 200 0" 0.001000 http://localhost:8111/as/sys/index Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:35:57.319 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:35:57] "GET /static/layui/css/layui.css HTTP/1.1 200 0" 0.004000 http://localhost:8111/as/sys/index Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:35:57.394 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:35:57] "GET /static/img/favicon.ico HTTP/1.1 200 0" 0.000000 http://localhost:8111/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:36:00.815 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:36:00] "GET /as/votedetail HTTP/1.1 200 0" 0.020000 http://localhost:8111/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:36:02.363 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:36:02] "GET /static/layui/font/iconfont.woff?v=240 HTTP/1.1 200 0" 0.000000 http://localhost:8111/static/layui/css/layui.css Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:36:39.183 [I] [beecache.go:27] Init cache success!! 
+2019/08/21 18:36:39.184 [I] [db.go:49] Auto create db 
+2019/08/21 18:36:39.194 [I] [projectdata.go:19] Init project data 
+2019/08/21 18:36:39.318 [I] [asm_amd64.s:2361] http server Running on http://:8111
+2019/08/21 18:36:41.408 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:36:41] "GET /static/layui/css/modules/layer/default/icon.png HTTP/1.1 200 0" 0.006000 http://localhost:8111/static/layui/css/modules/layer/default/layer.css?v=3.1.1 Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:36:42.407 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:36:42] "POST /as/votedetail HTTP/1.1 405 0" 0.017000 http://localhost:8111/as/votedetail Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:36:53.196 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:36:53] "GET /as/sys/base HTTP/1.1 200 0" 0.022000 http://localhost:8111/as/login Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:36:53.227 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:36:53] "GET /static/layui/layui.js HTTP/1.1 200 0" 0.000000 http://localhost:8111/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:36:53.237 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:36:53] "GET /static/layui/css/layui.css HTTP/1.1 200 0" 0.018000 http://localhost:8111/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:36:53.237 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:36:53] "GET /static/back/css/common.css HTTP/1.1 200 0" 0.017000 http://localhost:8111/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:36:53.261 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:36:53] "GET /as/sys/index HTTP/1.1 200 0" 0.024000 http://localhost:8111/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:36:53.267 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:36:53] "GET /static/layui/lay/modules/element.js HTTP/1.1 200 0" 0.000000 http://localhost:8111/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:36:53.294 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:36:53] "GET /static/layui/font/iconfont.woff?v=240 HTTP/1.1 200 0" 0.000000 http://localhost:8111/static/layui/css/layui.css Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:36:53.322 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:36:53] "GET /static/layui/lay/modules/jquery.js HTTP/1.1 200 0" 0.008000 http://localhost:8111/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:36:53.330 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:36:53] "GET /static/back/css/common.css HTTP/1.1 200 0" 0.001000 http://localhost:8111/as/sys/index Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:36:53.332 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:36:53] "GET /static/layui/css/layui.css HTTP/1.1 200 0" 0.005000 http://localhost:8111/as/sys/index Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:36:53.471 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:36:53] "GET /static/img/favicon.ico HTTP/1.1 200 0" 0.001000 http://localhost:8111/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:36:53.595 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:36:53] "GET /as/sys/base HTTP/1.1 200 0" 0.012000 http://localhost:8111/as/login Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:36:53.610 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:36:53] "GET /static/back/css/common.css HTTP/1.1 200 0" 0.001000 http://localhost:8111/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:36:53.610 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:36:53] "GET /static/layui/layui.js HTTP/1.1 200 0" 0.000000 http://localhost:8111/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:36:53.613 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:36:53] "GET /static/layui/css/layui.css HTTP/1.1 200 0" 0.004000 http://localhost:8111/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:36:53.663 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:36:53] "GET /as/sys/index HTTP/1.1 200 0" 0.028000 http://localhost:8111/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:36:53.666 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:36:53] "GET /static/layui/lay/modules/element.js HTTP/1.1 200 0" 0.001000 http://localhost:8111/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:36:53.695 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:36:53] "GET /static/layui/font/iconfont.woff?v=240 HTTP/1.1 200 0" 0.002000 http://localhost:8111/static/layui/css/layui.css Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:36:53.731 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:36:53] "GET /static/layui/lay/modules/jquery.js HTTP/1.1 200 0" 0.006000 http://localhost:8111/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:36:53.736 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:36:53] "GET /static/back/css/common.css HTTP/1.1 200 0" 0.000000 http://localhost:8111/as/sys/index Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:36:53.737 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:36:53] "GET /static/layui/css/layui.css HTTP/1.1 200 0" 0.001000 http://localhost:8111/as/sys/index Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:36:53.876 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:36:53] "GET /as/sys/base HTTP/1.1 200 0" 0.014000 http://localhost:8111/as/login Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:36:54.001 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:36:54] "GET /static/back/css/common.css HTTP/1.1 200 0" 0.001000 http://localhost:8111/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:36:54.002 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:36:54] "GET /static/layui/layui.js HTTP/1.1 200 0" 0.001000 http://localhost:8111/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:36:54.004 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:36:53] "GET /static/layui/css/layui.css HTTP/1.1 200 0" 0.005000 http://localhost:8111/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:36:54.041 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:36:54] "GET /as/sys/index HTTP/1.1 200 0" 0.022000 http://localhost:8111/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:36:54.049 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:36:54] "GET /static/layui/lay/modules/element.js HTTP/1.1 200 0" 0.001000 http://localhost:8111/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:36:54.072 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:36:54] "GET /static/layui/font/iconfont.woff?v=240 HTTP/1.1 200 0" 0.001000 http://localhost:8111/static/layui/css/layui.css Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:36:54.094 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:36:54] "GET /static/layui/lay/modules/jquery.js HTTP/1.1 200 0" 0.001000 http://localhost:8111/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:36:54.109 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:36:54] "GET /static/back/css/common.css HTTP/1.1 200 0" 0.000000 http://localhost:8111/as/sys/index Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:36:54.112 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:36:54] "GET /static/layui/css/layui.css HTTP/1.1 200 0" 0.004000 http://localhost:8111/as/sys/index Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:36:54.136 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:36:54] "GET /as/sys/base HTTP/1.1 200 0" 0.027000 http://localhost:8111/as/login Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:36:54.286 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:36:54] "GET /static/back/css/common.css HTTP/1.1 200 0" 0.000000 http://localhost:8111/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:36:54.287 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:36:54] "GET /static/layui/layui.js HTTP/1.1 200 0" 0.001000 http://localhost:8111/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:36:54.287 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:36:54] "GET /static/layui/css/layui.css HTTP/1.1 200 0" 0.001000 http://localhost:8111/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:36:54.332 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:36:54] "GET /as/sys/index HTTP/1.1 200 0" 0.017000 http://localhost:8111/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:36:54.334 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:36:54] "GET /static/layui/lay/modules/element.js HTTP/1.1 200 0" 0.001000 http://localhost:8111/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:36:54.352 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:36:54] "GET /static/layui/font/iconfont.woff?v=240 HTTP/1.1 200 0" 0.000000 http://localhost:8111/static/layui/css/layui.css Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:36:54.379 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:36:54] "GET /static/layui/lay/modules/jquery.js HTTP/1.1 200 0" 0.002000 http://localhost:8111/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:36:54.392 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:36:54] "GET /static/back/css/common.css HTTP/1.1 200 0" 0.001000 http://localhost:8111/as/sys/index Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:36:54.397 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:36:54] "GET /static/layui/css/layui.css HTTP/1.1 200 0" 0.006000 http://localhost:8111/as/sys/index Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:36:54.478 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:36:54] "GET /static/img/favicon.ico HTTP/1.1 200 0" 0.000000 http://localhost:8111/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:36:55.383 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:36:55] "GET /as/votedetail HTTP/1.1 200 0" 0.014000 http://localhost:8111/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:36:55.400 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:36:55] "GET /static/back/css/common.css HTTP/1.1 200 0" 0.000000 http://localhost:8111/as/votedetail Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:36:55.405 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:36:55] "GET /static/back/js/admin.js?a=phagevoteapi HTTP/1.1 200 0" 0.004000 http://localhost:8111/as/votedetail Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:36:55.408 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:36:55] "GET /static/layui/css/layui.css HTTP/1.1 200 0" 0.008000 http://localhost:8111/as/votedetail Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:36:55.481 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:36:55] "GET /static/layui/lay/modules/layer.js HTTP/1.1 200 0" 0.001000 http://localhost:8111/as/votedetail Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:36:55.489 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:36:55] "GET /static/layui/css/modules/layer/default/layer.css?v=3.1.1 HTTP/1.1 200 0" 0.001000 http://localhost:8111/as/votedetail Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:36:55.490 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:36:55] "GET /static/layui/lay/modules/jquery.js HTTP/1.1 200 0" 0.002000 http://localhost:8111/as/votedetail Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:36:55.520 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:36:55] "GET /static/layui/lay/modules/element.js HTTP/1.1 200 0" 0.001000 http://localhost:8111/as/votedetail Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:36:55.534 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:36:55] "GET /static/layui/lay/modules/form.js HTTP/1.1 200 0" 0.001000 http://localhost:8111/as/votedetail Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:36:55.539 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:36:55] "GET /static/layui/lay/modules/upload.js HTTP/1.1 200 0" 0.000000 http://localhost:8111/as/votedetail Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:37:00.937 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:37:00] "GET /static/layui/css/modules/layer/default/icon.png HTTP/1.1 200 0" 0.000000 http://localhost:8111/static/layui/css/modules/layer/default/layer.css?v=3.1.1 Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:37:02.349 [C] [asm_amd64.s:573] the request url is  /as/delallvotedetail
+2019/08/21 18:37:02.349 [C] [asm_amd64.s:573] Handler crashed with error delete operation cannot execute without condition
+2019/08/21 18:37:02.349 [C] [asm_amd64.s:573] C:/Go/src/runtime/asm_amd64.s:573
+2019/08/21 18:37:02.349 [C] [asm_amd64.s:573] C:/Go/src/runtime/panic.go:502
+2019/08/21 18:37:02.349 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/orm/db.go:808
+2019/08/21 18:37:02.349 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/orm/orm_queryset.go:179
+2019/08/21 18:37:02.349 [C] [asm_amd64.s:573] D:/mygo/src/phagego/phage-vote-api/controllers/common/votedetail/votedetail.go:32
+2019/08/21 18:37:02.349 [C] [asm_amd64.s:573] C:/Go/src/runtime/asm_amd64.s:573
+2019/08/21 18:37:02.349 [C] [asm_amd64.s:573] C:/Go/src/reflect/value.go:447
+2019/08/21 18:37:02.349 [C] [asm_amd64.s:573] C:/Go/src/reflect/value.go:308
+2019/08/21 18:37:02.349 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/router.go:847
+2019/08/21 18:37:02.349 [C] [asm_amd64.s:573] C:/Go/src/net/http/server.go:2694
+2019/08/21 18:37:02.349 [C] [asm_amd64.s:573] C:/Go/src/net/http/server.go:1830
+2019/08/21 18:37:02.349 [C] [asm_amd64.s:573] C:/Go/src/runtime/asm_amd64.s:2361
+2019/08/21 18:37:02.349 [server.go:2921] [HTTP] http: multiple response.WriteHeader calls
+2019/08/21 18:37:49.955 [I] [beecache.go:27] Init cache success!! 
+2019/08/21 18:37:49.957 [I] [db.go:49] Auto create db 
+2019/08/21 18:37:49.968 [I] [projectdata.go:19] Init project data 
+2019/08/21 18:37:50.084 [I] [asm_amd64.s:2361] http server Running on http://:8111
+2019/08/21 18:38:04.596 [I] [beecache.go:27] Init cache success!! 
+2019/08/21 18:38:04.598 [I] [db.go:49] Auto create db 
+2019/08/21 18:38:04.608 [I] [projectdata.go:19] Init project data 
+2019/08/21 18:38:04.725 [I] [asm_amd64.s:2361] http server Running on http://:8111
+2019/08/21 18:38:11.506 [I] [beecache.go:27] Init cache success!! 
+2019/08/21 18:38:11.508 [I] [db.go:49] Auto create db 
+2019/08/21 18:38:11.514 [I] [projectdata.go:19] Init project data 
+2019/08/21 18:38:11.641 [I] [asm_amd64.s:2361] http server Running on http://:8111
+2019/08/21 18:38:14.063 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:38:14] "POST /as/delallvotedetail HTTP/1.1 200 0" 0.018000 http://localhost:8111/as/votedetail Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:38:15.092 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:38:15] "GET /as/votedetail HTTP/1.1 200 0" 0.022000 http://localhost:8111/as/votedetail Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:38:15.119 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:38:15] "GET /static/back/css/common.css HTTP/1.1 200 0" 0.002000 http://localhost:8111/as/votedetail Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:38:15.120 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:38:15] "GET /static/layui/css/layui.css HTTP/1.1 200 0" 0.003000 http://localhost:8111/as/votedetail Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:38:15.151 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:38:15] "GET /static/layui/lay/modules/layer.js HTTP/1.1 200 0" 0.000000 http://localhost:8111/as/votedetail Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:38:15.197 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:38:15] "GET /static/layui/css/modules/layer/default/layer.css?v=3.1.1 HTTP/1.1 200 0" 0.004000 http://localhost:8111/as/votedetail Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:38:15.199 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:38:15] "GET /static/layui/lay/modules/jquery.js HTTP/1.1 200 0" 0.005000 http://localhost:8111/as/votedetail Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:38:15.232 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:38:15] "GET /static/layui/lay/modules/element.js HTTP/1.1 200 0" 0.001000 http://localhost:8111/as/votedetail Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:38:15.246 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:38:15] "GET /static/layui/lay/modules/form.js HTTP/1.1 200 0" 0.001000 http://localhost:8111/as/votedetail Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:38:15.252 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:38:15] "GET /static/layui/lay/modules/upload.js HTTP/1.1 200 0" 0.000000 http://localhost:8111/as/votedetail Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:40:14.449 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:40:14] "GET /as/votedetail HTTP/1.1 200 0" 0.019000 http://localhost:8111/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:40:14.469 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:40:14] "GET /static/back/css/common.css HTTP/1.1 200 0" 0.001000 http://localhost:8111/as/votedetail Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:40:14.471 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:40:14] "GET /static/layui/css/layui.css HTTP/1.1 200 0" 0.006000 http://localhost:8111/as/votedetail Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:40:14.498 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:40:14] "GET /static/layui/lay/modules/layer.js HTTP/1.1 200 0" 0.000000 http://localhost:8111/as/votedetail Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:40:16.256 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:40:16] "POST /as/delallvotedetail HTTP/1.1 200 0" 0.013000 http://localhost:8111/as/votedetail Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:40:17.279 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:40:17] "GET /as/votedetail HTTP/1.1 200 0" 0.011000 http://localhost:8111/as/votedetail Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:40:17.291 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:40:17] "GET /static/back/css/common.css HTTP/1.1 200 0" 0.000000 http://localhost:8111/as/votedetail Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:40:17.292 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:40:17] "GET /static/layui/css/layui.css HTTP/1.1 200 0" 0.001000 http://localhost:8111/as/votedetail Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:40:17.337 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:40:17] "GET /static/layui/lay/modules/layer.js HTTP/1.1 200 0" 0.001000 http://localhost:8111/as/votedetail Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:40:17.358 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:40:17] "GET /static/layui/lay/modules/jquery.js HTTP/1.1 200 0" 0.003000 http://localhost:8111/as/votedetail Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:40:17.386 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:40:17] "GET /static/layui/lay/modules/element.js HTTP/1.1 200 0" 0.000000 http://localhost:8111/as/votedetail Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:40:17.398 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:40:17] "GET /static/layui/lay/modules/form.js HTTP/1.1 200 0" 0.000000 http://localhost:8111/as/votedetail Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:40:17.404 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:40:17] "GET /static/layui/lay/modules/upload.js HTTP/1.1 200 0" 0.000000 http://localhost:8111/as/votedetail Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:40:18.666 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:40:18] "POST /as/delallvotedetail HTTP/1.1 200 0" 0.015000 http://localhost:8111/as/votedetail Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:40:19.709 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:40:19] "GET /as/votedetail HTTP/1.1 200 0" 0.030000 http://localhost:8111/as/votedetail Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:40:19.766 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:40:19] "GET /static/back/css/common.css HTTP/1.1 200 0" 0.000000 http://localhost:8111/as/votedetail Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:40:19.767 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:40:19] "GET /static/layui/css/layui.css HTTP/1.1 200 0" 0.001000 http://localhost:8111/as/votedetail Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:40:19.795 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:40:19] "GET /static/layui/lay/modules/layer.js HTTP/1.1 200 0" 0.001000 http://localhost:8111/as/votedetail Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:40:19.824 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:40:19] "GET /static/layui/lay/modules/jquery.js HTTP/1.1 200 0" 0.002000 http://localhost:8111/as/votedetail Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:40:19.849 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:40:19] "GET /static/layui/lay/modules/element.js HTTP/1.1 200 0" 0.001000 http://localhost:8111/as/votedetail Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:40:19.859 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:40:19] "GET /static/layui/lay/modules/form.js HTTP/1.1 200 0" 0.000000 http://localhost:8111/as/votedetail Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:40:19.865 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:40:19] "GET /static/layui/lay/modules/upload.js HTTP/1.1 200 0" 0.000000 http://localhost:8111/as/votedetail Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:45:06.647 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:45:06] "POST /as/delallvotedetail HTTP/1.1 200 0" 0.007000 http://localhost:8111/as/votedetail Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:45:07.685 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:45:07] "GET /as/votedetail HTTP/1.1 200 0" 0.025000 http://localhost:8111/as/votedetail Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:45:07.706 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:45:07] "GET /static/back/css/common.css HTTP/1.1 200 0" 0.001000 http://localhost:8111/as/votedetail Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:45:07.707 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:45:07] "GET /static/layui/css/layui.css HTTP/1.1 200 0" 0.005000 http://localhost:8111/as/votedetail Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:45:07.749 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:45:07] "GET /static/layui/lay/modules/layer.js HTTP/1.1 200 0" 0.001000 http://localhost:8111/as/votedetail Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:45:07.770 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:45:07] "GET /static/layui/lay/modules/jquery.js HTTP/1.1 200 0" 0.005000 http://localhost:8111/as/votedetail Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:45:07.797 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:45:07] "GET /static/layui/lay/modules/element.js HTTP/1.1 200 0" 0.000000 http://localhost:8111/as/votedetail Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:45:07.814 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:45:07] "GET /static/layui/lay/modules/form.js HTTP/1.1 200 0" 0.000000 http://localhost:8111/as/votedetail Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 18:45:07.821 [D] [server.go:2694] ::1 - - [21/Aug/2019 06:45:07] "GET /static/layui/lay/modules/upload.js HTTP/1.1 200 0" 0.001000 http://localhost:8111/as/votedetail Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/08/21 19:23:03.010 [I] [beecache.go:27] Init cache success!! 
+2019/08/21 19:23:03.011 [I] [db.go:49] Auto create db 
+2019/08/21 19:23:03.022 [I] [projectdata.go:19] Init project data 
+2019/08/21 19:23:03.152 [I] [asm_amd64.s:2361] http server Running on http://:8111
+2019/08/21 19:24:18.101 [I] [beecache.go:27] Init cache success!! 
+2019/08/21 19:24:18.102 [I] [db.go:49] Auto create db 
+2019/08/21 19:24:18.133 [I] [projectdata.go:19] Init project data 
+2019/08/21 19:24:18.253 [I] [asm_amd64.s:2361] http server Running on http://:8111
+2019/08/21 19:57:42.293 [I] [beecache.go:27] Init cache success!! 
+2019/08/21 19:57:42.293 [I] [db.go:49] Auto create db 
+2019/08/21 19:57:42.301 [I] [projectdata.go:19] Init project data 
+2019/08/21 19:57:42.448 [I] [asm_amd64.s:2361] http server Running on http://:8111

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	{{template "sysmanage/aalayout/meta.tpl" .}}
+</head>
+<body>
+<div class="layui-fluid">
+	<div class="layui-row layui-col-space10">
+		<div class="layui-col-xs12 layui-col-sm12 layui-col-md12">
+			<!--tab标签-->
+			<div class="layui-tab layui-tab-brief">
+				<ul class="layui-tab-title">
+					<li class=""><a href='{{urlfor "IndexSetVoteController.get"}}'>票数设置</a></li>
+					<li class="layui-this">修改票数</li>
+				</ul>
+				<div class="layui-tab-content">
+					<div class="layui-tab-item layui-show">
+						<form class="layui-form form-container" action='{{urlfor "EditSetVoteController.post"}}' method="post">
+							<input type="hidden" name = "Id" value="{{.data.Id}}">
+							<div class="layui-form-item">
+								<label class="layui-form-label">生肖</label>
+								<div class="layui-input-block">
+									<input  type="text" name="Category" value="{{getAnimal .data.Category}}" required lay-verify="required" placeholder="请输入好运金金额" class="layui-input" disabled>
+								</div>
+							</div>
+							<div class="layui-form-item">
+								<label class="layui-form-label">票数</label>
+								<div class="layui-input-block">
+									<input type="number" name="Value" value="{{.data.Value}}" required lay-verify="required" placeholder="请输入票数" class="layui-input">
+								</div>
+							</div>
+							<div class="layui-form-item">
+								<div class="layui-input-block">
+									<button class="layui-btn" lay-submit lay-filter="*">保存</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+{{template "sysmanage/aalayout/footjs.tpl" .}}
+</body>
+</html>

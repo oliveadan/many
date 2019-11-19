@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>login</title>
+    <link rel="shortcut icon" href="/static/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/static/front/css/bootstrap.css">
+    <link rel="stylesheet" href="/static/front/css/login.css">
+</head>
+
+<body>
+<div class="userLogin text-center">
+    <div class="title text-center">
+        <p>{{.siteName}}晋 升 之 路</p>
+        <div class="en text-center">VIP &nbsp; SERCIVE</div>
+    </div>
+
+    <div class="sub">
+        <input class="userInput" id="name" type="text" placeholder="请输入您的账号" autofocus>
+        <div>
+            <button onclick="checkuser()" class="btn">
+                登 &nbsp 录
+            </button>
+        </div>
+    </div>
+</div>
+<script src="/static/front/js/jquery-3.3.1.min.js"></script>
+<script src="/static/front/js/bootstrap.js"></script>
+<script src="/static/back/layer-v3.1.1/layer.js"></script>
+</body>
+<script>
+    function checkuser() {
+        var name = $("#name").val();
+        if (name ===""){
+            layer.msg("会员账号不能为空,请输入会员账号!");
+            return
+        }
+        $.ajax({
+            url: {{urlfor "FrontIndexController.Post"}},
+            type: "post",
+            data: {"name": name},
+            success: function (info) {
+                if (info.code === 1) {
+
+                    layer.msg(info.msg);
+                    location.href = info.url;
+                }
+                layer.msg(info.msg);
+            },
+        });
+    }
+</script>
+</html>

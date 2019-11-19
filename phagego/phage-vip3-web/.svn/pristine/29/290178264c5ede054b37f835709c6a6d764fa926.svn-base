@@ -1,0 +1,354 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>{{.siteName}}VIP特权查询</title>
+    <link rel="shortcut icon" href="/static/img/favicon.ico" type="image/x-icon">
+    <link href="/static/front/css/public.css" rel="stylesheet" type="text/css"/>
+    <link href="/static/front/css/style1.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="/static/front/js/jquery.js"></script>
+</head>
+<body>
+<div id="main">
+    <div class="header_div">
+        <div class="wrap">
+            <img src="/static/front/images/logo.png" class="logo"/>
+            <div class="header_right">
+                <img src="/static/front/images/tit_box1.png"/>
+                <div class="menu_div">
+                    <a href="{{.officialRegist}}">注册会员</a>&nbsp;丨
+                    <a href="{{.officialPromot}}">优惠活动</a>&nbsp;丨
+                    <a href="{{.custServ}}">在线客服</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="flash"></div>
+    <div class="lb_div">
+        <div class="wrap">
+            <img src="/static/front/images/lb.png" class="wz"/>
+            <p>
+                <marquee id="msgNews" scrollamount="4" scrolldelay="100" direction="left" onMouseOver="this.stop();"
+                         onMouseOut="this.start();">{{.notice}}</marquee>
+            </p>
+        </div>
+    </div>
+    <div class="fond_div">
+        <input type="text" id="search1" name="search1" placeholder="请输入会员账号"/><a href="javascript:;" id="submit"></a>
+    </div>
+    <img src="/static/front/images/tit1.png" class="tit1"/>
+    <div class="table_box">
+        <table border="1px" bordercolor="#bc3f3f">
+            <tr class="tit">
+                <td class="t1">项目</td>
+                <td class="t2">VIP1</td>
+                <td class="t2">VIP2</td>
+                <td class="t2">VIP3</td>
+                <td class="t2">VIP4</td>
+                <td class="t2">VIP5</td>
+                <td class="t2">VIP6</td>
+                <td class="t2">VIP7</td>
+                <td class="t2">VIP8</td>
+                <td class="t2">VIP9</td>
+                <td class="t2">VIP10</td>
+                <td class="t2">VIP11</td>
+                <td class="t2">VIP12</td>
+                <td class="t2">VIP13</td>
+                <td class="t2">VIP14</td>
+                <td class="t2">VIP15</td>
+                <td class="t2">VIP16</td>
+                <td class="t2">VIP17</td>
+                <td class="t2">VIP18</td>
+                <td class="t2">VIP19</td>
+                <td class="t2">VIP20</td>
+            </tr>
+            <tr>
+                <td class="t1">晋级标准/累积有效投注</td>
+                <td class="t2">10万</td>
+                <td class="t2">30万</td>
+                <td class="t2">100万</td>
+                <td class="t2">300万</td>
+                <td class="t2">500万</td>
+                <td class="t2">1000万</td>
+                <td class="t2">3000万</td>
+                <td class="t2">5000万</td>
+                <td class="t2">8000万</td>
+                <td class="t2">1.0亿</td>
+                <td class="t2">2.0亿</td>
+                <td class="t2">3.0亿</td>
+                <td class="t2">5.0亿</td>
+                <td class="t2">9.0亿</td>
+                <td class="t2">11亿</td>
+                <td class="t2">13亿</td>
+                <td class="t2">15亿</td>
+                <td class="t2">18亿</td>
+                <td class="t2">20亿</td>
+                <td class="t2">25亿</td>
+            </tr>
+            <tr>
+                <td class="t1">晋级彩金</td>
+                <td class="t2">38元</td>
+                <td class="t2">58元</td>
+                <td class="t2">188元</td>
+                <td class="t2">258元</td>
+                <td class="t2">588元</td>
+                <td class="t2">888元</td>
+                <td class="t2">1088元</td>
+                <td class="t2">1888元</td>
+                <td class="t2">2388元</td>
+                <td class="t2">2888元</td>
+                <td class="t2">4888元</td>
+                <td class="t2">6888元</td>
+                <td class="t2">8888元</td>
+                <td class="t2">15888元</td>
+                <td class="t2">18888元</td>
+                <td class="t2">25888元</td>
+                <td class="t2">28888元</td>
+                <td class="t2">33888元</td>
+                <td class="t2">38888元</td>
+                <td class="t2">88888元</td>
+            </tr>
+            <tr>
+                <td class="t1">存取款加速通道</td>
+                <td class="t2"></td>
+                <td class="t2"></td>
+                <td class="t2"></td>
+                <td class="t2"></td>
+                <td class="t2"></td>
+                <td class="t2"></td>
+                <td class="t2">√</td>
+                <td class="t2">√</td>
+                <td class="t2">√</td>
+                <td class="t2">√</td>
+                <td class="t2">√</td>
+                <td class="t2">√</td>
+                <td class="t2">√</td>
+                <td class="t2">√</td>
+                <td class="t2">√</td>
+                <td class="t2">√</td>
+                <td class="t2">√</td>
+                <td class="t2">√</td>
+                <td class="t2">√</td>
+                <td class="t2">√</td>
+            </tr>
+            <tr>
+                <td class="t1">VIP专用线路</td>
+                <td class="t2">√</td>
+                <td class="t2">√</td>
+                <td class="t2">√</td>
+                <td class="t2">√</td>
+                <td class="t2">√</td>
+                <td class="t2">√</td>
+                <td class="t2">√</td>
+                <td class="t2">√</td>
+                <td class="t2">√</td>
+                <td class="t2">√</td>
+                <td class="t2">√</td>
+                <td class="t2">√</td>
+                <td class="t2">√</td>
+                <td class="t2">√</td>
+                <td class="t2">√</td>
+                <td class="t2">√</td>
+                <td class="t2">√</td>
+                <td class="t2">√</td>
+                <td class="t2">√</td>
+                <td class="t2">√</td>
+            </tr>
+            <tr>
+                <td class="t1">24小时服务</td>
+                <td class="t2">√</td>
+                <td class="t2">√</td>
+                <td class="t2">√</td>
+                <td class="t2">√</td>
+                <td class="t2">√</td>
+                <td class="t2">√</td>
+                <td class="t2">√</td>
+                <td class="t2">√</td>
+                <td class="t2">√</td>
+                <td class="t2">√</td>
+                <td class="t2">√</td>
+                <td class="t2">√</td>
+                <td class="t2">√</td>
+                <td class="t2">√</td>
+                <td class="t2">√</td>
+                <td class="t2">√</td>
+                <td class="t2">√</td>
+                <td class="t2">√</td>
+                <td class="t2">√</td>
+                <td class="t2">√</td>
+            </tr>
+        </table>
+        <p style="text-align:left">
+            VIP说明：<br>
+            例：会员升级为VIP，从荣升VIP开始计算有效投注，累计10万有效投注，即可获得晋级彩金38元，当累计到30万有效投注，即可再次获得58元！
+    </div>
+    <div class="box2">
+        <img src="/static/front/images/tit3.png" class="tit2"/>
+        <div class="wrap">
+            <p>
+                <font class="ye">1、如何查询VIP等级</font><br/>
+                可在每天的1号下午3点后在查询框内输入您的账号点击查询<br/>
+                <font class="ye">2、如何申请VIP晋级彩金？</font><br/>
+                点击查询框输入会员账号即可查看当天所得vip彩金，点击领取即可，系统会在点击领取后10分钟内自动派送到您的账户，因vip会员众多，并非每个会员都会及时到账，若未及时到账请您耐心等待，彩金只需1倍流水即可提款，如：会员直接从vip2晋级到vip5，跨越三个等级，即可获得晋升彩金：188（vip3）+258（vip4）+588（vip5）=1034元！<br/>
+            </p>
+            <div class="table_box2">
+                <table border="1px" bordercolor="#bc3f3f">
+                    <tr class="tit">
+                        <td class="t1">好运彩金</td>
+                        <td class="t2">天有效投注</td>
+                        <td class="t2">VIP等级要求</td>
+                    <tr>
+                        <td class="t1">8元</td>
+                        <td class="t2">1万+</td>
+                        <td class="t2">VIP1-20</td>
+                    <tr>
+                        <td class="t1">38元</td>
+                        <td class="t2">10万+</td>
+                        <td class="t2">VIP1-20</td>
+
+                    <tr>
+                        <td class="t1">58元</td>
+                        <td class="t2">30万+</td>
+                        <td class="t2">VIP1-20</td>
+                    <tr>
+                        <td class="t1">88元</td>
+                        <td class="t2">50万+</td>
+                        <td class="t2">VIP5-20</td>
+                    <tr>
+                        <td class="t1">188元</td>
+                        <td class="t2">80万+</td>
+                        <td class="t2">VIP5-20</td>
+                    <tr>
+                        <td class="t1">288元</td>
+                        <td class="t2">100万+</td>
+                        <td class="t2">VIP7-20</td>
+                    <tr>
+                        <td class="t1">588元</td>
+                        <td class="t2">200万+</td>
+                        <td class="t2">VIP7-20</td>
+                    <tr>
+                        <td class="t1">888元</td>
+                        <td class="t2">500万+</td>
+                        <td class="t2">VIP7-20</td>
+                    </tr>
+                    <tr>
+                        <td class="t1">1888元</td>
+                        <td class="t2">1000万+</td>
+                        <td class="t2">VIP10-20</td>
+                    </tr>
+                    <tr>
+                        <td class="t1">3888元</td>
+                        <td class="t2">2000万+</td>
+                        <td class="t2">VIP10-20</td>
+                    </tr>
+                    <tr>
+                        <td class="t1">5888元</td>
+                        <td class="t2">5000万+</td>
+                        <td class="t2">VIP15-20</td>
+                    </tr>
+                    <tr>
+                        <td class="t1">8888元</td>
+                        <td class="t2">8000万+</td>
+                        <td class="t2">VIP15-20</td>
+                    </tr>
+                    <tr>
+                        <td class="t1">18888元</td>
+                        <td class="t2">1亿+</td>
+                        <td class="t2">VIP15-20</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="box3">
+        <img src="/static/front/images/tit2.png" class="tit2"/>
+        <p>
+            1.什么是资金通道？<br>
+            我们奉行1分钟存款到账/10分钟提款到账的原则，vip等级越高，处理效率越优先。<br>
+            2.什么是专用线路？<br>
+            vip3级别以上，我们可以给您开通一条简单易记的登录网址，请联系在线客服登记申请<br>
+            3.什么是专属经理？<br>
+            专属客户经理是指当澳门银河赌场会员升级为VIP5的VIP等级时，都有专属客服经理根据您的需求，提供一对一顾问式服务，我们将针对您的娱乐需求，为您提供量身定制的私人服务。<br>
+            4.关于全年服务<br>
+            我们为您提供7*24小时不间断的客服服务，在线存取款及游戏投注，如需要帮助，请随时联系咨询在线客服。<br>
+        </p>
+    </div>
+    <div class="foot">
+        <p>
+            {{/* <a href="#">关于我们</a>&nbsp;|&nbsp;
+            <a href="#">取款帮助</a>&nbsp;|&nbsp;
+            <a href="#">存款帮助</a>&nbsp;|&nbsp;
+            <a href="#">合作伙</a>伴&nbsp;|&nbsp;
+            <a href="#">联系我们</a>&nbsp;|&nbsp;
+            <a href="#">常见问题</a><br/>*/}}
+            Copyright {{.siteName}}版权所有
+        </p>
+    </div>
+</div>
+
+<div id="show">
+    <div id="tangchuang">
+        <div id="close"></div>
+        <div id="stitle">VIP等级查询中心</div>
+        <div style=" overflow-y: scroll; overflow-x: hidden; height: 500px; margin-bottom: 10px;">
+            <div class="l8" style="width:100%;margin-left:15px;margin-right:15px">
+                <div style="width:13%">会员帐号</div>
+                <div>当前VIP等级</div>
+                <div style="width:20%">累计有效投注</div>
+                <div style="width:20%">累计晋级彩金</div>
+                <div style="width:10%">累计好运金</div>
+                <div class="last" style="width:25%">距离晋级需总投注金额</div>
+            </div>
+            <div id="membertotal" class="l8 clearMargin white" style="width:100%;margin-left:15px;margin-right:15px">
+                <div>无</div>
+                <div>无等级</div>
+                <div style="width:20%">无</div>
+                <div style="width:20%">无</div>
+                <div style="width:10%">无</div>
+                <div class="last" style="width:25%">无</div>
+            </div>
+            <div class="l8" style="width:100%;margin-left:15px;margin-right:15px">
+                <div style="width:13%">会员帐号</div>
+                <div style="width:15%">当天投注</div>
+                <div style="width:18%">当天晋级彩金</div>
+                <div style="width:9%">是否领取</div>
+                <div style="width:15%">当天好运金</div>
+                <div style="width:10%">是否领取</div>
+                <div style="width:20%">投注周期</div>
+            </div>
+            <div id="weekup" class="l8 clearMargin white" style="width:100%;margin-left:15px;margin-right:15px">
+                <div style="width:20%">无</div>
+                <div style="width:20%">无</div>
+                <div style="width:20%">无</div>
+                <div style="width:20%">无</div>
+                <div style="width:20%">无</div>
+            </div>
+            <div class="pages" style="width:100%;margin-left:15px;margin-right:15px">
+                <div id="countweek" class="total">共0条</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="iDialogLayout" style="z-index: 10000; display:none;"></div>
+<script type="text/javascript" src="/static/front/js/Query.js"></script>
+<script type="text/javascript" src="/static/front/layer-v3.1.1/layer.js"></script>
+<script>
+    $('#submit').click(function () {
+        var _user = $("#search1").val();
+        if (_user == "") {
+           layer.msg('会员帐号不能为空!');
+            return;
+        }
+        $('body #show').show();
+        showDetail();
+        return false;
+    });
+    $('#close').click(function () {
+        $(this).parent().parent().hide();
+    });
+</script>
+</body>
+</html>

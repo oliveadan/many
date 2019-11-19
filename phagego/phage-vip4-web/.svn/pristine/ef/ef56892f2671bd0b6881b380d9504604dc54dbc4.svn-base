@@ -1,0 +1,21 @@
+package utils
+
+import (
+	"github.com/astaxie/beego/orm"
+	"phagego/phage-vip4-web/models/common"
+)
+
+func GetCountEnAble() map[int]string {
+	m := map[int]string{
+		0: "否",
+		1:"是",
+	}
+	return m
+}
+
+func GetMissionDescribe(id int64) string{
+	o := orm.NewOrm()
+	var mission common.Mission
+	_ = o.QueryTable(new(common.Mission)).Filter("Id", id).One(&mission)
+	return mission.Describe
+}

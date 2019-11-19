@@ -1,0 +1,79 @@
+body {
+    position: relative;
+}
+
+.userLogin {
+    width: 100%;
+    height: 50%;
+    margin: 0 auto;
+    font-size: 20px;
+    color: #ece3de;
+    font-weight: bold;
+    background-color: #ece3de;
+    padding-bottom: 350px;
+}
+.title{
+    background-color: #684331;  
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding-top: 30%;
+    padding-bottom: 10%;
+    font-size: 46px;
+    color: gold;
+}
+
+.userInput {
+    margin-top: 20%;
+    padding-left: 10px;
+    border-radius: 2%;
+    color: #aaa;
+    height: 50px;
+}
+input::-ms-input-placeholder{
+    text-align: center;
+}
+input::-webkit-input-placeholder{
+    text-align: center;
+    color: rgb(231, 231, 231);
+}
+
+.sub {
+    margin: 5% auto;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #ece3de;
+
+}
+.btn{
+    background-color: #684331;
+    height: 60px;
+    margin: 10%  auto;
+    width: 50%;
+    font-size: 26px;
+}
+.btn:hover{
+    background-color: #695044;
+    color: #ece3de;
+}
+@media screen and (min-width:976px) {
+    .userLogin {
+      width: 700px;
+      padding-bottom: 10%;
+    }
+    .btn{
+        background-color: #684331;
+        height: 50px;
+        margin: 10%  auto;
+        width: 40%;
+        font-size: 20px;
+    }
+    .userInput {
+        margin-top: 20%;
+        padding-left: 10px;
+        border-radius: 2%;
+        color: #684331;
+        width: 50%;
+        height: 50px;
+    }
+  }

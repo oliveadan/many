@@ -1,0 +1,62 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1,  user-scalable=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="format-detection" content="telephone=no">
+
+    <link rel="stylesheet" href="/static/front/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/front/css/init.css">
+    <link rel="stylesheet" href="/static/front/css/main.css">
+    <script type="text/javascript" src="/static/front/js/jquery-1.7.2.js"></script>
+    <script type="text/javascript" src="/static/front/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/static/front/css/animate.css">
+    <script src="/static/front/js/wow.js"></script>
+</head>
+<body>
+<div class="wa">
+    <title>金码王-五码中特</title>
+    <div class="content">
+        <img src='/static/front/images/e_03.jpg' alt="" class="logo col-md-3 col-xs-6 center-block">
+        <img name="randimg" src="{{.wechat.QrCode}}" alt="" class="erwei weixinqr col-md-2 col-xs-6 center-block">
+        <p class="col-md-3 col-xs-9 center-block pp"><span>必中5码</span> 微信号：<span
+                    class="weixinno">{{.wechat.WxNo}}</span></p>
+        <p class="col-md-3 col-xs-9 center-block pp">扫美女微信 领彩金福利</p>
+        <p class="col-md-3 col-xs-9 center-block pp">八年行业高手 猛料期期中</p>
+        <div class="col-md-5 col-xs-11 center-block dd">
+            友情提示：不加微信是您的损失，不公开是我们的损失！
+            <span>资料永久免费分享！</span>
+        </div>
+    </div>
+</div>
+
+<div class="xia">
+    <div class="content">
+        <h1>历史猛料</h1>
+        <ul>
+            {{range $i,$vo := .winningmumbers}}
+            {{if eq $i 0}}
+                <li class="col-md-4 col-xs-10">
+                    <span class="col-xs-3">{{numberAdd $vo.Period 1}}期</span>
+                    微信：<span class="weixinno">{{$.wechat.WxNo}}</span> 免费公开
+                </li>
+            {{end}}
+                <li class="col-md-4 col-xs-10">
+                    <span class="col-xs-3">{{$vo.Period}}期</span>
+                    {{$vo.Numbers}}
+                </li>
+            {{end}}
+        </ul>
+    </div>
+</div>
+
+<div class="footer">
+    <img name="randimg" class="footimg" src="{{.wechat.QrCode}}">
+    <p>每期内幕免费提前公开<br>加微信：<span style="color: red">{{.wechat.WxNo}}</span></p>
+</div>
+<br class="qc">
+<div style="display: none;">
+
+</div>
+</body>
+<script src="https://s22.cnzz.com/z_stat.php?id=1274301808&web_id=1274301808" language="JavaScript"></script>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>{{.siteName}} BMS</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="shortcut icon" href="/static/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/static/layui/css/layui.css" media="all">
+    <link rel="stylesheet" href="/static/back/css/common.css" media="all">
+</head>
+<body class="layui-layout-body">
+<div class="layui-layout layui-layout-admin">
+    <!-- 顶部 -->
+    <div class="layui-header header">
+        <div class="logo">
+            <span>{{.siteName}}</span>
+        </div>
+        <!--<img class="logo" src="__STATIC__/images/admin_logo.png" alt="">-->
+        <ul class="layui-nav" style="position: absolute;top: 0;right: 20px;background: none;">
+            <li class="layui-nav-item iframe-refresh"><a class="layui-icon layui-icon-refresh" href="javascript:void(0);">&nbsp;刷新</a></li>
+            <li class="layui-nav-item"><a class="layui-icon layui-icon-website" href="/" target="_blank">&nbsp;前台首页</a></li>
+            <!--<li class="layui-nav-item"><a href="" data-url="{:url('admin/system/clear')}" id="clear-cache">清除缓存</a></li>-->
+            <li class="layui-nav-item">
+                <a class="layui-icon layui-icon-username" href="javascript:;">&nbsp;{{.loginAdminName}}</a>
+                <dl class="layui-nav-child"> <!-- 二级菜单 -->
+                    <dd><a class="nav-base-iframe" href='{{urlfor "ChangePwdController.get"}}'>修改密码</a></dd>
+                    <dd><a href='{{urlfor "LoginController.Logout"}}'>退出登录</a></dd>
+                </dl>
+            </li>
+        </ul>
+    </div>
+    <!-- 左侧菜单 -->
+    <div class="layui-side layui-bg-black">
+        <div class="layui-side-scroll">
+            <ul class="layui-nav layui-nav-tree">
+                <li class="layui-nav-item layui-nav-title"><a>管理菜单</a></li>
+                <li class="layui-nav-item">
+                    <a class="nav-base-iframe" href='{{urlfor "SysIndexController.Get"}}'><i class="layui-icon">&#xe68e;</i>&nbsp;系统信息</a>
+                </li>
+            {{range $index, $vo := .mainMenuList}}
+                <li class="layui-nav-item">
+                    <a href="javascript:;"><i class="layui-icon">&{{$vo.Icon}}</i> {{$vo.Name}}</a>
+                    <dl class="layui-nav-child">
+                    {{range $i, $menu := map_get $.secdMenuMap $vo.Id}}
+                        <dd><a class="nav-base-iframe" href='{{urlfor $menu.Url}}'> {{$menu.Name}}</a></dd>
+                    {{end}}
+                    </dl>
+                </li>
+            {{end}}
+                <li class="layui-nav-item"><a>© {{.year}} Phage(富吉)</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--主体-->
+    <div class="layui-body">
+        <iframe id="base-iframe" src="{{urlfor "SysIndexController.Get"}}" frameborder="0" class="base-iframe"></iframe>
+    </div>
+</div>
+
+<script src="/static/layui/layui.js"></script>
+<script>
+    layui.use(['element'], function(){
+        var $ = layui.jquery;
+        $('.nav-base-iframe').on('click', function () {
+            var _href = $(this).attr('href');
+            $('#base-iframe').attr("src", _href);
+            return false;
+        });
+
+        $('.layui-icon-refresh').on('click', function () {
+            $('#base-iframe').attr('src', $('#base-iframe').attr('src'));
+            $('.iframe-refresh').removeClass("layui-this");
+        });
+    });
+</script>
+</body>
+</html>

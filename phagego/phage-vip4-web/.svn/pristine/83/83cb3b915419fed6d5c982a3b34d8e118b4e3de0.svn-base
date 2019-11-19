@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {{template "sysmanage/aalayout/meta.tpl" .}}
+</head>
+<body>
+<div class="layui-fluid">
+    <div class="layui-row layui-col-space10">
+        <div class="layui-col-xs12 layui-col-sm12 layui-col-md12">
+            <!--tab标签-->
+            <div class="layui-tab layui-tab-brief">
+                <ul class="layui-tab-title">
+                    <li class=""><a href='{{urlfor "IndexTimeGiftController.get"}}'>时间奖励列表</a></li>
+                    <li class="layui-this">添加时间奖励</li>
+                </ul>
+                <div class="layui-tab-content">
+                    <div class="layui-tab-item layui-show">
+                        <form class="layui-form form-container" action='{{urlfor "EditTimeGiftController.post"}}'
+                              method="post">
+                            <input type="hidden" name="Id" value="{{.data.Id}}">
+                            {{ .xsrfdata}}
+                            <div class="layui-form-item">
+                                <label class="layui-form-label">VIP等级</label>
+                                <div class="layui-input-inline">
+                                    <input  type="number" name="GiftLevel" value="{{.data.GiftLevel}}" placeholder="请输入VIP等级" required lay-verify="required"
+                                            class="layui-input">
+                                </div>
+                            </div>
+                            <div class="layui-form-item">
+                                <label class="layui-form-label">奖励名称</label>
+                                <div class="layui-input-inline">
+                                    <input type="text" name="GiftName" value="{{.data.GiftName}}" placeholder="请输入奖励名称" required lay-verify="required"
+                                           class="layui-input">
+                                </div>
+                            </div>
+                            <div class="layui-form-item">
+                                <label class="layui-form-label">奖励内容</label>
+                                <div class="layui-input-inline">
+                                    <input  name="GiftContent" value="{{.data.GiftContent}}" placeholder="请输入排序，必须为数字" required lay-verify="required"
+                                            class="layui-input">
+                                </div>
+                            </div>
+                            <div class="layui-form-item">
+                                <div class="layui-input-block">
+                                    <button class="layui-btn" lay-submit lay-filter="*">保存</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{{template "sysmanage/aalayout/footjs.tpl" .}}
+</body>
+</html>

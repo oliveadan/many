@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+<head>
+{{template "sysmanage/aalayout/meta.tpl" .}}
+</head>
+<body>
+<div class="layui-fluid">
+    <div class="layui-row layui-col-space10">
+        <div class="layui-col-xs12 layui-col-sm12 layui-col-md12">
+            <!--tab标签-->
+            <div class="layui-tab layui-tab-brief">
+                <ul class="layui-tab-title">
+                    <li class="layui-this">查看会员信息</li>
+                    <li {{if  eq .adminroleid 3 }} style="display: none"{{end}} class=""><a id="import" lay-data="{url: '{{urlfor "CheckIndexController.Import"}}'}"
+
+                                    href='javascript:void(0);'>批量导入</a></li>
+                </ul>
+                <div class="layui-tab-content">
+                    <form class="layui-form layui-form-pane form-container" style="max-width: 1500px;"
+                          action='{{urlfor "CheckIndexController.get"}}' method="get">
+                        <div class="layui-inline" {{if  eq .adminroleid 3 }} style="display: none"{{end}}>
+                            <div class="layui-input-inline">
+                                <select id="hierarchy1" name="hierarchy" lay-verify="required" lay-search>
+                                <option value="">全部分层</option>
+                                {{range $i, $m := .Hierarchys}}
+                                    <option value="{{$m.Hierarchy}}"
+                                            {{if eq $m.Hierarchy $.condArr.hierarchy}}selected="selected"{{end}}>{{$m.Hierarchy}}</option>
+                                {{end}}
+                                </select>
+                            </div>
+                        </div>
+                        <div class="layui-inline" {{if  eq .adminroleid 3 }}
+                             {{if eq .checkpermission.Idd  0}}style="display: none"{{end}}{{end}}>
+                            <div class="layui-input-inline">
+                                <input type="text" name="idd" value="{{.condArr.idd}}" placeholder="Id"
+                                       class="layui-input">
+                            </div>
+                        </div>
+                        <div class="layui-inline" {{if  eq .adminroleid 3 }}
+                             {{if eq .checkpermission.Account  0}}style="display: none"{{end}}{{end}}>
+                            <div class="layui-input-inline">
+                                <input type="text" name="account" value="{{.condArr.account}}" placeholder="会员账号"
+                                       class="layui-input">
+                            </div>
+                        </div>
+                        <div class="layui-inline" {{if  eq .adminroleid 3 }}
+                             {{if eq .checkpermission.Name  0}}style="display: none"{{end}}{{end}}>
+                            <div class="layui-input-inline">
+                                <input type="text" name="name" value="{{.condArr.name}}" placeholder="会员姓名"
+                                       class="layui-input">
+                            </div>
+                        </div>
+                        <div class="layui-inline"{{if  eq .adminroleid 3 }}
+                             {{if eq .checkpermission.Agent  0}}style="display: none"{{end}}{{end}}>
+                            <div class="layui-input-inline">
+                                <input type="text" name="agent" value="{{.condArr.agent}}" placeholder="代理"
+                                       class="layui-input">
+                            </div>
+                        </div>
+                        <div class="layui-inline" {{if  eq .adminroleid 3 }}
+                             {{if eq .checkpermission.LoginInformation  0}}style="display: none"{{end}}{{end}}>
+                            <div class="layui-input-inline">
+                                <input type="text" name="loginInformation" value="{{.condArr.loginInformation}}"
+                                       placeholder="登录信息" class="layui-input">
+                            </div>
+                        </div>
+                        <div class="layui-inline" {{if  eq .adminroleid 3 }}
+                             {{if eq .checkpermission.RegisterDate  0}}style="display: none"{{end}}{{end}}>
+                            <div class="layui-input-inline">
+                                <input type="text" name="registerdate" value="{{.condArr.registerdate}}"
+                                       placeholder="注册日期"
+                                       class="layui-input">
+                            </div>
+                        </div>
+                        <div class="layui-inline" {{if  eq .adminroleid 3 }}
+                             {{if eq .checkpermission.Mobile  0}}style="display: none"{{end}}{{end}}>
+                            <div class="layui-input-inline">
+                                <input type="text" name="mobile" value="{{.condArr.mobile}}" placeholder="手机号"
+                                       class="layui-input">
+                            </div>
+                        </div>
+                        <div class="layui-inline" {{if  eq .adminroleid 3 }}
+                             {{if eq .checkpermission.Email  0}}style="display: none"{{end}}{{end}}>
+                            <div class="layui-input-inline">
+                                <input type="text" name="email" value="{{.condArr.email}}" placeholder="电子邮箱"
+                                       class="layui-input">
+                            </div>
+                        </div>
+                        <div class="layui-inline" {{if  eq .adminroleid 3 }}
+                             {{if eq .checkpermission.Qq  0}}style="display: none"{{end}}{{end}}>
+                            <div class="layui-input-inline">
+                                <input type="text" name="qq" value="{{.condArr.qq}}" placeholder="qq"
+                                       class="layui-input">
+                            </div>
+                        </div>
+                        <div class="layui-inline" {{if  eq .adminroleid 3 }}
+                             {{if eq .checkpermission.Wechat  0}}style="display: none"{{end}}{{end}}>
+                            <div class="layui-input-inline">
+                                <input type="text" name="wechat" value="{{.condArr.wechat}}" placeholder="微信"
+                                       class="layui-input">
+                            </div>
+                        </div>
+                        <div class="layui-inline" {{if  eq .adminroleid 3 }}
+                             {{if eq .checkpermission.PasswordHint  0}}style="display: none"{{end}}{{end}}>
+                            <div class="layui-input-inline">
+                                <input type="text" name="passwordhint" value="{{.condArr.passwordhint}}"
+                                       placeholder="密码提示问题" class="layui-input">
+                            </div>
+                        </div>
+                        <div class="layui-inline" {{if  eq .adminroleid 3 }}
+                             {{if eq .checkpermission.PasswordAnswer  0}}style="display: none"{{end}}{{end}}>
+                            <div class="layui-input-inline">
+                                <input type="text" name="passwordanswer" value="{{.condArr.passwordanswer}}"
+                                       placeholder="密码提示答案" class="layui-input">
+                            </div>
+                        </div>
+                        <div class="layui-inline" {{if  eq .adminroleid 3 }}
+                             {{if eq .checkpermission.WithdrawalPassword  0}}style="display: none"{{end}}{{end}}>
+                            <div class="layui-input-inline">
+                                <input type="text" name="withdrawalpassword" value="{{.condArr.withdrawalpassword}}"
+                                       placeholder="开户银行" class="layui-input">
+                            </div>
+                        </div>
+                        <div class="layui-inline" {{if  eq .adminroleid 3 }}
+                             {{if eq .checkpermission.OpenBank  0}}style="display: none"{{end}}{{end}}>
+                            <div class="layui-input-inline">
+                                <input type="text" name="openbank" value="{{.condArr.openbank}}" placeholder="开户银行"
+                                       class="layui-input">
+                            </div>
+                            <div class="layui-input-inline" {{if  eq .adminroleid 3 }}
+                                 {{if eq .checkpermission.BankAccount  0}}style="display: none"{{end}}{{end}}>
+                                <input type="text" name="bankaccount" value="{{.condArr.bankaccount}}"
+                                       placeholder="银行账号"
+                                       class="layui-input">
+                            </div>
+                        </div>
+                        <div class="layui-inline" {{if  eq .adminroleid 3 }}style="display: none"{{end}}}>
+                            <div class="layui-input-inline">
+                                <input type="checkbox" name="isExport" value="1" lay-skin="switch" lay-text="导出|导出">
+                            </div>
+                        </div>
+                        <div class="layui-inline">
+                            <button  class="layui-btn">搜索/导出</button>
+                            <a {{if  eq $.adminroleid 3 }} style="display: none"{{end}}
+                                    href='{{urlfor "CheckIndexController.Delbatch"}}'
+                               class="layui-btn layui-btn-danger ajax-batch1">删除所有</a>
+                        </div>
+                    </form>
+                    <hr>
+                    <div class="layui-tab-item layui-show">
+                        <table class="layui-table">
+                            <thead>
+                            <tr>
+                                <th {{if  eq .adminroleid 3 }} style="display: none"{{end}}>
+                                   分层
+                                </th>
+                                <th {{if  eq .adminroleid 3 }}{{if eq .checkpermission.Idd  0}} style="display: none"{{end}}{{end}}>
+                                    Id
+                                </th>
+                                <th {{if  eq .adminroleid 3 }} {{if eq .checkpermission.Account  0}}style="display: none"{{end}}{{end}}>
+                                    会员账号
+                                </th>
+                                <th {{if  eq .adminroleid 3 }} {{if eq .checkpermission.Name  0}}style="display: none"{{end}}{{end}}>
+                                    会员姓名
+                                </th>
+                                <th {{if  eq .adminroleid 3 }} {{if eq .checkpermission.Agent  0}}style="display: none"{{end}}{{end}}>
+                                    代理商
+                                </th>
+                                <th {{if  eq .adminroleid 3 }} {{if eq .checkpermission.LoginInformation  0}}style="display: none"{{end}}{{end}}>
+                                    类别
+                                </th>
+                                <th {{if  eq .adminroleid 3 }} {{if eq .checkpermission.RegisterDate  0}}style="display: none"{{end}}{{end}}>
+                                    登录时间
+                                </th>
+                                <th {{if  eq .adminroleid 3 }} {{if eq .checkpermission.Mobile  0}}style="display: none"{{end}}{{end}}>
+                                    手机号码
+                                </th>
+                                <th {{if  eq .adminroleid 3 }} {{if eq .checkpermission.Email  0}}style="display: none"{{end}}{{end}}>
+                                    电子邮箱
+                                </th>
+                                <th {{if  eq .adminroleid 3 }} {{if eq .checkpermission.Qq  0}}style="display: none"{{end}}{{end}}>
+                                    QQ号码
+                                </th>
+                                <th {{if  eq .adminroleid 3 }} {{if eq .checkpermission.Wechat  0}}style="display: none"{{end}}{{end}}>
+                                    微信号码
+                                </th>
+                                <th {{if  eq .adminroleid 3 }} {{if eq .checkpermission.PasswordHint  0}}style="display: none"{{end}}{{end}}>
+                                    密码提示问题
+                                </th>
+                                <th {{if  eq .adminroleid 3 }} {{if eq .checkpermission.PasswordAnswer  0}}style="display: none"{{end}}{{end}}>
+                                    密码提示答案
+                                </th>
+                                <th {{if  eq .adminroleid 3 }} {{if eq .checkpermission.WithdrawalPassword  0}}style="display: none"{{end}}{{end}}>
+                                    取款密码
+                                </th>
+                                <th {{if  eq .adminroleid 3 }} {{if eq .checkpermission.OpenBank  0}}style="display: none"{{end}}{{end}}>
+                                    开户银行
+                                </th>
+                                <th {{if  eq .adminroleid 3 }} {{if eq .checkpermission.BankAccount  0}}style="display: none"{{end}}{{end}}>
+                                    银行账号
+                                </th>
+                                <th>拨打情况</th>
+                                <th>备注</th>
+                                <th>操作</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            {{range $index, $vo := .dataList}}
+                            <tr>
+                                <td {{if  eq $.adminroleid 3 }} style="display: none"{{end}}>{{$vo.Hierarchy}}</td>
+                                <td {{if  eq $.adminroleid 3 }}
+                                {{if eq $.checkpermission.Idd  0}}style="display: none"{{end}}{{end}}>{{$vo.Idd}}</td>
+                                <td {{if  eq $.adminroleid 3 }}
+                                {{if eq $.checkpermission.Account  0}}style="display: none"{{end}}{{end}}>{{$vo.Account}}</td>
+                                <td {{if  eq $.adminroleid 3 }}
+                                {{if eq $.checkpermission.Name  0}}style="display: none"{{end}}{{end}}>{{$vo.Name}}</td>
+                                <td {{if  eq $.adminroleid 3 }}
+                                {{if eq $.checkpermission.Agent  0}}style="display: none"{{end}}{{end}}>{{$vo.Agent}}</td>
+                                <td {{if  eq $.adminroleid 3 }}
+                                {{if eq $.checkpermission.LoginInformation  0}}style="display: none"{{end}}{{end}}>{{$vo.LoginInformation}}</td>
+                                <td {{if  eq $.adminroleid 3 }}
+                                {{if eq $.checkpermission.RegisterDate  0}}style="display: none"{{end}}{{end}}>{{date $vo.RegisterDate "Y-m-d H:i:s"}}</td>
+                                <td {{if  eq $.adminroleid 3 }}6
+                                {{if eq $.checkpermission.Mobile  0}}style="display: none"{{end}}{{end}}><a href="skype:+86{{$vo.Mobile}}?call">拨打</a><input  style="opacity: 0;position: absolute" id="m{{$vo.Id}}" value="{{$vo.Mobile}}"/><button  onclick="copymobile({{$vo.Id}})">复制</button></td>
+                                <td {{if  eq $.adminroleid 3 }}
+                                {{if eq $.checkpermission.Email  0}}style="display: none"{{end}}{{end}}>{{$vo.Email}}</td>
+                                <td {{if  eq $.adminroleid 3 }}
+                                {{if eq $.checkpermission.Qq  0}}style="display: none"{{end}}{{end}}>{{$vo.Qq}}</td>
+                                <td {{if  eq $.adminroleid 3 }}
+                                {{if eq $.checkpermission.Wechat  0}}style="display: none"{{end}}{{end}}>{{$vo.Wechat}}</td>
+                                <td {{if  eq $.adminroleid 3 }}
+                                {{if eq $.checkpermission.PasswordHint  0}}style="display: none"{{end}}{{end}}>{{$vo.PasswordHint}}</td>
+                                <td {{if  eq $.adminroleid 3 }}
+                                {{if eq $.checkpermission.PasswordAnswer  0}}style="display: none"{{end}}{{end}}>{{$vo.PasswordAnswer}}</td>
+                                <td {{if  eq $.adminroleid 3 }}
+                                {{if eq $.checkpermission.WithdrawalPassword  0}}style="display: none"{{end}}{{end}}>{{$vo.WithdrawalPassword}}</td>
+                                <td {{if  eq $.adminroleid 3 }}
+                                {{if eq $.checkpermission.OpenBank  0}}style="display: none"{{end}}{{end}}>{{$vo.OpenBank}}</td>
+                                <td {{if  eq $.adminroleid 3 }}
+                                {{if eq $.checkpermission.BankAccount  0}}style="display: none"{{end}}{{end}}>{{$vo.BankAccount}}</td>
+                                <td>{{map_get getDialStatusMap $vo.DialStatus}}</td>
+                                <td>{{$vo.Comment}}</td>
+                                <td>
+                                    <a href='{{urlfor "CheckEditController.post" "id" $vo.Id}}'
+                                    class="layui-btn layui-btn-normal layui-btn-mini">编辑</a>
+                                    <a {{if  eq $.adminroleid 3 }} style="display: none"{{end}} href='{{urlfor "CheckIndexController.Delone" "id" $vo.Id}}'
+                                       class="layui-btn layui-btn-danger layui-btn-mini ajax-delete">删除</a>
+                                </td>
+                            </tr>
+                            {{else}}
+							{{template "sysmanage/aalayout/table-no-data.tpl"}}
+						{{end}}
+                            </tbody>
+                        </table>
+                    {{template "sysmanage/aalayout/paginator.tpl" .}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{{template "sysmanage/aalayout/footjs.tpl" .}}
+<script>
+    layui.use(['element','layer'], function () {
+        var $ = layui.jquery;
+        var layer = layui.layer;
+        $('.nav-base-iframe').on('click', function () {
+            var _href = $(this).attr('href');
+            $('#base-iframe').attr("src", _href);
+            return false;
+        });
+
+        $('.layui-icon-refresh').on('click', function () {
+            $('#base-iframe').attr('src', $('#base-iframe').attr('src'));
+            $('.iframe-refresh').removeClass("layui-this");
+        });
+
+        $('.ajax-batch1').on('click', function () {
+            var _href = $(this).attr('href');
+            var gamename = $("#hierarchy1").find("option:selected").attr("value");
+                if (gamename == ""){
+                    gamename = "全部";
+                }
+                layer.open({
+                    shade: false,
+                    content: '确定删除' + gamename +'分层的所有数据？' ,
+                    btn: ['确定', '取消'],
+                    yes: function (index) {
+                        $.ajax({
+                            url: _href,
+                            type: "post",
+                            data: {"hierarchy": gamename },
+                            beforeSend:function(){
+                                layer.load();
+                            },
+                            success: function (info) {
+                                layer.closeAll('loading');
+                                if (info.code === 1) {
+                                    setTimeout(function () {
+                                        location.href = info.url || location.href;
+                                    }, 1000);
+                                }
+                                layer.msg(info.msg);
+                            },
+                            error:function () {
+                                layer.closeAll('loading');
+                            }
+                        });
+                        layer.close(index);
+                    }
+                });
+
+            return false;
+        });
+    });
+</script>
+<script>
+     function copymobile(id) {
+         var mobile = document.getElementById("m"+id);
+         mobile.select();
+         document.execCommand("Copy"); // 执行浏览器复制命令
+         alert("已复制好，可贴粘。");
+     }
+</script>
+</body>
+</html>

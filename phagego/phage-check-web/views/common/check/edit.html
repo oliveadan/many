@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+{{template "sysmanage/aalayout/meta.tpl" .}}
+</head>
+<body>
+<div class="layui-fluid">
+    <div class="layui-row layui-col-space10">
+        <div class="layui-col-xs12 layui-col-sm12 layui-col-md12">
+            <!--tab标签-->
+            <div class="layui-tab layui-tab-brief">
+                <ul class="layui-tab-title">
+                    <li class="layui-this">编辑客服查可看字段</li>
+                </ul>
+                <div class="layui-tab-content">
+                    <form class="layui-form form-container" action='{{urlfor "CheckEditController.post"}}'
+                          method="post">
+                    {{ .xsrfdata }}
+                        <input name="Id" value="{{.data.Id}}" style="display: none">
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">拨打情况</label>
+                            <div class="layui-input-block">
+                                <select name="DialStatus" lay-verify="required" lay-search>
+                                    <option value="0"{{if eq .data.DialStatus 0}}selected="selected"{{end}}>未拨打</option>
+                                    <option value="1"{{if eq .data.DialStatus 1}}selected="selected"{{end}}>有效接听
+                                    </option>
+                                    <option value="2"{{if eq .data.DialStatus 2}}selected="selected"{{end}}>不是本人
+                                    </option>
+                                    <option value="3"{{if eq .data.DialStatus 3}}selected="selected"{{end}}>接通挂断
+                                    </option>
+                                    <option value="4"{{if eq .data.DialStatus 4}}selected="selected"{{end}}>无法接通
+                                    </option>
+                                    <option value="5"{{if eq .data.DialStatus 5}}selected="selected"{{end}}>无人接听
+                                    </option>
+                                    <option value="6"{{if eq .data.DialStatus 6}}selected="selected"{{end}}>拒接</option>
+                                    <option value="7"{{if eq .data.DialStatus 7}}selected="selected"{{end}}>关机</option>
+                                    <option value="8"{{if eq .data.DialStatus 8}}selected="selected"{{end}}>停机</option>
+                                    <option value="9"{{if eq .data.DialStatus 9}}selected="selected"{{end}}>空号</option>
+                                    <option value="10"{{if eq .data.DialStatus 10}}selected="selected"{{end}}>其他</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">备注内容</label>
+                            <div class="layui-input-block">
+                            <textarea id="applytips" name="Comment" class="int"
+                                      style="width:400px; height:60px;">{{.data.Comment}}</textarea>
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <div class="layui-input-block">
+                                <button class="layui-btn" lay-submit lay-filter="*">保存</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+{{template "sysmanage/aalayout/footjs.tpl" .}}
+</body>
+</html>

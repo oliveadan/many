@@ -1,0 +1,280 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>{{.siteName}}VIP特权查询</title>
+    <link href="/static/front/css/public.css" rel="stylesheet" type="text/css"/>
+    <link href="/static/front/css/style1.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="/static/front/js/jquery.js"></script>
+</head>
+<body>
+<div id="main">
+    <div class="header_div">
+        <div class="wrap">
+            <img src="/static/front/images/logo.png" class="logo"/>
+            <div class="header_right">
+                <img src="/static/front/images/tit_box1.png"/>
+                <div class="menu_div">
+                    <a href="{{.ranking}}">电子排行榜</a>&nbsp;丨 <a href="{{.officialSite}}">首&nbsp;页</a>&nbsp;丨
+                    <a href="{{.officialRegist}}">注册会员</a>&nbsp;丨
+                    <a href="{{.officialPromot}}">优惠活动</a>&nbsp;丨
+                    <a href="{{.custServ}}">在线客服</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="flash"></div>
+    <div class="lb_div">
+        <div class="wrap">
+            <img src="/static/front/images/lb.png" class="wz"/>
+            <p>
+                <marquee id="msgNews" scrollamount="4" scrolldelay="100" direction="left" onMouseOver="this.stop();"
+                         onMouseOut="this.start();"></marquee>
+            </p>
+        </div>
+    </div>
+    <div class="fond_div">
+        <input type="text" id="search1" name="search1" placeholder="请输入会员账号"/><a href="javascript:;" id="submit"></a>
+    </div>
+    <img src="/static/front/images/tit1.png" class="tit1"/>
+    <div class="table_box">
+        <table border="1px" bordercolor="#bc3f3f">
+            <tr class="tit">
+                <td class="t1">项目</td>
+                <td class="t2">VIP1</td>
+                <td class="t2">VIP2</td>
+                <td class="t2">VIP3</td>
+                <td class="t2">VIP4</td>
+                <td class="t2">VIP5</td>
+                <td class="t2">VIP6</td>
+                <td class="t2">VIP7</td>
+                <td class="t2">VIP8</td>
+                <td class="t2">VIP9</td>
+            </tr>
+            <tr>
+                <td class="t1">晋级标准/累积存款金额</td>
+                <td class="t2">1+</td>
+                <td class="t2">10万</td>
+                <td class="t2">50万</td>
+                <td class="t2">100万</td>
+                <td class="t2">500万</td>
+                <td class="t2">1000万</td>
+                <td class="t2">5000万</td>
+                <td class="t2">1亿</td>
+                <td class="t2">10亿</td>
+            </tr>
+            <tr>
+                <td class="t1">晋级彩金</td>
+                <td class="t2">-</td>
+                <td class="t2">188</td>
+                <td class="t2">388</td>
+                <td class="t2">888</td>
+                <td class="t2">1888</td>
+                <td class="t2">3888</td>
+                <td class="t2">8888</td>
+                <td class="t2">18888</td>
+                <td class="t2">38888</td>
+            </tr>
+            <tr>
+                <td class="t1">每月好运金</td>
+                <td class="t2">18</td>
+                <td class="t2">88</td>
+                <td class="t2">188</td>
+                <td class="t2">388</td>
+                <td class="t2">888</td>
+                <td class="t2">1888</td>
+                <td class="t2">3888</td>
+                <td class="t2">8888</td>
+                <td class="t2">18888</td>
+            </tr>
+            <tr>
+                <td class="t1">存取款加速通道</td>
+                <td class="t2"></td>
+                <td class="t2"></td>
+                <td class="t2"></td>
+                <td class="t2">√</td>
+                <td class="t2">√</td>
+                <td class="t2">√</td>
+                <td class="t2">√</td>
+                <td class="t2">√</td>
+                <td class="t2">√</td>
+            </tr>
+            <tr>
+                <td class="t1">VIP专用线路</td>
+                <td class="t2"></td>
+                <td class="t2"></td>
+                <td class="t2"></td>
+                <td class="t2"></td>
+                <td class="t2">√</td>
+                <td class="t2">√</td>
+                <td class="t2">√</td>
+                <td class="t2">√</td>
+                <td class="t2">√</td>
+            </tr>
+            <tr>
+                <td class="t1">24小时服务</td>
+                <td class="t2">√</td>
+                <td class="t2">√</td>
+                <td class="t2">√</td>
+                <td class="t2">√</td>
+                <td class="t2">√</td>
+                <td class="t2">√</td>
+                <td class="t2">√</td>
+                <td class="t2">√</td>
+                <td class="t2">√</td>
+            </tr>
+        </table>
+        <p style="text-align:left">
+            (温馨提示：每月好运金具体派送规则，详情可见活动细则4，如有疑问，请您咨询在线客服和QQ专员，谢谢)<br>
+            申请方式APPLY：会员无需申请，存款1元起即可加入bet365 VIP俱乐部，系统根据会员每月存款量派送晋级彩金和好运金。
+    </div>
+    <div class="box2">
+        <img src="/static/front/images/tit3.png" class="tit2"/>
+        <div class="wrap">
+            <p>
+                <font class="ye">1、从什么时间开始累积存款金额?</font><br/>
+                1.会员每年01月18日至次年01月17日累积存款金额，次年01月20日清零。如：会员2010年01月18日至2010年05月17日累积存款金额到10万升级为VIP2；再存款40万元，总累计存款金额为50万，升级为VIP3，2011年01月20日VIP积分清零并自动派送VIP积分兑换彩金。<br/>
+                <font class="ye">2、如何查询？</font><br/>
+                2.我们会在每月18日18:00前后更新您的VIP等级，您可以在VIP系统进行查询。<br/>
+                <font class="ye">3、如何申请晋级彩金？</font><br/>
+                3.晋级彩金无需申请，我们会在每月18日18:00左右开始陆续发放，因晋级彩金数目众多，无法保证每个会员都能及时到账，若未及时到账请耐心等待，晋级彩金只需一倍流水即可提现。<br/>
+                <font class="ye">4、什么是每月好运彩金？</font><br/>
+                月逢18，好运必发！我们会在每月18日派发特别好运金。<br/>
+
+            </p>
+            <div class="table_box2">
+                <table border="1px" bordercolor="#bc3f3f">
+                    <tr class="tit">
+                        <td class="t1">好运彩金</td>
+                        <td class="t2">月存款金额</td>
+                        <td class="t2">VIP等级要求</td>
+                    <tr>
+                        <td class="t1">18</td>
+                        <td class="t2">5000元</td>
+                        <td class="t2">VIP1-9</td>
+                    <tr>
+                        <td class="t1">88</td>
+                        <td class="t2">1万</td>
+                        <td class="t2">VIP2-9</td>
+
+                    <tr>
+                        <td class="t1">388</td>
+                        <td class="t2">10万</td>
+                        <td class="t2">VIP4-9</td>
+                    <tr>
+                        <td class="t1">888</td>
+                        <td class="t2">50万</td>
+                        <td class="t2">VIP5-9</td>
+                    <tr>
+                        <td class="t1">1888</td>
+                        <td class="t2">100万</td>
+                        <td class="t2">VIP6-9</td>
+                    <tr>
+                        <td class="t1">3888</td>
+                        <td class="t2">500万</td>
+                        <td class="t2">VIP7-9</td>
+                    <tr>
+                        <td class="t1">8888</td>
+                        <td class="t2">1000万</td>
+                        <td class="t2">VIP8-9</td>
+                    <tr>
+                        <td class="t1">18888</td>
+                        <td class="t2">5000万</td>
+                        <td class="t2">VIP9</td>
+                    </tr>
+                    <tr class="con">
+                        <td colspan="3">以您上个月18日至本月17日期间产生的有效充值计算，我们会在每月18日18:00左右开始陆续发放，详情如上。</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="box3">
+        <img src="/static/front/images/tit2.png" class="tit2"/>
+        <p>
+            1.所有优惠以人民币(CNY)为结算金额，以美东时间(EDT)为计时区间。<br>
+            2.此优惠产生流水可参与网站返水。任何对赌、正反下注及其他对冲存款情况都不计算存款金额，所有类似违规操作均不计入流水。<br>
+            3.每位有效玩家、每一手机号码、电子邮箱、相同银行卡、每一个IP地址、每一台电脑者只能注册一个bet365账号，如发现有违规者我们将保留无限期审核扣回红利及所产生的利润权利。<br>
+            4.存款在运动博弈、对冲或对打存款不计，未接受注单/赛果为平的注单不计。在真人娱乐/电子游艺/彩票游戏/无风险存款不计。无风险存款包括在百家乐同时存款庄家、闲家，轮盘同时存款“黑色+红色、单+双、大+小”，任何取消注单赛事或局数不计。<br>
+            5.bet365的所有优惠特为玩家而设，如发现任何团体或个人，以不诚实方式套取红利或任何威胁、滥用公司优惠等行为，公司保留冻结、取消该团体或个人账户及账户结余的权利。<br>
+            6.bet365有权查核玩家的一切存款记录，若玩家违反活动已定下的条例及细则之规定或出现任何有非娱乐目的利用红利获利的情况，bet365将会撤销所有获奖的权利。<br>
+            7.bet365保留可单方面执行的决定权，在任何时候无事先通知的情况下，修改、改变、停止、取消或使此活动失效，此条款适用于所有优惠。<br>
+            8.参与此活动的玩家必须接受及遵循上述规则与条款。
+        </p>
+    </div>
+    <div class="foot">
+        <p>
+           {{/* <a href="#">关于我们</a>&nbsp;|&nbsp;
+            <a href="#">取款帮助</a>&nbsp;|&nbsp;
+            <a href="#">存款帮助</a>&nbsp;|&nbsp;
+            <a href="#">合作伙</a>伴&nbsp;|&nbsp;
+            <a href="#">联系我们</a>&nbsp;|&nbsp;
+            <a href="#">常见问题</a><br/>*/}}
+            Copyright {{.siteName}}版权所有
+        </p>
+    </div>
+</div>
+
+<div id="show">
+    <div id="tangchuang">
+        <div id="close"></div>
+        <div id="stitle">VIP等级查询中心</div>
+        <div style=" overflow-y: scroll; overflow-x: hidden; height: 500px; margin-bottom: 10px;">
+            <div class="l8" style="width:100%;margin-left:15px;margin-right:15px">
+                <div>会员帐号</div>
+                <div>当前VIP等级</div>
+                <div style="width:20%">累计有效充值</div>
+                <div style="width:20%">累计晋级彩金</div>
+                <div style="width:10%">累计好运金</div>
+                <div class="last" style="width:25%">距离晋级需总充值金额</div>
+            </div>
+            <div id="membertotal" class="l8 clearMargin white" style="width:100%;margin-left:15px;margin-right:15px">
+                <div>无</div>
+                <div>无等级</div>
+                <div style="width:20%">无</div>
+                <div style="width:20%">无</div>
+                <div style="width:10%">无</div>
+                <div class="last" style="width:25%">无</div>
+            </div>
+            <div class="l8" style="width:100%;margin-left:15px;margin-right:15px">
+                <div style="width:20%">会员帐号</div>
+                <div style="width:20%">当月充值金额</div>
+                <div style="width:20%">晋级彩金</div>
+                <div style="width:20%">当月好运金</div>
+                <div style="width:20%">充值周期</div>
+            </div>
+            <div id="weekup" class="l8 clearMargin white" style="width:100%;margin-left:15px;margin-right:15px">
+                <div style="width:20%">无</div>
+                <div style="width:20%">无</div>
+                <div style="width:20%">无</div>
+                <div style="width:20%">无</div>
+                <div style="width:20%">无</div>
+            </div>
+            <div class="pages" style="width:100%;margin-left:15px;margin-right:15px">
+                <div id="countweek" class="total">共0条</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="iDialogLayout" style="z-index: 10000; display:none;"></div>
+<script type="text/javascript" src="/static/front/js/Query.js"></script>
+<script>
+    $('#submit').click(function () {
+        var _user = $("#search1").val();
+        if (_user == "") {
+            alert('会员帐号不能为空!');
+            return;
+        }
+        showDetail();
+        $('body #show').show();
+        return false;
+    });
+    $('#close').click(function () {
+        $(this).parent().parent().hide();
+    });
+</script>
+</body>
+</html>

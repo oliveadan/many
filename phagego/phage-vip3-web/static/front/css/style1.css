@@ -1,0 +1,221 @@
+
+#show {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    left: 0;
+    top: 0;
+    display: none
+}
+
+#tangchuang {
+    width: 90%;
+    height: 550px;
+    z-index: 1000;
+    position: relative;
+    margin: 6% auto 0;
+    background: #fff
+}
+
+#tangchuang #close {
+    width: 30px;
+    height: 30px;
+    right: -16px;
+    top: -16px;
+    background: url(../images/close.png) no-repeat center;
+    position: absolute;
+    cursor: pointer
+}
+
+#stitle {
+    color: #fff;
+    height: 35px;
+    background: #a40000;
+    line-height: 35px;
+    text-indent: 20px;
+    font-weight: bold;
+    font-size: 18px
+}
+
+.clearMargin {
+    margin-top: 0 !important
+}
+
+.clearMargin > div {
+    border-bottom: solid 1px #fff
+}
+
+.white > div {
+    background: #e5e5e5 !important;
+    color: #333 !important
+}
+
+.l5, .l8, .pages {
+    width: 90%;
+    height: 35px;
+    line-height: 35px;
+    margin: 15px auto 0
+}
+
+.l5 > div, .l8 > div {
+    position: relative;
+    text-align: center;
+    float: left;
+    background: #68532a;
+    color: #fff
+}
+
+.l5 > div:after, .l8 > div:after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    background: #fff;
+    right: 0;
+    top: 0
+}
+
+.l8 > div {
+    width: 10%
+}
+
+.l5 > div {
+    width: 13.5%
+}
+
+.l8 > div.last {
+    width: 25%
+}
+
+.pages {
+    clear: both;
+    height: auto;
+    overflow: auto
+}
+
+.pages > div {
+    float: left;
+    color: #fff
+}
+
+.pages .total {
+    background: #a40000;
+    padding: 0 10px;
+    height: 35px;
+    line-height: 35px
+}
+
+.pages .pg {
+    background: #68532a;
+    margin-left: 8px;
+    padding: 0 5px;
+    display: inline-block;
+    color: #fff
+}
+
+.pages .pg.active {
+    background: #c40000
+}
+
+.ttop {
+    width: 910px;
+    margin: 10px auto 0;
+    height: 76px;
+    background: url(../images/tt1.png) no-repeat center;
+    color: #fff;
+    line-height: 76px;
+    font-size: 12px;
+    padding: 0 30px;
+    font-family: "宋体";
+    background-size: 100%;
+    margin-left: -30px
+}
+
+.ttop strong {
+    font-size: 16px;
+    font-family: microsoft yahei;
+    line-height: 16px;
+    display: inline-block;
+    margin-right: 8px;
+    height: 76px;
+    line-height: 76px
+}
+
+.ttitle {
+    width: 232px;
+    height: 82px;
+    display: inline-block;
+    background: url(../images/tt2.png) no-repeat center;
+    padding-left: 100px;
+    line-height: 82px;
+    color: #fff;
+    font-size: 22px;
+    margin: 20px 0 10px -30px
+}
+
+.ttext, .ttext1 {
+    width: 96%;
+    margin: 0 auto;
+    font-weight: bold;
+    letter-spacing: 1px;
+    line-height: 28px;
+    color: #000;
+    white-space: pre-line;
+    margin-bottom: 10px
+}
+
+.ttext1 {
+    width: 100%;
+    letter-spacing: normal
+}
+
+.ttext1 a {
+    text-decoration: underline
+}
+
+.pointLine {
+    width: auto;
+    padding-left: 20px;
+    background: url(../images/hdsj.png) no-repeat left center;
+    font-weight: bold
+}
+
+#mn2 table {
+    color: #fff;
+    font-weight: 100;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 15px
+}
+
+#mn2 table th {
+    background: #660000;
+    color: #fffc00 !important
+}
+
+#mn2 table th, #mn2 table td {
+    border: solid 1px #333333;
+    border-left: none;
+    border-bottom: none;
+    padding: 8px 0;
+    font-weight: normal;
+    white-space: pre-line;
+    line-height: 30px;
+    color: #bfbfbf
+}
+
+#mn2 table th {
+    border-color: #853333
+}
+
+#mn2 table td {
+    font-size: 14px
+}
+
+#mn2 table.tdpad0 td {
+    height: auto;
+    line-height: normal
+}
+

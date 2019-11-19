@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {{template "sysmanage/aalayout/meta.tpl" .}}
+</head>
+<body>
+<div class="layui-fluid">
+    <div class="layui-row layui-col-space10">
+        <div class="layui-col-xs12 layui-col-sm12 layui-col-md12">
+            <!--tab标签-->
+            <div class="layui-tab layui-tab-brief">
+                <ul class="layui-tab-title">
+                    <li class="layui-this">微信列表</li>
+                    <li class=""><a href='{{urlfor "WechatAddContorller.get"}}'>添加微信</a></li>
+                </ul>
+                <div style="margin: 0 5px;">
+                    前端展示说明：<br>
+                    <span style="color: red">
+                    随机选取一个启用的微信账号在前台展示。
+                    </span>
+                </div>
+                <div class="layui-tab-content">
+                    <div class="layui-tab-item layui-show">
+                        <table class="layui-table">
+                            <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>微信账号</th>
+                                <th>二维码</th>
+                                <th>是否启用</th>
+                                <th>操作</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            {{range $index, $vo := .dataList}}
+                                <tr>
+                                    <td>{{$vo.Id}}</td>
+                                    <td>{{$vo.WxNo}}</td>
+                                    <td><img src="{{$vo.QrCode}}"></td>
+                                    <td>{{if eq $vo.Enabled 1}}<span class="layui-badge layui-bg-green">启用</span>{{else}}<span
+                                                class="layui-badge layui-bg-red">禁用</span>{{end}}</td>
+                                    <td>
+                                        <a href='{{urlfor "WechatContorller.Enable" "id" $vo.Id}}' class="ajax-click">
+                                            {{if eq $vo.Enabled 0}}<span class="layui-btn layui-btn-mini">启用</span>
+                                            {{else}}<span class="layui-btn layui-btn-warm">禁用</span>{{end}}</a>
+                                        <a href='{{urlfor "WechatEditContorller.get" "id" $vo.Id}}'
+                                           class="layui-btn layui-btn-normal layui-btn-xs">编辑</a>
+                                        <button href='{{urlfor "WechatContorller.Delone" "id" $vo.Id}}'
+                                                class="layui-btn layui-btn-danger layui-btn-xs ajax-delete">删除
+                                        </button>
+                                    </td>
+                                </tr>
+                            {{else}}
+                                {{template "sysmanage/aalayout/table-no-data.tpl"}}
+                            {{end}}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{{template "sysmanage/aalayout/footjs.tpl" .}}
+</body>
+</html>

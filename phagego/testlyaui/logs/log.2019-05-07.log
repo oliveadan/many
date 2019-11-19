@@ -1,0 +1,1282 @@
+2019/05/05 16:07:28.594 [I] [beecache.go:27] Init cache success!! 
+2019/05/05 16:07:28.596 [I] [db.go:46] Auto create db 
+2019/05/05 16:08:40.705 [I] [beecache.go:27] Init cache success!! 
+2019/05/05 16:08:40.706 [I] [db.go:46] Auto create db 
+2019/05/05 16:08:41.000 [I] [db.go:70] Init frame data 
+2019/05/05 16:08:41.064 [I] [projectdata.go:18] Init project data 
+2019/05/05 16:08:41.177 [I] [asm_amd64.s:2361] http server Running on http://:8080
+2019/05/05 16:08:41.180 [C] [asm_amd64.s:2361] ListenAndServe:  listen tcp :8080: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted.
+2019/05/05 16:08:51.888 [I] [beecache.go:27] Init cache success!! 
+2019/05/05 16:08:51.890 [I] [db.go:46] Auto create db 
+2019/05/05 16:08:51.910 [I] [projectdata.go:18] Init project data 
+2019/05/05 16:08:52.095 [I] [asm_amd64.s:2361] http server Running on http://:8087
+2019/05/05 16:09:37.801 [C] [asm_amd64.s:573] the request url is  /
+2019/05/05 16:09:37.801 [C] [asm_amd64.s:573] Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2019/05/05 16:09:37.801 [C] [asm_amd64.s:573] C:/Go/src/runtime/asm_amd64.s:573
+2019/05/05 16:09:37.801 [C] [asm_amd64.s:573] C:/Go/src/runtime/panic.go:502
+2019/05/05 16:09:37.801 [C] [asm_amd64.s:573] C:/Go/src/runtime/panic.go:63
+2019/05/05 16:09:37.801 [C] [asm_amd64.s:573] C:/Go/src/runtime/signal_windows.go:167
+2019/05/05 16:09:37.801 [C] [asm_amd64.s:573] C:/Go/src/html/template/template.go:95
+2019/05/05 16:09:37.801 [C] [asm_amd64.s:573] C:/Go/src/html/template/template.go:119
+2019/05/05 16:09:37.801 [C] [asm_amd64.s:573] D:/mygo/src/phagego/testlyaui/main.go:28
+2019/05/05 16:09:37.801 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/error.go:444
+2019/05/05 16:09:37.801 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/error.go:432
+2019/05/05 16:09:37.801 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/router.go:740
+2019/05/05 16:09:37.802 [C] [asm_amd64.s:573] C:/Go/src/net/http/server.go:2694
+2019/05/05 16:09:37.802 [C] [asm_amd64.s:573] C:/Go/src/net/http/server.go:1830
+2019/05/05 16:09:37.802 [C] [asm_amd64.s:573] C:/Go/src/runtime/asm_amd64.s:2361
+2019/05/05 16:09:37.984 [C] [asm_amd64.s:573] the request url is  /favicon.ico
+2019/05/05 16:09:37.984 [C] [asm_amd64.s:573] Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2019/05/05 16:09:37.984 [C] [asm_amd64.s:573] C:/Go/src/runtime/asm_amd64.s:573
+2019/05/05 16:09:37.984 [C] [asm_amd64.s:573] C:/Go/src/runtime/panic.go:502
+2019/05/05 16:09:37.984 [C] [asm_amd64.s:573] C:/Go/src/runtime/panic.go:63
+2019/05/05 16:09:37.984 [C] [asm_amd64.s:573] C:/Go/src/runtime/signal_windows.go:167
+2019/05/05 16:09:37.984 [C] [asm_amd64.s:573] C:/Go/src/html/template/template.go:95
+2019/05/05 16:09:37.984 [C] [asm_amd64.s:573] C:/Go/src/html/template/template.go:119
+2019/05/05 16:09:37.984 [C] [asm_amd64.s:573] D:/mygo/src/phagego/testlyaui/main.go:28
+2019/05/05 16:09:37.984 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/error.go:444
+2019/05/05 16:09:37.984 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/error.go:432
+2019/05/05 16:09:37.984 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/router.go:740
+2019/05/05 16:09:37.984 [C] [asm_amd64.s:573] C:/Go/src/net/http/server.go:2694
+2019/05/05 16:09:37.984 [C] [asm_amd64.s:573] C:/Go/src/net/http/server.go:1830
+2019/05/05 16:09:37.984 [C] [asm_amd64.s:573] C:/Go/src/runtime/asm_amd64.s:2361
+2019/05/05 16:43:47.846 [I] [beecache.go:27] Init cache success!! 
+2019/05/05 16:43:47.848 [I] [db.go:46] Auto create db 
+2019/05/05 16:43:47.860 [I] [projectdata.go:18] Init project data 
+2019/05/05 16:43:48.404 [I] [asm_amd64.s:2361] http server Running on http://:8087
+2019/05/05 16:43:52.837 [C] [asm_amd64.s:573] the request url is  /
+2019/05/05 16:43:52.837 [C] [asm_amd64.s:573] Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2019/05/05 16:43:52.837 [C] [asm_amd64.s:573] C:/Go/src/runtime/asm_amd64.s:573
+2019/05/05 16:43:52.837 [C] [asm_amd64.s:573] C:/Go/src/runtime/panic.go:502
+2019/05/05 16:43:52.837 [C] [asm_amd64.s:573] C:/Go/src/runtime/panic.go:63
+2019/05/05 16:43:52.837 [C] [asm_amd64.s:573] C:/Go/src/runtime/signal_windows.go:167
+2019/05/05 16:43:52.837 [C] [asm_amd64.s:573] C:/Go/src/html/template/template.go:95
+2019/05/05 16:43:52.837 [C] [asm_amd64.s:573] C:/Go/src/html/template/template.go:119
+2019/05/05 16:43:52.837 [C] [asm_amd64.s:573] D:/mygo/src/phagego/testlyaui/main.go:28
+2019/05/05 16:43:52.837 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/error.go:444
+2019/05/05 16:43:52.837 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/error.go:432
+2019/05/05 16:43:52.837 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/router.go:740
+2019/05/05 16:43:52.837 [C] [asm_amd64.s:573] C:/Go/src/net/http/server.go:2694
+2019/05/05 16:43:52.838 [C] [asm_amd64.s:573] C:/Go/src/net/http/server.go:1830
+2019/05/05 16:43:52.838 [C] [asm_amd64.s:573] C:/Go/src/runtime/asm_amd64.s:2361
+2019/05/05 16:43:55.626 [C] [asm_amd64.s:573] the request url is  /
+2019/05/05 16:43:55.626 [C] [asm_amd64.s:573] Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2019/05/05 16:43:55.626 [C] [asm_amd64.s:573] C:/Go/src/runtime/asm_amd64.s:573
+2019/05/05 16:43:55.626 [C] [asm_amd64.s:573] C:/Go/src/runtime/panic.go:502
+2019/05/05 16:43:55.626 [C] [asm_amd64.s:573] C:/Go/src/runtime/panic.go:63
+2019/05/05 16:43:55.626 [C] [asm_amd64.s:573] C:/Go/src/runtime/signal_windows.go:167
+2019/05/05 16:43:55.626 [C] [asm_amd64.s:573] C:/Go/src/html/template/template.go:95
+2019/05/05 16:43:55.626 [C] [asm_amd64.s:573] C:/Go/src/html/template/template.go:119
+2019/05/05 16:43:55.626 [C] [asm_amd64.s:573] D:/mygo/src/phagego/testlyaui/main.go:28
+2019/05/05 16:43:55.626 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/error.go:444
+2019/05/05 16:43:55.626 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/error.go:432
+2019/05/05 16:43:55.626 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/router.go:740
+2019/05/05 16:43:55.626 [C] [asm_amd64.s:573] C:/Go/src/net/http/server.go:2694
+2019/05/05 16:43:55.626 [C] [asm_amd64.s:573] C:/Go/src/net/http/server.go:1830
+2019/05/05 16:43:55.626 [C] [asm_amd64.s:573] C:/Go/src/runtime/asm_amd64.s:2361
+2019/05/05 16:44:36.919 [C] [asm_amd64.s:573] the request url is  /
+2019/05/05 16:44:36.919 [C] [asm_amd64.s:573] Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2019/05/05 16:44:36.919 [C] [asm_amd64.s:573] C:/Go/src/runtime/asm_amd64.s:573
+2019/05/05 16:44:36.919 [C] [asm_amd64.s:573] C:/Go/src/runtime/panic.go:502
+2019/05/05 16:44:36.919 [C] [asm_amd64.s:573] C:/Go/src/runtime/panic.go:63
+2019/05/05 16:44:36.920 [C] [asm_amd64.s:573] C:/Go/src/runtime/signal_windows.go:167
+2019/05/05 16:44:36.920 [C] [asm_amd64.s:573] C:/Go/src/html/template/template.go:95
+2019/05/05 16:44:36.920 [C] [asm_amd64.s:573] C:/Go/src/html/template/template.go:119
+2019/05/05 16:44:36.920 [C] [asm_amd64.s:573] D:/mygo/src/phagego/testlyaui/main.go:28
+2019/05/05 16:44:36.920 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/error.go:444
+2019/05/05 16:44:36.920 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/error.go:432
+2019/05/05 16:44:36.920 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/router.go:740
+2019/05/05 16:44:36.920 [C] [asm_amd64.s:573] C:/Go/src/net/http/server.go:2694
+2019/05/05 16:44:36.920 [C] [asm_amd64.s:573] C:/Go/src/net/http/server.go:1830
+2019/05/05 16:44:36.920 [C] [asm_amd64.s:573] C:/Go/src/runtime/asm_amd64.s:2361
+2019/05/05 16:44:39.128 [C] [asm_amd64.s:573] the request url is  /
+2019/05/05 16:44:39.128 [C] [asm_amd64.s:573] Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2019/05/05 16:44:39.128 [C] [asm_amd64.s:573] C:/Go/src/runtime/asm_amd64.s:573
+2019/05/05 16:44:39.129 [C] [asm_amd64.s:573] C:/Go/src/runtime/panic.go:502
+2019/05/05 16:44:39.129 [C] [asm_amd64.s:573] C:/Go/src/runtime/panic.go:63
+2019/05/05 16:44:39.129 [C] [asm_amd64.s:573] C:/Go/src/runtime/signal_windows.go:167
+2019/05/05 16:44:39.129 [C] [asm_amd64.s:573] C:/Go/src/html/template/template.go:95
+2019/05/05 16:44:39.129 [C] [asm_amd64.s:573] C:/Go/src/html/template/template.go:119
+2019/05/05 16:44:39.129 [C] [asm_amd64.s:573] D:/mygo/src/phagego/testlyaui/main.go:28
+2019/05/05 16:44:39.129 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/error.go:444
+2019/05/05 16:44:39.129 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/error.go:432
+2019/05/05 16:44:39.129 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/router.go:740
+2019/05/05 16:44:39.129 [C] [asm_amd64.s:573] C:/Go/src/net/http/server.go:2694
+2019/05/05 16:44:39.129 [C] [asm_amd64.s:573] C:/Go/src/net/http/server.go:1830
+2019/05/05 16:44:39.129 [C] [asm_amd64.s:573] C:/Go/src/runtime/asm_amd64.s:2361
+2019/05/05 16:45:29.709 [I] [beecache.go:27] Init cache success!! 
+2019/05/05 16:45:29.711 [I] [db.go:46] Auto create db 
+2019/05/05 16:45:29.718 [I] [projectdata.go:18] Init project data 
+2019/05/05 16:45:29.824 [I] [asm_amd64.s:2361] http server Running on http://:8087
+2019/05/05 16:45:32.574 [C] [asm_amd64.s:573] the request url is  /
+2019/05/05 16:45:32.575 [C] [asm_amd64.s:573] Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2019/05/05 16:45:32.575 [C] [asm_amd64.s:573] C:/Go/src/runtime/asm_amd64.s:573
+2019/05/05 16:45:32.575 [C] [asm_amd64.s:573] C:/Go/src/runtime/panic.go:502
+2019/05/05 16:45:32.575 [C] [asm_amd64.s:573] C:/Go/src/runtime/panic.go:63
+2019/05/05 16:45:32.575 [C] [asm_amd64.s:573] C:/Go/src/runtime/signal_windows.go:167
+2019/05/05 16:45:32.575 [C] [asm_amd64.s:573] C:/Go/src/html/template/template.go:95
+2019/05/05 16:45:32.575 [C] [asm_amd64.s:573] C:/Go/src/html/template/template.go:119
+2019/05/05 16:45:32.575 [C] [asm_amd64.s:573] D:/mygo/src/phagego/testlyaui/main.go:28
+2019/05/05 16:45:32.575 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/error.go:444
+2019/05/05 16:45:32.575 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/error.go:432
+2019/05/05 16:45:32.575 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/router.go:740
+2019/05/05 16:45:32.575 [C] [asm_amd64.s:573] C:/Go/src/net/http/server.go:2694
+2019/05/05 16:45:32.575 [C] [asm_amd64.s:573] C:/Go/src/net/http/server.go:1830
+2019/05/05 16:45:32.575 [C] [asm_amd64.s:573] C:/Go/src/runtime/asm_amd64.s:2361
+2019/05/05 16:58:22.922 [I] [beecache.go:27] Init cache success!! 
+2019/05/05 16:58:22.923 [I] [db.go:46] Auto create db 
+2019/05/05 16:58:22.931 [I] [projectdata.go:18] Init project data 
+2019/05/05 16:58:23.042 [I] [asm_amd64.s:2361] http server Running on http://:8087
+2019/05/05 16:58:27.578 [C] [asm_amd64.s:573] the request url is  /
+2019/05/05 16:58:27.578 [C] [asm_amd64.s:573] Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2019/05/05 16:58:27.578 [C] [asm_amd64.s:573] C:/Go/src/runtime/asm_amd64.s:573
+2019/05/05 16:58:27.578 [C] [asm_amd64.s:573] C:/Go/src/runtime/panic.go:502
+2019/05/05 16:58:27.578 [C] [asm_amd64.s:573] C:/Go/src/runtime/panic.go:63
+2019/05/05 16:58:27.578 [C] [asm_amd64.s:573] C:/Go/src/runtime/signal_windows.go:167
+2019/05/05 16:58:27.578 [C] [asm_amd64.s:573] C:/Go/src/html/template/template.go:95
+2019/05/05 16:58:27.578 [C] [asm_amd64.s:573] C:/Go/src/html/template/template.go:119
+2019/05/05 16:58:27.578 [C] [asm_amd64.s:573] D:/mygo/src/phagego/testlyaui/main.go:28
+2019/05/05 16:58:27.578 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/error.go:444
+2019/05/05 16:58:27.578 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/error.go:432
+2019/05/05 16:58:27.578 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/router.go:740
+2019/05/05 16:58:27.578 [C] [asm_amd64.s:573] C:/Go/src/net/http/server.go:2694
+2019/05/05 16:58:27.578 [C] [asm_amd64.s:573] C:/Go/src/net/http/server.go:1830
+2019/05/05 16:58:27.578 [C] [asm_amd64.s:573] C:/Go/src/runtime/asm_amd64.s:2361
+2019/05/05 17:00:34.382 [I] [beecache.go:27] Init cache success!! 
+2019/05/05 17:00:34.383 [I] [db.go:46] Auto create db 
+2019/05/05 17:00:34.391 [I] [projectdata.go:18] Init project data 
+2019/05/05 17:00:34.503 [I] [asm_amd64.s:2361] http server Running on http://:8087
+2019/05/05 17:00:38.701 [C] [asm_amd64.s:573] the request url is  /
+2019/05/05 17:00:38.701 [C] [asm_amd64.s:573] Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2019/05/05 17:00:38.701 [C] [asm_amd64.s:573] C:/Go/src/runtime/asm_amd64.s:573
+2019/05/05 17:00:38.701 [C] [asm_amd64.s:573] C:/Go/src/runtime/panic.go:502
+2019/05/05 17:00:38.701 [C] [asm_amd64.s:573] C:/Go/src/runtime/panic.go:63
+2019/05/05 17:00:38.701 [C] [asm_amd64.s:573] C:/Go/src/runtime/signal_windows.go:167
+2019/05/05 17:00:38.701 [C] [asm_amd64.s:573] C:/Go/src/html/template/template.go:95
+2019/05/05 17:00:38.701 [C] [asm_amd64.s:573] C:/Go/src/html/template/template.go:119
+2019/05/05 17:00:38.701 [C] [asm_amd64.s:573] D:/mygo/src/phagego/testlyaui/main.go:28
+2019/05/05 17:00:38.701 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/error.go:444
+2019/05/05 17:00:38.701 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/error.go:432
+2019/05/05 17:00:38.701 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/router.go:740
+2019/05/05 17:00:38.701 [C] [asm_amd64.s:573] C:/Go/src/net/http/server.go:2694
+2019/05/05 17:00:38.701 [C] [asm_amd64.s:573] C:/Go/src/net/http/server.go:1830
+2019/05/05 17:00:38.701 [C] [asm_amd64.s:573] C:/Go/src/runtime/asm_amd64.s:2361
+2019/05/05 17:01:57.590 [W] [login.go:21] LoginController Get from ip: ::1 
+2019/05/05 17:01:57.643 [D] [server.go:2694] ::1 - - [05/May/2019 05:01:57] "GET /as/login HTTP/1.1 200 0" 0.068000  Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/05/05 17:01:57.664 [D] [server.go:2694] ::1 - - [05/May/2019 05:01:57] "GET /static/back/css/common.css HTTP/1.1 200 0" 0.004000 http://localhost:8087/as/login Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/05/05 17:01:57.669 [D] [server.go:2694] ::1 - - [05/May/2019 05:01:57] "GET /captcha/GRumSpDYRrnZ4yH.png HTTP/1.1 200 0" 0.009000 http://localhost:8087/as/login Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/05/05 17:01:57.670 [D] [server.go:2694] ::1 - - [05/May/2019 05:01:57] "GET /static/layui/layui.js HTTP/1.1 200 0" 0.010000 http://localhost:8087/as/login Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/05/05 17:01:57.672 [D] [server.go:2694] ::1 - - [05/May/2019 05:01:57] "GET /static/layui/css/layui.css HTTP/1.1 200 0" 0.014000 http://localhost:8087/as/login Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/05/05 17:01:57.675 [D] [server.go:2694] ::1 - - [05/May/2019 05:01:57] "GET /static/back/js/md5.min.js HTTP/1.1 200 0" 0.004000 http://localhost:8087/as/login Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/05/05 17:01:57.684 [D] [server.go:2694] ::1 - - [05/May/2019 05:01:57] "GET /static/back/js/jsencrypt.min.js HTTP/1.1 200 0" 0.017000 http://localhost:8087/as/login Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/05/05 17:01:57.769 [D] [server.go:2694] ::1 - - [05/May/2019 05:01:57] "GET /static/layui/font/iconfont.woff?v=240 HTTP/1.1 200 0" 0.002000 http://localhost:8087/static/layui/css/layui.css Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/05/05 17:01:57.776 [D] [server.go:2694] ::1 - - [05/May/2019 05:01:57] "GET /static/layui/lay/modules/layer.js HTTP/1.1 200 0" 0.001000 http://localhost:8087/as/login Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/05/05 17:01:57.789 [D] [server.go:2694] ::1 - - [05/May/2019 05:01:57] "GET /static/layui/css/modules/layer/default/layer.css?v=3.1.1 HTTP/1.1 200 0" 0.001000 http://localhost:8087/as/login Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/05/05 17:01:57.791 [D] [server.go:2694] ::1 - - [05/May/2019 05:01:57] "GET /static/layui/lay/modules/jquery.js HTTP/1.1 200 0" 0.002000 http://localhost:8087/as/login Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/05/05 17:01:57.834 [D] [server.go:2694] ::1 - - [05/May/2019 05:01:57] "GET /static/layui/lay/modules/form.js HTTP/1.1 200 0" 0.004000 http://localhost:8087/as/login Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/05/05 17:01:57.838 [D] [server.go:2694] ::1 - - [05/May/2019 05:01:57] "GET /static/img/favicon.ico HTTP/1.1 200 0" 0.002000 http://localhost:8087/as/login Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/05/05 17:02:00.876 [D] [server.go:2694] ::1 - - [05/May/2019 05:02:00] "GET /static/layui/css/modules/layer/default/loading-0.gif HTTP/1.1 200 0" 0.001000 http://localhost:8087/static/layui/css/modules/layer/default/layer.css?v=3.1.1 Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/05/05 17:02:00.917 [W] [login.go:114] LoginController Post from ip: ::1 username: admin 
+2019/05/05 17:02:00.917 [D] [server.go:2694] ::1 - - [05/May/2019 05:02:00] "POST /as/login HTTP/1.1 200 0" 0.014000 http://localhost:8087/as/login Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/05/05 17:02:00.927 [D] [server.go:2694] ::1 - - [05/May/2019 05:02:00] "GET /static/layui/css/modules/layer/default/icon.png HTTP/1.1 200 0" 0.001000 http://localhost:8087/static/layui/css/modules/layer/default/layer.css?v=3.1.1 Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/05/05 17:02:01.979 [D] [server.go:2694] ::1 - - [05/May/2019 05:02:01] "GET /as/sys/base HTTP/1.1 200 0" 0.037000 http://localhost:8087/as/login Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/05/05 17:02:02.005 [D] [server.go:2694] ::1 - - [05/May/2019 05:02:02] "GET /static/layui/lay/modules/element.js HTTP/1.1 200 0" 0.001000 http://localhost:8087/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/05/05 17:02:02.017 [D] [server.go:2694] ::1 - - [05/May/2019 05:02:02] "GET /as/sys/index HTTP/1.1 200 0" 0.012000 http://localhost:8087/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/05/05 17:02:10.364 [D] [server.go:2694] ::1 - - [05/May/2019 05:02:10] "GET /as/sys/index HTTP/1.1 200 0" 0.027000 http://localhost:8087/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/05/05 17:02:28.617 [D] [server.go:2694] ::1 - - [05/May/2019 05:02:28] "GET /as/sys/getauth HTTP/1.1 200 0" 0.046000 http://localhost:8087/as/sys/index Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/05/05 17:02:28.658 [D] [server.go:2694] ::1 - - [05/May/2019 05:02:28] "GET /static/back/js/admin.js?a=testlyaui HTTP/1.1 200 0" 0.002000 http://localhost:8087/as/sys/getauth Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/05/05 17:02:28.731 [D] [server.go:2694] ::1 - - [05/May/2019 05:02:28] "GET /static/layui/lay/modules/upload.js HTTP/1.1 200 0" 0.001000 http://localhost:8087/as/sys/getauth Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/05/05 17:02:37.615 [D] [server.go:2694] ::1 - - [05/May/2019 05:02:37] "GET /as/org/index HTTP/1.1 200 0" 0.022000 http://localhost:8087/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/05/05 17:02:39.652 [D] [server.go:2694] ::1 - - [05/May/2019 05:02:39] "GET /as/admin/index HTTP/1.1 200 0" 0.036000 http://localhost:8087/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/05/05 17:02:39.999 [D] [server.go:2694] ::1 - - [05/May/2019 05:02:39] "GET /as/site/index HTTP/1.1 200 0" 0.015000 http://localhost:8087/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/05/05 17:02:40.397 [D] [server.go:2694] ::1 - - [05/May/2019 05:02:40] "GET /as/qicknav/index HTTP/1.1 200 0" 0.019000 http://localhost:8087/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/05/05 17:02:40.930 [D] [server.go:2694] ::1 - - [05/May/2019 05:02:40] "GET /as/sys/index HTTP/1.1 200 0" 0.016000 http://localhost:8087/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/05/05 17:02:42.339 [D] [server.go:2694] ::1 - - [05/May/2019 05:02:42] "GET /as/sys/index HTTP/1.1 200 0" 0.023000 http://localhost:8087/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/05/05 17:02:43.340 [D] [server.go:2694] ::1 - - [05/May/2019 05:02:43] "GET /as/org/index HTTP/1.1 200 0" 0.024000 http://localhost:8087/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/05/05 17:02:43.809 [D] [server.go:2694] ::1 - - [05/May/2019 05:02:43] "GET /as/admin/index HTTP/1.1 200 0" 0.039000 http://localhost:8087/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/05/05 17:02:44.174 [D] [server.go:2694] ::1 - - [05/May/2019 05:02:44] "GET /as/site/index HTTP/1.1 200 0" 0.024000 http://localhost:8087/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/05/05 17:02:44.565 [D] [server.go:2694] ::1 - - [05/May/2019 05:02:44] "GET /as/qicknav/index HTTP/1.1 200 0" 0.015000 http://localhost:8087/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/05/05 17:02:46.457 [D] [server.go:2694] ::1 - - [05/May/2019 05:02:46] "GET /as/site/index HTTP/1.1 200 0" 0.022000 http://localhost:8087/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/05/05 17:02:46.771 [D] [server.go:2694] ::1 - - [05/May/2019 05:02:46] "GET /as/admin/index HTTP/1.1 200 0" 0.026000 http://localhost:8087/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/05/05 17:02:47.228 [D] [server.go:2694] ::1 - - [05/May/2019 05:02:47] "GET /as/org/index HTTP/1.1 200 0" 0.025000 http://localhost:8087/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/05/05 17:02:48.412 [D] [server.go:2694] ::1 - - [05/May/2019 05:02:48] "GET /as/org/index HTTP/1.1 200 0" 0.027000 http://localhost:8087/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/05/05 17:02:48.739 [D] [server.go:2694] ::1 - - [05/May/2019 05:02:48] "GET /as/org/index HTTP/1.1 200 0" 0.032000 http://localhost:8087/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/05/05 17:02:49.046 [D] [server.go:2694] ::1 - - [05/May/2019 05:02:49] "GET /as/admin/index HTTP/1.1 200 0" 0.026000 http://localhost:8087/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/05/05 17:02:49.433 [D] [server.go:2694] ::1 - - [05/May/2019 05:02:49] "GET /as/site/index HTTP/1.1 200 0" 0.024000 http://localhost:8087/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/05/05 17:02:49.883 [D] [server.go:2694] ::1 - - [05/May/2019 05:02:49] "GET /as/qicknav/index HTTP/1.1 200 0" 0.025000 http://localhost:8087/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/05/05 17:03:06.299 [D] [server.go:2694] ::1 - - [05/May/2019 05:03:06] "GET /as/sys/base HTTP/1.1 200 0" 0.027000  Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/05/05 17:03:06.409 [D] [server.go:2694] ::1 - - [05/May/2019 05:03:06] "GET /as/sys/index HTTP/1.1 200 0" 0.017000 http://localhost:8087/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/05/05 17:03:11.380 [D] [server.go:2694] ::1 - - [05/May/2019 05:03:11] "GET /as/sys/index HTTP/1.1 200 0" 0.032000 http://localhost:8087/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/05/05 17:03:34.595 [C] [asm_amd64.s:573] the request url is  /
+2019/05/05 17:03:34.595 [C] [asm_amd64.s:573] Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2019/05/05 17:03:34.595 [C] [asm_amd64.s:573] C:/Go/src/runtime/asm_amd64.s:573
+2019/05/05 17:03:34.595 [C] [asm_amd64.s:573] C:/Go/src/runtime/panic.go:502
+2019/05/05 17:03:34.596 [C] [asm_amd64.s:573] C:/Go/src/runtime/panic.go:63
+2019/05/05 17:03:34.596 [C] [asm_amd64.s:573] C:/Go/src/runtime/signal_windows.go:167
+2019/05/05 17:03:34.596 [C] [asm_amd64.s:573] C:/Go/src/html/template/template.go:95
+2019/05/05 17:03:34.596 [C] [asm_amd64.s:573] C:/Go/src/html/template/template.go:119
+2019/05/05 17:03:34.596 [C] [asm_amd64.s:573] D:/mygo/src/phagego/testlyaui/main.go:28
+2019/05/05 17:03:34.596 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/error.go:444
+2019/05/05 17:03:34.596 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/error.go:432
+2019/05/05 17:03:34.596 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/router.go:740
+2019/05/05 17:03:34.596 [C] [asm_amd64.s:573] C:/Go/src/net/http/server.go:2694
+2019/05/05 17:03:34.596 [C] [asm_amd64.s:573] C:/Go/src/net/http/server.go:1830
+2019/05/05 17:03:34.596 [C] [asm_amd64.s:573] C:/Go/src/runtime/asm_amd64.s:2361
+2019/05/05 17:05:00.247 [I] [beecache.go:27] Init cache success!! 
+2019/05/05 17:05:00.249 [I] [db.go:46] Auto create db 
+2019/05/05 17:05:00.259 [I] [projectdata.go:18] Init project data 
+2019/05/05 17:05:00.381 [I] [asm_amd64.s:2361] http server Running on http://:8087
+2019/05/05 17:05:08.977 [I] [beecache.go:27] Init cache success!! 
+2019/05/05 17:05:08.978 [I] [db.go:46] Auto create db 
+2019/05/05 17:05:08.986 [I] [projectdata.go:18] Init project data 
+2019/05/05 17:05:09.091 [I] [asm_amd64.s:2361] http server Running on http://:8087
+2019/05/05 17:05:12.033 [C] [asm_amd64.s:573] the request url is  /
+2019/05/05 17:05:12.034 [C] [asm_amd64.s:573] Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2019/05/05 17:05:12.034 [C] [asm_amd64.s:573] C:/Go/src/runtime/asm_amd64.s:573
+2019/05/05 17:05:12.034 [C] [asm_amd64.s:573] C:/Go/src/runtime/panic.go:502
+2019/05/05 17:05:12.034 [C] [asm_amd64.s:573] C:/Go/src/runtime/panic.go:63
+2019/05/05 17:05:12.034 [C] [asm_amd64.s:573] C:/Go/src/runtime/signal_windows.go:167
+2019/05/05 17:05:12.034 [C] [asm_amd64.s:573] C:/Go/src/html/template/template.go:95
+2019/05/05 17:05:12.034 [C] [asm_amd64.s:573] C:/Go/src/html/template/template.go:119
+2019/05/05 17:05:12.034 [C] [asm_amd64.s:573] D:/mygo/src/phagego/testlyaui/main.go:28
+2019/05/05 17:05:12.034 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/error.go:444
+2019/05/05 17:05:12.034 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/error.go:432
+2019/05/05 17:05:12.034 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/router.go:740
+2019/05/05 17:05:12.034 [C] [asm_amd64.s:573] C:/Go/src/net/http/server.go:2694
+2019/05/05 17:05:12.034 [C] [asm_amd64.s:573] C:/Go/src/net/http/server.go:1830
+2019/05/05 17:05:12.034 [C] [asm_amd64.s:573] C:/Go/src/runtime/asm_amd64.s:2361
+2019/05/05 17:05:15.900 [C] [asm_amd64.s:573] the request url is  /layui
+2019/05/05 17:05:15.900 [C] [asm_amd64.s:573] Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2019/05/05 17:05:15.900 [C] [asm_amd64.s:573] C:/Go/src/runtime/asm_amd64.s:573
+2019/05/05 17:05:15.900 [C] [asm_amd64.s:573] C:/Go/src/runtime/panic.go:502
+2019/05/05 17:05:15.900 [C] [asm_amd64.s:573] C:/Go/src/runtime/panic.go:63
+2019/05/05 17:05:15.900 [C] [asm_amd64.s:573] C:/Go/src/runtime/signal_windows.go:167
+2019/05/05 17:05:15.900 [C] [asm_amd64.s:573] C:/Go/src/html/template/template.go:95
+2019/05/05 17:05:15.900 [C] [asm_amd64.s:573] C:/Go/src/html/template/template.go:119
+2019/05/05 17:05:15.900 [C] [asm_amd64.s:573] D:/mygo/src/phagego/testlyaui/main.go:28
+2019/05/05 17:05:15.900 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/error.go:444
+2019/05/05 17:05:15.900 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/error.go:432
+2019/05/05 17:05:15.900 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/router.go:740
+2019/05/05 17:05:15.900 [C] [asm_amd64.s:573] C:/Go/src/net/http/server.go:2694
+2019/05/05 17:05:15.900 [C] [asm_amd64.s:573] C:/Go/src/net/http/server.go:1830
+2019/05/05 17:05:15.900 [C] [asm_amd64.s:573] C:/Go/src/runtime/asm_amd64.s:2361
+2019/05/05 17:10:59.168 [I] [beecache.go:27] Init cache success!! 
+2019/05/05 17:10:59.169 [I] [db.go:46] Auto create db 
+2019/05/05 17:10:59.177 [I] [projectdata.go:18] Init project data 
+2019/05/05 17:10:59.286 [I] [asm_amd64.s:2361] http server Running on http://:8087
+2019/05/05 17:11:18.567 [C] [asm_amd64.s:573] the request url is  /layui
+2019/05/05 17:11:18.567 [C] [asm_amd64.s:573] Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2019/05/05 17:11:18.567 [C] [asm_amd64.s:573] C:/Go/src/runtime/asm_amd64.s:573
+2019/05/05 17:11:18.567 [C] [asm_amd64.s:573] C:/Go/src/runtime/panic.go:502
+2019/05/05 17:11:18.567 [C] [asm_amd64.s:573] C:/Go/src/runtime/panic.go:63
+2019/05/05 17:11:18.567 [C] [asm_amd64.s:573] C:/Go/src/runtime/signal_windows.go:167
+2019/05/05 17:11:18.567 [C] [asm_amd64.s:573] C:/Go/src/html/template/template.go:95
+2019/05/05 17:11:18.567 [C] [asm_amd64.s:573] C:/Go/src/html/template/template.go:119
+2019/05/05 17:11:18.567 [C] [asm_amd64.s:573] D:/mygo/src/phagego/testlyaui/main.go:28
+2019/05/05 17:11:18.567 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/error.go:444
+2019/05/05 17:11:18.567 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/error.go:432
+2019/05/05 17:11:18.567 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/router.go:740
+2019/05/05 17:11:18.567 [C] [asm_amd64.s:573] C:/Go/src/net/http/server.go:2694
+2019/05/05 17:11:18.567 [C] [asm_amd64.s:573] C:/Go/src/net/http/server.go:1830
+2019/05/05 17:11:18.567 [C] [asm_amd64.s:573] C:/Go/src/runtime/asm_amd64.s:2361
+2019/05/05 17:11:21.627 [C] [asm_amd64.s:573] the request url is  /layui
+2019/05/05 17:11:21.627 [C] [asm_amd64.s:573] Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2019/05/05 17:11:21.627 [C] [asm_amd64.s:573] C:/Go/src/runtime/asm_amd64.s:573
+2019/05/05 17:11:21.627 [C] [asm_amd64.s:573] C:/Go/src/runtime/panic.go:502
+2019/05/05 17:11:21.627 [C] [asm_amd64.s:573] C:/Go/src/runtime/panic.go:63
+2019/05/05 17:11:21.627 [C] [asm_amd64.s:573] C:/Go/src/runtime/signal_windows.go:167
+2019/05/05 17:11:21.627 [C] [asm_amd64.s:573] C:/Go/src/html/template/template.go:95
+2019/05/05 17:11:21.627 [C] [asm_amd64.s:573] C:/Go/src/html/template/template.go:119
+2019/05/05 17:11:21.627 [C] [asm_amd64.s:573] D:/mygo/src/phagego/testlyaui/main.go:28
+2019/05/05 17:11:21.627 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/error.go:444
+2019/05/05 17:11:21.627 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/error.go:432
+2019/05/05 17:11:21.627 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/router.go:740
+2019/05/05 17:11:21.627 [C] [asm_amd64.s:573] C:/Go/src/net/http/server.go:2694
+2019/05/05 17:11:21.627 [C] [asm_amd64.s:573] C:/Go/src/net/http/server.go:1830
+2019/05/05 17:11:21.627 [C] [asm_amd64.s:573] C:/Go/src/runtime/asm_amd64.s:2361
+2019/05/05 17:11:54.198 [I] [beecache.go:27] Init cache success!! 
+2019/05/05 17:11:54.199 [I] [db.go:46] Auto create db 
+2019/05/05 17:11:54.206 [I] [projectdata.go:18] Init project data 
+2019/05/05 17:11:54.315 [I] [asm_amd64.s:2361] http server Running on http://:8087
+2019/05/05 17:11:57.156 [C] [asm_amd64.s:573] the request url is  /layui
+2019/05/05 17:11:57.156 [C] [asm_amd64.s:573] Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2019/05/05 17:11:57.156 [C] [asm_amd64.s:573] C:/Go/src/runtime/asm_amd64.s:573
+2019/05/05 17:11:57.157 [C] [asm_amd64.s:573] C:/Go/src/runtime/panic.go:502
+2019/05/05 17:11:57.157 [C] [asm_amd64.s:573] C:/Go/src/runtime/panic.go:63
+2019/05/05 17:11:57.157 [C] [asm_amd64.s:573] C:/Go/src/runtime/signal_windows.go:167
+2019/05/05 17:11:57.157 [C] [asm_amd64.s:573] C:/Go/src/html/template/template.go:95
+2019/05/05 17:11:57.157 [C] [asm_amd64.s:573] C:/Go/src/html/template/template.go:119
+2019/05/05 17:11:57.157 [C] [asm_amd64.s:573] D:/mygo/src/phagego/testlyaui/main.go:28
+2019/05/05 17:11:57.157 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/error.go:444
+2019/05/05 17:11:57.157 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/error.go:432
+2019/05/05 17:11:57.157 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/router.go:740
+2019/05/05 17:11:57.157 [C] [asm_amd64.s:573] C:/Go/src/net/http/server.go:2694
+2019/05/05 17:11:57.157 [C] [asm_amd64.s:573] C:/Go/src/net/http/server.go:1830
+2019/05/05 17:11:57.157 [C] [asm_amd64.s:573] C:/Go/src/runtime/asm_amd64.s:2361
+2019/05/05 17:12:11.902 [I] [beecache.go:27] Init cache success!! 
+2019/05/05 17:12:11.903 [I] [db.go:46] Auto create db 
+2019/05/05 17:12:11.910 [I] [projectdata.go:18] Init project data 
+2019/05/05 17:12:12.021 [I] [asm_amd64.s:2361] http server Running on http://:8087
+2019/05/05 17:12:16.536 [C] [asm_amd64.s:573] the request url is  /
+2019/05/05 17:12:16.536 [C] [asm_amd64.s:573] Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2019/05/05 17:12:16.536 [C] [asm_amd64.s:573] C:/Go/src/runtime/asm_amd64.s:573
+2019/05/05 17:12:16.536 [C] [asm_amd64.s:573] C:/Go/src/runtime/panic.go:502
+2019/05/05 17:12:16.536 [C] [asm_amd64.s:573] C:/Go/src/runtime/panic.go:63
+2019/05/05 17:12:16.536 [C] [asm_amd64.s:573] C:/Go/src/runtime/signal_windows.go:167
+2019/05/05 17:12:16.536 [C] [asm_amd64.s:573] C:/Go/src/html/template/template.go:95
+2019/05/05 17:12:16.537 [C] [asm_amd64.s:573] C:/Go/src/html/template/template.go:119
+2019/05/05 17:12:16.537 [C] [asm_amd64.s:573] D:/mygo/src/phagego/testlyaui/main.go:28
+2019/05/05 17:12:16.537 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/error.go:444
+2019/05/05 17:12:16.537 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/error.go:432
+2019/05/05 17:12:16.537 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/router.go:740
+2019/05/05 17:12:16.537 [C] [asm_amd64.s:573] C:/Go/src/net/http/server.go:2694
+2019/05/05 17:12:16.537 [C] [asm_amd64.s:573] C:/Go/src/net/http/server.go:1830
+2019/05/05 17:12:16.538 [C] [asm_amd64.s:573] C:/Go/src/runtime/asm_amd64.s:2361
+2019/05/05 17:12:51.531 [I] [beecache.go:27] Init cache success!! 
+2019/05/05 17:12:51.532 [I] [db.go:46] Auto create db 
+2019/05/05 17:12:51.538 [I] [projectdata.go:18] Init project data 
+2019/05/05 17:12:51.640 [I] [asm_amd64.s:2361] http server Running on http://:8087
+2019/05/05 17:13:08.625 [C] [asm_amd64.s:573] the request url is  /
+2019/05/05 17:13:08.625 [C] [asm_amd64.s:573] Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2019/05/05 17:13:08.625 [C] [asm_amd64.s:573] C:/Go/src/runtime/asm_amd64.s:573
+2019/05/05 17:13:08.625 [C] [asm_amd64.s:573] C:/Go/src/runtime/panic.go:502
+2019/05/05 17:13:08.625 [C] [asm_amd64.s:573] C:/Go/src/runtime/panic.go:63
+2019/05/05 17:13:08.625 [C] [asm_amd64.s:573] C:/Go/src/runtime/signal_windows.go:167
+2019/05/05 17:13:08.625 [C] [asm_amd64.s:573] C:/Go/src/html/template/template.go:95
+2019/05/05 17:13:08.625 [C] [asm_amd64.s:573] C:/Go/src/html/template/template.go:119
+2019/05/05 17:13:08.625 [C] [asm_amd64.s:573] D:/mygo/src/phagego/testlyaui/main.go:28
+2019/05/05 17:13:08.625 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/error.go:444
+2019/05/05 17:13:08.625 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/error.go:432
+2019/05/05 17:13:08.625 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/router.go:740
+2019/05/05 17:13:08.625 [C] [asm_amd64.s:573] C:/Go/src/net/http/server.go:2694
+2019/05/05 17:13:08.625 [C] [asm_amd64.s:573] C:/Go/src/net/http/server.go:1830
+2019/05/05 17:13:08.625 [C] [asm_amd64.s:573] C:/Go/src/runtime/asm_amd64.s:2361
+2019/05/05 17:13:10.054 [C] [asm_amd64.s:573] the request url is  /
+2019/05/05 17:13:10.054 [C] [asm_amd64.s:573] Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2019/05/05 17:13:10.054 [C] [asm_amd64.s:573] C:/Go/src/runtime/asm_amd64.s:573
+2019/05/05 17:13:10.054 [C] [asm_amd64.s:573] C:/Go/src/runtime/panic.go:502
+2019/05/05 17:13:10.054 [C] [asm_amd64.s:573] C:/Go/src/runtime/panic.go:63
+2019/05/05 17:13:10.054 [C] [asm_amd64.s:573] C:/Go/src/runtime/signal_windows.go:167
+2019/05/05 17:13:10.054 [C] [asm_amd64.s:573] C:/Go/src/html/template/template.go:95
+2019/05/05 17:13:10.054 [C] [asm_amd64.s:573] C:/Go/src/html/template/template.go:119
+2019/05/05 17:13:10.054 [C] [asm_amd64.s:573] D:/mygo/src/phagego/testlyaui/main.go:28
+2019/05/05 17:13:10.054 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/error.go:444
+2019/05/05 17:13:10.054 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/error.go:432
+2019/05/05 17:13:10.054 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/router.go:740
+2019/05/05 17:13:10.054 [C] [asm_amd64.s:573] C:/Go/src/net/http/server.go:2694
+2019/05/05 17:13:10.054 [C] [asm_amd64.s:573] C:/Go/src/net/http/server.go:1830
+2019/05/05 17:13:10.054 [C] [asm_amd64.s:573] C:/Go/src/runtime/asm_amd64.s:2361
+2019/05/05 17:19:13.376 [I] [beecache.go:27] Init cache success!! 
+2019/05/05 17:19:13.377 [I] [db.go:46] Auto create db 
+2019/05/05 17:19:13.384 [I] [projectdata.go:18] Init project data 
+2019/05/05 17:19:13.496 [I] [asm_amd64.s:2361] http server Running on http://:8087
+2019/05/05 17:19:22.829 [C] [asm_amd64.s:573] the request url is  /
+2019/05/05 17:19:22.829 [C] [asm_amd64.s:573] Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2019/05/05 17:19:22.829 [C] [asm_amd64.s:573] C:/Go/src/runtime/asm_amd64.s:573
+2019/05/05 17:19:22.829 [C] [asm_amd64.s:573] C:/Go/src/runtime/panic.go:502
+2019/05/05 17:19:22.829 [C] [asm_amd64.s:573] C:/Go/src/runtime/panic.go:63
+2019/05/05 17:19:22.829 [C] [asm_amd64.s:573] C:/Go/src/runtime/signal_windows.go:167
+2019/05/05 17:19:22.829 [C] [asm_amd64.s:573] C:/Go/src/html/template/template.go:95
+2019/05/05 17:19:22.829 [C] [asm_amd64.s:573] C:/Go/src/html/template/template.go:119
+2019/05/05 17:19:22.829 [C] [asm_amd64.s:573] D:/mygo/src/phagego/testlyaui/main.go:28
+2019/05/05 17:19:22.829 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/error.go:444
+2019/05/05 17:19:22.829 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/error.go:432
+2019/05/05 17:19:22.829 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/router.go:740
+2019/05/05 17:19:22.832 [C] [asm_amd64.s:573] C:/Go/src/net/http/server.go:2694
+2019/05/05 17:19:22.832 [C] [asm_amd64.s:573] C:/Go/src/net/http/server.go:1830
+2019/05/05 17:19:22.832 [C] [asm_amd64.s:573] C:/Go/src/runtime/asm_amd64.s:2361
+2019/05/05 17:21:49.931 [I] [beecache.go:27] Init cache success!! 
+2019/05/05 17:21:49.933 [I] [db.go:46] Auto create db 
+2019/05/05 17:21:49.939 [I] [projectdata.go:18] Init project data 
+2019/05/05 17:22:57.049 [I] [beecache.go:27] Init cache success!! 
+2019/05/05 17:22:57.051 [I] [db.go:46] Auto create db 
+2019/05/05 17:22:57.061 [I] [projectdata.go:18] Init project data 
+2019/05/05 17:22:57.171 [I] [asm_amd64.s:2361] http server Running on http://:8087
+2019/05/05 17:23:01.413 [C] [asm_amd64.s:573] the request url is  /
+2019/05/05 17:23:01.413 [C] [asm_amd64.s:573] Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2019/05/05 17:23:01.414 [C] [asm_amd64.s:573] C:/Go/src/runtime/asm_amd64.s:573
+2019/05/05 17:23:01.414 [C] [asm_amd64.s:573] C:/Go/src/runtime/panic.go:502
+2019/05/05 17:23:01.414 [C] [asm_amd64.s:573] C:/Go/src/runtime/panic.go:63
+2019/05/05 17:23:01.414 [C] [asm_amd64.s:573] C:/Go/src/runtime/signal_windows.go:167
+2019/05/05 17:23:01.414 [C] [asm_amd64.s:573] C:/Go/src/html/template/template.go:95
+2019/05/05 17:23:01.414 [C] [asm_amd64.s:573] C:/Go/src/html/template/template.go:119
+2019/05/05 17:23:01.414 [C] [asm_amd64.s:573] D:/mygo/src/phagego/testlyaui/main.go:28
+2019/05/05 17:23:01.414 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/error.go:444
+2019/05/05 17:23:01.414 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/error.go:432
+2019/05/05 17:23:01.414 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/router.go:740
+2019/05/05 17:23:01.414 [C] [asm_amd64.s:573] C:/Go/src/net/http/server.go:2694
+2019/05/05 17:23:01.414 [C] [asm_amd64.s:573] C:/Go/src/net/http/server.go:1830
+2019/05/05 17:23:01.414 [C] [asm_amd64.s:573] C:/Go/src/runtime/asm_amd64.s:2361
+2019/05/05 17:30:16.823 [I] [beecache.go:27] Init cache success!! 
+2019/05/05 17:30:16.825 [I] [db.go:46] Auto create db 
+2019/05/05 17:30:16.828 [I] [projectdata.go:18] Init project data 
+2019/05/05 17:30:16.937 [I] [asm_amd64.s:2361] http server Running on http://:8087
+2019/05/05 17:33:04.711 [I] [beecache.go:27] Init cache success!! 
+2019/05/05 17:33:04.712 [I] [db.go:46] Auto create db 
+2019/05/05 17:33:04.716 [I] [projectdata.go:18] Init project data 
+2019/05/05 17:33:04.822 [I] [asm_amd64.s:2361] http server Running on http://:8087
+2019/05/05 17:33:12.516 [I] [beecache.go:27] Init cache success!! 
+2019/05/05 17:33:12.518 [I] [db.go:46] Auto create db 
+2019/05/05 17:33:12.522 [I] [projectdata.go:18] Init project data 
+2019/05/05 17:33:12.638 [I] [asm_amd64.s:2361] http server Running on http://:8087
+2019/05/05 17:33:12.784 [C] [asm_amd64.s:573] the request url is  /
+2019/05/05 17:33:12.784 [C] [asm_amd64.s:573] Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2019/05/05 17:33:12.784 [C] [asm_amd64.s:573] C:/Go/src/runtime/asm_amd64.s:573
+2019/05/05 17:33:12.784 [C] [asm_amd64.s:573] C:/Go/src/runtime/panic.go:502
+2019/05/05 17:33:12.784 [C] [asm_amd64.s:573] C:/Go/src/runtime/panic.go:63
+2019/05/05 17:33:12.784 [C] [asm_amd64.s:573] C:/Go/src/runtime/signal_windows.go:167
+2019/05/05 17:33:12.784 [C] [asm_amd64.s:573] C:/Go/src/html/template/template.go:95
+2019/05/05 17:33:12.784 [C] [asm_amd64.s:573] C:/Go/src/html/template/template.go:119
+2019/05/05 17:33:12.784 [C] [asm_amd64.s:573] D:/mygo/src/phagego/testlyaui/main.go:28
+2019/05/05 17:33:12.784 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/error.go:444
+2019/05/05 17:33:12.784 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/error.go:432
+2019/05/05 17:33:12.784 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/router.go:740
+2019/05/05 17:33:12.784 [C] [asm_amd64.s:573] C:/Go/src/net/http/server.go:2694
+2019/05/05 17:33:12.784 [C] [asm_amd64.s:573] C:/Go/src/net/http/server.go:1830
+2019/05/05 17:33:12.784 [C] [asm_amd64.s:573] C:/Go/src/runtime/asm_amd64.s:2361
+2019/05/05 17:33:14.334 [C] [asm_amd64.s:573] the request url is  /
+2019/05/05 17:33:14.334 [C] [asm_amd64.s:573] Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2019/05/05 17:33:14.334 [C] [asm_amd64.s:573] C:/Go/src/runtime/asm_amd64.s:573
+2019/05/05 17:33:14.334 [C] [asm_amd64.s:573] C:/Go/src/runtime/panic.go:502
+2019/05/05 17:33:14.334 [C] [asm_amd64.s:573] C:/Go/src/runtime/panic.go:63
+2019/05/05 17:33:14.334 [C] [asm_amd64.s:573] C:/Go/src/runtime/signal_windows.go:167
+2019/05/05 17:33:14.334 [C] [asm_amd64.s:573] C:/Go/src/html/template/template.go:95
+2019/05/05 17:33:14.334 [C] [asm_amd64.s:573] C:/Go/src/html/template/template.go:119
+2019/05/05 17:33:14.334 [C] [asm_amd64.s:573] D:/mygo/src/phagego/testlyaui/main.go:28
+2019/05/05 17:33:14.334 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/error.go:444
+2019/05/05 17:33:14.334 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/error.go:432
+2019/05/05 17:33:14.334 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/router.go:740
+2019/05/05 17:33:14.334 [C] [asm_amd64.s:573] C:/Go/src/net/http/server.go:2694
+2019/05/05 17:33:14.334 [C] [asm_amd64.s:573] C:/Go/src/net/http/server.go:1830
+2019/05/05 17:33:14.334 [C] [asm_amd64.s:573] C:/Go/src/runtime/asm_amd64.s:2361
+2019/05/05 17:35:22.395 [I] [beecache.go:27] Init cache success!! 
+2019/05/05 17:35:22.396 [I] [db.go:46] Auto create db 
+2019/05/05 17:35:22.400 [I] [projectdata.go:18] Init project data 
+2019/05/05 17:35:22.509 [I] [asm_amd64.s:2361] http server Running on http://:8087
+2019/05/05 17:35:26.758 [C] [asm_amd64.s:573] the request url is  /
+2019/05/05 17:35:26.758 [C] [asm_amd64.s:573] Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2019/05/05 17:35:26.758 [C] [asm_amd64.s:573] C:/Go/src/runtime/asm_amd64.s:573
+2019/05/05 17:35:26.758 [C] [asm_amd64.s:573] C:/Go/src/runtime/panic.go:502
+2019/05/05 17:35:26.758 [C] [asm_amd64.s:573] C:/Go/src/runtime/panic.go:63
+2019/05/05 17:35:26.758 [C] [asm_amd64.s:573] C:/Go/src/runtime/signal_windows.go:167
+2019/05/05 17:35:26.758 [C] [asm_amd64.s:573] C:/Go/src/html/template/template.go:95
+2019/05/05 17:35:26.758 [C] [asm_amd64.s:573] C:/Go/src/html/template/template.go:119
+2019/05/05 17:35:26.758 [C] [asm_amd64.s:573] D:/mygo/src/phagego/testlyaui/main.go:28
+2019/05/05 17:35:26.758 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/error.go:444
+2019/05/05 17:35:26.758 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/error.go:432
+2019/05/05 17:35:26.758 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/router.go:740
+2019/05/05 17:35:26.758 [C] [asm_amd64.s:573] C:/Go/src/net/http/server.go:2694
+2019/05/05 17:35:26.758 [C] [asm_amd64.s:573] C:/Go/src/net/http/server.go:1830
+2019/05/05 17:35:26.758 [C] [asm_amd64.s:573] C:/Go/src/runtime/asm_amd64.s:2361
+2019/05/05 17:35:33.870 [C] [asm_amd64.s:573] the request url is  /
+2019/05/05 17:35:33.870 [C] [asm_amd64.s:573] Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2019/05/05 17:35:33.870 [C] [asm_amd64.s:573] C:/Go/src/runtime/asm_amd64.s:573
+2019/05/05 17:35:33.870 [C] [asm_amd64.s:573] C:/Go/src/runtime/panic.go:502
+2019/05/05 17:35:33.870 [C] [asm_amd64.s:573] C:/Go/src/runtime/panic.go:63
+2019/05/05 17:35:33.870 [C] [asm_amd64.s:573] C:/Go/src/runtime/signal_windows.go:167
+2019/05/05 17:35:33.870 [C] [asm_amd64.s:573] C:/Go/src/html/template/template.go:95
+2019/05/05 17:35:33.870 [C] [asm_amd64.s:573] C:/Go/src/html/template/template.go:119
+2019/05/05 17:35:33.870 [C] [asm_amd64.s:573] D:/mygo/src/phagego/testlyaui/main.go:28
+2019/05/05 17:35:33.870 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/error.go:444
+2019/05/05 17:35:33.870 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/error.go:432
+2019/05/05 17:35:33.870 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/router.go:740
+2019/05/05 17:35:33.870 [C] [asm_amd64.s:573] C:/Go/src/net/http/server.go:2694
+2019/05/05 17:35:33.870 [C] [asm_amd64.s:573] C:/Go/src/net/http/server.go:1830
+2019/05/05 17:35:33.870 [C] [asm_amd64.s:573] C:/Go/src/runtime/asm_amd64.s:2361
+2019/05/05 17:44:27.122 [C] [asm_amd64.s:573] the request url is  /
+2019/05/05 17:44:27.122 [C] [asm_amd64.s:573] Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2019/05/05 17:44:27.122 [C] [asm_amd64.s:573] C:/Go/src/runtime/asm_amd64.s:573
+2019/05/05 17:44:27.122 [C] [asm_amd64.s:573] C:/Go/src/runtime/panic.go:502
+2019/05/05 17:44:27.122 [C] [asm_amd64.s:573] C:/Go/src/runtime/panic.go:63
+2019/05/05 17:44:27.122 [C] [asm_amd64.s:573] C:/Go/src/runtime/signal_windows.go:167
+2019/05/05 17:44:27.122 [C] [asm_amd64.s:573] C:/Go/src/html/template/template.go:95
+2019/05/05 17:44:27.122 [C] [asm_amd64.s:573] C:/Go/src/html/template/template.go:119
+2019/05/05 17:44:27.122 [C] [asm_amd64.s:573] D:/mygo/src/phagego/testlyaui/main.go:28
+2019/05/05 17:44:27.122 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/error.go:444
+2019/05/05 17:44:27.122 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/error.go:432
+2019/05/05 17:44:27.122 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/router.go:740
+2019/05/05 17:44:27.122 [C] [asm_amd64.s:573] C:/Go/src/net/http/server.go:2694
+2019/05/05 17:44:27.122 [C] [asm_amd64.s:573] C:/Go/src/net/http/server.go:1830
+2019/05/05 17:44:27.122 [C] [asm_amd64.s:573] C:/Go/src/runtime/asm_amd64.s:2361
+2019/05/05 17:44:28.598 [C] [asm_amd64.s:573] the request url is  /
+2019/05/05 17:44:28.598 [C] [asm_amd64.s:573] Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2019/05/05 17:44:28.598 [C] [asm_amd64.s:573] C:/Go/src/runtime/asm_amd64.s:573
+2019/05/05 17:44:28.598 [C] [asm_amd64.s:573] C:/Go/src/runtime/panic.go:502
+2019/05/05 17:44:28.598 [C] [asm_amd64.s:573] C:/Go/src/runtime/panic.go:63
+2019/05/05 17:44:28.598 [C] [asm_amd64.s:573] C:/Go/src/runtime/signal_windows.go:167
+2019/05/05 17:44:28.598 [C] [asm_amd64.s:573] C:/Go/src/html/template/template.go:95
+2019/05/05 17:44:28.598 [C] [asm_amd64.s:573] C:/Go/src/html/template/template.go:119
+2019/05/05 17:44:28.598 [C] [asm_amd64.s:573] D:/mygo/src/phagego/testlyaui/main.go:28
+2019/05/05 17:44:28.598 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/error.go:444
+2019/05/05 17:44:28.598 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/error.go:432
+2019/05/05 17:44:28.598 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/router.go:740
+2019/05/05 17:44:28.598 [C] [asm_amd64.s:573] C:/Go/src/net/http/server.go:2694
+2019/05/05 17:44:28.599 [C] [asm_amd64.s:573] C:/Go/src/net/http/server.go:1830
+2019/05/05 17:44:28.599 [C] [asm_amd64.s:573] C:/Go/src/runtime/asm_amd64.s:2361
+2019/05/05 17:47:06.437 [I] [beecache.go:27] Init cache success!! 
+2019/05/05 17:47:06.438 [I] [db.go:46] Auto create db 
+2019/05/05 17:47:06.443 [I] [projectdata.go:18] Init project data 
+2019/05/05 17:47:06.555 [I] [asm_amd64.s:2361] http server Running on http://:8087
+2019/05/05 17:47:58.126 [C] [asm_amd64.s:573] the request url is  /
+2019/05/05 17:47:58.126 [C] [asm_amd64.s:573] Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2019/05/05 17:47:58.126 [C] [asm_amd64.s:573] C:/Go/src/runtime/asm_amd64.s:573
+2019/05/05 17:47:58.126 [C] [asm_amd64.s:573] C:/Go/src/runtime/panic.go:502
+2019/05/05 17:47:58.126 [C] [asm_amd64.s:573] C:/Go/src/runtime/panic.go:63
+2019/05/05 17:47:58.126 [C] [asm_amd64.s:573] C:/Go/src/runtime/signal_windows.go:167
+2019/05/05 17:47:58.126 [C] [asm_amd64.s:573] C:/Go/src/html/template/template.go:95
+2019/05/05 17:47:58.126 [C] [asm_amd64.s:573] C:/Go/src/html/template/template.go:119
+2019/05/05 17:47:58.126 [C] [asm_amd64.s:573] D:/mygo/src/phagego/testlyaui/main.go:28
+2019/05/05 17:47:58.126 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/error.go:444
+2019/05/05 17:47:58.126 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/error.go:432
+2019/05/05 17:47:58.126 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/router.go:740
+2019/05/05 17:47:58.126 [C] [asm_amd64.s:573] C:/Go/src/net/http/server.go:2694
+2019/05/05 17:47:58.126 [C] [asm_amd64.s:573] C:/Go/src/net/http/server.go:1830
+2019/05/05 17:47:58.126 [C] [asm_amd64.s:573] C:/Go/src/runtime/asm_amd64.s:2361
+2019/05/05 17:48:33.201 [I] [beecache.go:27] Init cache success!! 
+2019/05/05 17:48:33.240 [I] [db.go:46] Auto create db 
+2019/05/05 17:48:34.813 [I] [db.go:70] Init frame data 
+2019/05/05 17:48:34.875 [I] [projectdata.go:18] Init project data 
+2019/05/05 17:48:34.997 [I] [asm_amd64.s:2361] http server Running on http://:8087
+2019/05/05 17:48:42.124 [C] [asm_amd64.s:573] the request url is  /
+2019/05/05 17:48:42.125 [C] [asm_amd64.s:573] Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2019/05/05 17:48:42.125 [C] [asm_amd64.s:573] C:/Go/src/runtime/asm_amd64.s:573
+2019/05/05 17:48:42.125 [C] [asm_amd64.s:573] C:/Go/src/runtime/panic.go:502
+2019/05/05 17:48:42.125 [C] [asm_amd64.s:573] C:/Go/src/runtime/panic.go:63
+2019/05/05 17:48:42.125 [C] [asm_amd64.s:573] C:/Go/src/runtime/signal_windows.go:167
+2019/05/05 17:48:42.125 [C] [asm_amd64.s:573] C:/Go/src/html/template/template.go:95
+2019/05/05 17:48:42.125 [C] [asm_amd64.s:573] C:/Go/src/html/template/template.go:119
+2019/05/05 17:48:42.125 [C] [asm_amd64.s:573] D:/mygo/src/phagego/testlyaui/main.go:28
+2019/05/05 17:48:42.125 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/error.go:444
+2019/05/05 17:48:42.125 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/error.go:432
+2019/05/05 17:48:42.125 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/router.go:740
+2019/05/05 17:48:42.125 [C] [asm_amd64.s:573] C:/Go/src/net/http/server.go:2694
+2019/05/05 17:48:42.125 [C] [asm_amd64.s:573] C:/Go/src/net/http/server.go:1830
+2019/05/05 17:48:42.125 [C] [asm_amd64.s:573] C:/Go/src/runtime/asm_amd64.s:2361
+2019/05/05 17:53:06.760 [W] [login.go:21] LoginController Get from ip: ::1 
+2019/05/05 17:53:06.822 [D] [server.go:2694] ::1 - - [05/May/2019 05:53:06] "GET /as/login HTTP/1.1 200 0" 0.066000  Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/05/05 17:53:06.847 [D] [server.go:2694] ::1 - - [05/May/2019 05:53:06] "GET /captcha/zSVEEOIwrM6lOBD.png HTTP/1.1 200 0" 0.006000 http://localhost:8087/as/login Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/05/05 17:53:09.563 [W] [login.go:114] LoginController Post from ip: ::1 username: admin 
+2019/05/05 17:53:09.563 [D] [server.go:2694] ::1 - - [05/May/2019 05:53:09] "POST /as/login HTTP/1.1 200 0" 0.010000 http://localhost:8087/as/login Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/05/05 17:53:10.611 [D] [server.go:2694] ::1 - - [05/May/2019 05:53:10] "GET /as/sys/base HTTP/1.1 200 0" 0.028000 http://localhost:8087/as/login Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/05/05 17:53:10.657 [D] [server.go:2694] ::1 - - [05/May/2019 05:53:10] "GET /as/sys/index HTTP/1.1 200 0" 0.015000 http://localhost:8087/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/05/05 17:53:26.862 [D] [server.go:2694] ::1 - - [05/May/2019 05:53:26] "GET /as/org/index HTTP/1.1 200 0" 0.016000 http://localhost:8087/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/05/05 17:53:27.489 [D] [server.go:2694] ::1 - - [05/May/2019 05:53:27] "GET /as/site/index HTTP/1.1 200 0" 0.016000 http://localhost:8087/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/05/05 17:53:28.533 [D] [server.go:2694] ::1 - - [05/May/2019 05:53:28] "GET /as/site/index HTTP/1.1 200 0" 0.030000 http://localhost:8087/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/05/05 17:53:29.147 [D] [server.go:2694] ::1 - - [05/May/2019 05:53:29] "GET /as/qicknav/index HTTP/1.1 200 0" 0.034000 http://localhost:8087/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/05/05 17:53:30.707 [D] [server.go:2694] ::1 - - [05/May/2019 05:53:30] "GET /as/site/index HTTP/1.1 200 0" 0.029000 http://localhost:8087/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/05/05 17:53:32.001 [D] [server.go:2694] ::1 - - [05/May/2019 05:53:31] "GET /as/qicknav/index HTTP/1.1 200 0" 0.012000 http://localhost:8087/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/05/05 17:53:32.886 [D] [server.go:2694] ::1 - - [05/May/2019 05:53:32] "GET /as/qicknav/add HTTP/1.1 200 0" 0.019000 http://localhost:8087/as/qicknav/index Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/05/05 17:53:53.135 [D] [server.go:2694] ::1 - - [05/May/2019 05:53:53] "GET /as/qicknav/index HTTP/1.1 200 0" 0.036000 http://localhost:8087/as/qicknav/add Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/05/05 17:53:53.971 [D] [server.go:2694] ::1 - - [05/May/2019 05:53:53] "GET /as/site/index HTTP/1.1 200 0" 0.027000 http://localhost:8087/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/05/05 17:53:55.512 [D] [server.go:2694] ::1 - - [05/May/2019 05:53:55] "GET /as/qicknav/index HTTP/1.1 200 0" 0.011000 http://localhost:8087/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/05/05 17:56:25.007 [I] [beecache.go:27] Init cache success!! 
+2019/05/05 17:56:25.009 [I] [db.go:46] Auto create db 
+2019/05/05 17:56:25.016 [I] [projectdata.go:18] Init project data 
+2019/05/05 17:56:25.127 [I] [asm_amd64.s:2361] http server Running on http://:8087
+2019/05/05 17:57:23.152 [I] [beecache.go:27] Init cache success!! 
+2019/05/05 17:57:23.194 [I] [db.go:46] Auto create db 
+2019/05/05 17:57:23.332 [I] [projectdata.go:18] Init project data 
+2019/05/05 17:57:23.599 [I] [asm_amd64.s:2361] http server Running on http://:8087
+2019/05/05 17:57:29.414 [C] [asm_amd64.s:573] the request url is  /
+2019/05/05 17:57:29.414 [C] [asm_amd64.s:573] Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2019/05/05 17:57:29.414 [C] [asm_amd64.s:573] C:/Go/src/runtime/asm_amd64.s:573
+2019/05/05 17:57:29.414 [C] [asm_amd64.s:573] C:/Go/src/runtime/panic.go:502
+2019/05/05 17:57:29.414 [C] [asm_amd64.s:573] C:/Go/src/runtime/panic.go:63
+2019/05/05 17:57:29.414 [C] [asm_amd64.s:573] C:/Go/src/runtime/signal_windows.go:167
+2019/05/05 17:57:29.414 [C] [asm_amd64.s:573] C:/Go/src/html/template/template.go:95
+2019/05/05 17:57:29.414 [C] [asm_amd64.s:573] C:/Go/src/html/template/template.go:119
+2019/05/05 17:57:29.414 [C] [asm_amd64.s:573] D:/mygo/src/phagego/testlyaui/main.go:28
+2019/05/05 17:57:29.414 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/error.go:444
+2019/05/05 17:57:29.414 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/error.go:432
+2019/05/05 17:57:29.414 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/router.go:740
+2019/05/05 17:57:29.415 [C] [asm_amd64.s:573] C:/Go/src/net/http/server.go:2694
+2019/05/05 17:57:29.415 [C] [asm_amd64.s:573] C:/Go/src/net/http/server.go:1830
+2019/05/05 17:57:29.415 [C] [asm_amd64.s:573] C:/Go/src/runtime/asm_amd64.s:2361
+2019/05/05 17:58:09.443 [I] [beecache.go:27] Init cache success!! 
+2019/05/05 17:58:09.444 [I] [db.go:46] Auto create db 
+2019/05/05 17:58:09.451 [I] [projectdata.go:18] Init project data 
+2019/05/05 17:58:09.555 [I] [asm_amd64.s:2361] http server Running on http://:8087
+2019/05/05 17:58:14.031 [C] [asm_amd64.s:573] the request url is  /
+2019/05/05 17:58:14.031 [C] [asm_amd64.s:573] Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2019/05/05 17:58:14.031 [C] [asm_amd64.s:573] C:/Go/src/runtime/asm_amd64.s:573
+2019/05/05 17:58:14.031 [C] [asm_amd64.s:573] C:/Go/src/runtime/panic.go:502
+2019/05/05 17:58:14.031 [C] [asm_amd64.s:573] C:/Go/src/runtime/panic.go:63
+2019/05/05 17:58:14.031 [C] [asm_amd64.s:573] C:/Go/src/runtime/signal_windows.go:167
+2019/05/05 17:58:14.031 [C] [asm_amd64.s:573] C:/Go/src/html/template/template.go:95
+2019/05/05 17:58:14.031 [C] [asm_amd64.s:573] C:/Go/src/html/template/template.go:119
+2019/05/05 17:58:14.031 [C] [asm_amd64.s:573] D:/mygo/src/phagego/testlyaui/main.go:28
+2019/05/05 17:58:14.031 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/error.go:444
+2019/05/05 17:58:14.031 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/error.go:432
+2019/05/05 17:58:14.032 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/router.go:740
+2019/05/05 17:58:14.032 [C] [asm_amd64.s:573] C:/Go/src/net/http/server.go:2694
+2019/05/05 17:58:14.032 [C] [asm_amd64.s:573] C:/Go/src/net/http/server.go:1830
+2019/05/05 17:58:14.032 [C] [asm_amd64.s:573] C:/Go/src/runtime/asm_amd64.s:2361
+2019/05/05 17:58:18.628 [C] [asm_amd64.s:573] the request url is  /
+2019/05/05 17:58:18.628 [C] [asm_amd64.s:573] Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2019/05/05 17:58:18.628 [C] [asm_amd64.s:573] C:/Go/src/runtime/asm_amd64.s:573
+2019/05/05 17:58:18.628 [C] [asm_amd64.s:573] C:/Go/src/runtime/panic.go:502
+2019/05/05 17:58:18.628 [C] [asm_amd64.s:573] C:/Go/src/runtime/panic.go:63
+2019/05/05 17:58:18.628 [C] [asm_amd64.s:573] C:/Go/src/runtime/signal_windows.go:167
+2019/05/05 17:58:18.628 [C] [asm_amd64.s:573] C:/Go/src/html/template/template.go:95
+2019/05/05 17:58:18.628 [C] [asm_amd64.s:573] C:/Go/src/html/template/template.go:119
+2019/05/05 17:58:18.628 [C] [asm_amd64.s:573] D:/mygo/src/phagego/testlyaui/main.go:28
+2019/05/05 17:58:18.628 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/error.go:444
+2019/05/05 17:58:18.628 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/error.go:432
+2019/05/05 17:58:18.628 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/router.go:740
+2019/05/05 17:58:18.628 [C] [asm_amd64.s:573] C:/Go/src/net/http/server.go:2694
+2019/05/05 17:58:18.628 [C] [asm_amd64.s:573] C:/Go/src/net/http/server.go:1830
+2019/05/05 17:58:18.628 [C] [asm_amd64.s:573] C:/Go/src/runtime/asm_amd64.s:2361
+2019/05/05 18:07:34.780 [I] [beecache.go:27] Init cache success!! 
+2019/05/05 18:07:34.782 [I] [db.go:46] Auto create db 
+2019/05/05 18:07:34.787 [I] [projectdata.go:18] Init project data 
+2019/05/05 18:07:34.900 [I] [asm_amd64.s:2361] http server Running on http://:8087
+2019/05/05 18:07:40.157 [C] [asm_amd64.s:573] the request url is  /
+2019/05/05 18:07:40.157 [C] [asm_amd64.s:573] Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2019/05/05 18:07:40.157 [C] [asm_amd64.s:573] C:/Go/src/runtime/asm_amd64.s:573
+2019/05/05 18:07:40.157 [C] [asm_amd64.s:573] C:/Go/src/runtime/panic.go:502
+2019/05/05 18:07:40.157 [C] [asm_amd64.s:573] C:/Go/src/runtime/panic.go:63
+2019/05/05 18:07:40.157 [C] [asm_amd64.s:573] C:/Go/src/runtime/signal_windows.go:167
+2019/05/05 18:07:40.157 [C] [asm_amd64.s:573] C:/Go/src/html/template/template.go:95
+2019/05/05 18:07:40.157 [C] [asm_amd64.s:573] C:/Go/src/html/template/template.go:119
+2019/05/05 18:07:40.157 [C] [asm_amd64.s:573] D:/mygo/src/phagego/testlyaui/main.go:28
+2019/05/05 18:07:40.157 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/error.go:444
+2019/05/05 18:07:40.157 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/error.go:432
+2019/05/05 18:07:40.157 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/router.go:740
+2019/05/05 18:07:40.157 [C] [asm_amd64.s:573] C:/Go/src/net/http/server.go:2694
+2019/05/05 18:07:40.157 [C] [asm_amd64.s:573] C:/Go/src/net/http/server.go:1830
+2019/05/05 18:07:40.157 [C] [asm_amd64.s:573] C:/Go/src/runtime/asm_amd64.s:2361
+2019/05/05 18:07:41.459 [C] [asm_amd64.s:573] the request url is  /
+2019/05/05 18:07:41.459 [C] [asm_amd64.s:573] Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2019/05/05 18:07:41.459 [C] [asm_amd64.s:573] C:/Go/src/runtime/asm_amd64.s:573
+2019/05/05 18:07:41.459 [C] [asm_amd64.s:573] C:/Go/src/runtime/panic.go:502
+2019/05/05 18:07:41.459 [C] [asm_amd64.s:573] C:/Go/src/runtime/panic.go:63
+2019/05/05 18:07:41.459 [C] [asm_amd64.s:573] C:/Go/src/runtime/signal_windows.go:167
+2019/05/05 18:07:41.459 [C] [asm_amd64.s:573] C:/Go/src/html/template/template.go:95
+2019/05/05 18:07:41.459 [C] [asm_amd64.s:573] C:/Go/src/html/template/template.go:119
+2019/05/05 18:07:41.459 [C] [asm_amd64.s:573] D:/mygo/src/phagego/testlyaui/main.go:28
+2019/05/05 18:07:41.459 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/error.go:444
+2019/05/05 18:07:41.459 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/error.go:432
+2019/05/05 18:07:41.459 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/router.go:740
+2019/05/05 18:07:41.459 [C] [asm_amd64.s:573] C:/Go/src/net/http/server.go:2694
+2019/05/05 18:07:41.459 [C] [asm_amd64.s:573] C:/Go/src/net/http/server.go:1830
+2019/05/05 18:07:41.459 [C] [asm_amd64.s:573] C:/Go/src/runtime/asm_amd64.s:2361
+2019/05/05 18:07:42.885 [C] [asm_amd64.s:573] the request url is  /
+2019/05/05 18:07:42.885 [C] [asm_amd64.s:573] Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2019/05/05 18:07:42.885 [C] [asm_amd64.s:573] C:/Go/src/runtime/asm_amd64.s:573
+2019/05/05 18:07:42.885 [C] [asm_amd64.s:573] C:/Go/src/runtime/panic.go:502
+2019/05/05 18:07:42.885 [C] [asm_amd64.s:573] C:/Go/src/runtime/panic.go:63
+2019/05/05 18:07:42.885 [C] [asm_amd64.s:573] C:/Go/src/runtime/signal_windows.go:167
+2019/05/05 18:07:42.885 [C] [asm_amd64.s:573] C:/Go/src/html/template/template.go:95
+2019/05/05 18:07:42.885 [C] [asm_amd64.s:573] C:/Go/src/html/template/template.go:119
+2019/05/05 18:07:42.885 [C] [asm_amd64.s:573] D:/mygo/src/phagego/testlyaui/main.go:28
+2019/05/05 18:07:42.885 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/error.go:444
+2019/05/05 18:07:42.885 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/error.go:432
+2019/05/05 18:07:42.886 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/router.go:740
+2019/05/05 18:07:42.886 [C] [asm_amd64.s:573] C:/Go/src/net/http/server.go:2694
+2019/05/05 18:07:42.886 [C] [asm_amd64.s:573] C:/Go/src/net/http/server.go:1830
+2019/05/05 18:07:42.886 [C] [asm_amd64.s:573] C:/Go/src/runtime/asm_amd64.s:2361
+2019/05/05 18:11:36.969 [I] [beecache.go:27] Init cache success!! 
+2019/05/05 18:11:36.971 [I] [db.go:46] Auto create db 
+2019/05/05 18:11:36.976 [I] [projectdata.go:18] Init project data 
+2019/05/05 18:11:37.085 [I] [asm_amd64.s:2361] http server Running on http://:8087
+2019/05/05 18:11:47.095 [C] [asm_amd64.s:573] the request url is  /
+2019/05/05 18:11:47.095 [C] [asm_amd64.s:573] Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2019/05/05 18:11:47.095 [C] [asm_amd64.s:573] C:/Go/src/runtime/asm_amd64.s:573
+2019/05/05 18:11:47.095 [C] [asm_amd64.s:573] C:/Go/src/runtime/panic.go:502
+2019/05/05 18:11:47.095 [C] [asm_amd64.s:573] C:/Go/src/runtime/panic.go:63
+2019/05/05 18:11:47.095 [C] [asm_amd64.s:573] C:/Go/src/runtime/signal_windows.go:167
+2019/05/05 18:11:47.095 [C] [asm_amd64.s:573] C:/Go/src/html/template/template.go:95
+2019/05/05 18:11:47.095 [C] [asm_amd64.s:573] C:/Go/src/html/template/template.go:119
+2019/05/05 18:11:47.095 [C] [asm_amd64.s:573] D:/mygo/src/phagego/testlyaui/main.go:28
+2019/05/05 18:11:47.095 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/error.go:444
+2019/05/05 18:11:47.095 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/error.go:432
+2019/05/05 18:11:47.095 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/router.go:740
+2019/05/05 18:11:47.095 [C] [asm_amd64.s:573] C:/Go/src/net/http/server.go:2694
+2019/05/05 18:11:47.095 [C] [asm_amd64.s:573] C:/Go/src/net/http/server.go:1830
+2019/05/05 18:11:47.095 [C] [asm_amd64.s:573] C:/Go/src/runtime/asm_amd64.s:2361
+2019/05/05 18:12:01.037 [W] [login.go:21] LoginController Get from ip: ::1 
+2019/05/05 18:12:01.050 [D] [server.go:2694] ::1 - - [05/May/2019 06:12:01] "GET /as/login HTTP/1.1 200 0" 0.027000  Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/05/05 18:12:01.078 [D] [server.go:2694] ::1 - - [05/May/2019 06:12:01] "GET /captcha/cjaCpSnX4sKqzyM.png HTTP/1.1 200 0" 0.009000 http://localhost:8087/as/login Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/05/05 18:12:04.601 [W] [login.go:114] LoginController Post from ip: ::1 username: admin 
+2019/05/05 18:12:04.602 [D] [server.go:2694] ::1 - - [05/May/2019 06:12:04] "POST /as/login HTTP/1.1 200 0" 0.013000 http://localhost:8087/as/login Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/05/05 18:12:05.665 [D] [server.go:2694] ::1 - - [05/May/2019 06:12:05] "GET /as/sys/base HTTP/1.1 200 0" 0.042000 http://localhost:8087/as/login Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/05/05 18:12:05.707 [D] [server.go:2694] ::1 - - [05/May/2019 06:12:05] "GET /as/sys/index HTTP/1.1 200 0" 0.017000 http://localhost:8087/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/05/05 18:12:08.145 [D] [server.go:2694] ::1 - - [05/May/2019 06:12:08] "GET /as/admin/index HTTP/1.1 200 0" 0.036000 http://localhost:8087/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/05/05 18:12:08.881 [D] [server.go:2694] ::1 - - [05/May/2019 06:12:08] "GET /as/org/index HTTP/1.1 200 0" 0.033000 http://localhost:8087/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/05/05 18:12:09.611 [D] [server.go:2694] ::1 - - [05/May/2019 06:12:09] "GET /as/admin/index HTTP/1.1 200 0" 0.013000 http://localhost:8087/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/05/05 18:12:11.288 [D] [server.go:2694] ::1 - - [05/May/2019 06:12:11] "GET /as/admin/edit?id=2 HTTP/1.1 200 0" 0.010000 http://localhost:8087/as/admin/index Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/05/05 18:12:13.434 [D] [server.go:2694] ::1 - - [05/May/2019 06:12:13] "GET /as/admin/index HTTP/1.1 200 0" 0.025000 http://localhost:8087/as/admin/edit?id=2 Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/05/05 18:12:14.565 [D] [server.go:2694] ::1 - - [05/May/2019 06:12:14] "GET /as/admin/edit?id=2 HTTP/1.1 200 0" 0.033000 http://localhost:8087/as/admin/index Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/05/05 18:12:17.369 [D] [server.go:2694] ::1 - - [05/May/2019 06:12:17] "GET /as/admin/index HTTP/1.1 200 0" 0.027000 http://localhost:8087/as/admin/edit?id=2 Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/05/05 18:12:33.136 [D] [server.go:2694] ::1 - - [05/May/2019 06:12:33] "GET /as/qicknav/index HTTP/1.1 200 0" 0.033000 http://localhost:8087/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/05/05 18:12:33.769 [D] [server.go:2694] ::1 - - [05/May/2019 06:12:33] "GET /as/site/index HTTP/1.1 200 0" 0.031000 http://localhost:8087/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/05/05 18:12:36.175 [D] [server.go:2694] ::1 - - [05/May/2019 06:12:36] "GET /as/admin/index HTTP/1.1 200 0" 0.010000 http://localhost:8087/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/05/05 18:12:37.153 [D] [server.go:2694] ::1 - - [05/May/2019 06:12:37] "GET /as/org/index HTTP/1.1 200 0" 0.025000 http://localhost:8087/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/05/05 18:12:38.174 [D] [server.go:2694] ::1 - - [05/May/2019 06:12:38] "GET /as/admin/index HTTP/1.1 200 0" 0.022000 http://localhost:8087/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/05/05 18:12:40.820 [D] [server.go:2694] ::1 - - [05/May/2019 06:12:40] "GET /as/admin/index HTTP/1.1 200 0" 0.045000 http://localhost:8087/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/05/05 18:12:41.548 [D] [server.go:2694] ::1 - - [05/May/2019 06:12:41] "GET /as/admin/index HTTP/1.1 200 0" 0.036000 http://localhost:8087/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/05/05 18:12:43.117 [D] [server.go:2694] ::1 - - [05/May/2019 06:12:43] "GET /as/admin/index HTTP/1.1 200 0" 0.038000 http://localhost:8087/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/05/05 18:12:43.582 [D] [server.go:2694] ::1 - - [05/May/2019 06:12:43] "GET /as/org/index HTTP/1.1 200 0" 0.014000 http://localhost:8087/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/05/05 18:12:44.049 [D] [server.go:2694] ::1 - - [05/May/2019 06:12:44] "GET /as/admin/index HTTP/1.1 200 0" 0.019000 http://localhost:8087/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/05/05 18:12:44.498 [D] [server.go:2694] ::1 - - [05/May/2019 06:12:44] "GET /as/site/index HTTP/1.1 200 0" 0.029000 http://localhost:8087/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/05/05 18:12:45.306 [D] [server.go:2694] ::1 - - [05/May/2019 06:12:45] "GET /as/qicknav/index HTTP/1.1 200 0" 0.025000 http://localhost:8087/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/05/05 18:12:46.082 [D] [server.go:2694] ::1 - - [05/May/2019 06:12:46] "GET /as/site/index HTTP/1.1 200 0" 0.013000 http://localhost:8087/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/05/05 18:12:46.453 [D] [server.go:2694] ::1 - - [05/May/2019 06:12:46] "GET /as/admin/index HTTP/1.1 200 0" 0.016000 http://localhost:8087/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/05/05 18:12:46.731 [D] [server.go:2694] ::1 - - [05/May/2019 06:12:46] "GET /as/org/index HTTP/1.1 200 0" 0.013000 http://localhost:8087/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/05/05 18:12:48.419 [D] [server.go:2694] ::1 - - [05/May/2019 06:12:48] "GET /as/admin/index HTTP/1.1 200 0" 0.025000 http://localhost:8087/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/05/05 18:12:49.619 [D] [server.go:2694] ::1 - - [05/May/2019 06:12:49] "GET /as/site/index HTTP/1.1 200 0" 0.030000 http://localhost:8087/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/05/05 18:12:50.535 [D] [server.go:2694] ::1 - - [05/May/2019 06:12:50] "GET /as/qicknav/index HTTP/1.1 200 0" 0.023000 http://localhost:8087/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/05/05 18:12:51.115 [D] [server.go:2694] ::1 - - [05/May/2019 06:12:51] "GET /as/site/index HTTP/1.1 200 0" 0.012000 http://localhost:8087/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/05/05 18:12:51.674 [D] [server.go:2694] ::1 - - [05/May/2019 06:12:51] "GET /as/admin/index HTTP/1.1 200 0" 0.021000 http://localhost:8087/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/05/05 18:12:52.168 [D] [server.go:2694] ::1 - - [05/May/2019 06:12:52] "GET /as/org/index HTTP/1.1 200 0" 0.041000 http://localhost:8087/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/05/05 18:12:53.230 [D] [server.go:2694] ::1 - - [05/May/2019 06:12:53] "GET /as/admin/index HTTP/1.1 200 0" 0.019000 http://localhost:8087/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/05/05 18:12:53.640 [D] [server.go:2694] ::1 - - [05/May/2019 06:12:53] "GET /as/site/index HTTP/1.1 200 0" 0.010000 http://localhost:8087/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/05/05 18:12:54.903 [D] [server.go:2694] ::1 - - [05/May/2019 06:12:54] "GET /as/admin/index HTTP/1.1 200 0" 0.044000 http://localhost:8087/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/05/05 18:12:55.227 [D] [server.go:2694] ::1 - - [05/May/2019 06:12:55] "GET /as/org/index HTTP/1.1 200 0" 0.014000 http://localhost:8087/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/05/05 18:12:55.975 [D] [server.go:2694] ::1 - - [05/May/2019 06:12:55] "GET /as/admin/index HTTP/1.1 200 0" 0.030000 http://localhost:8087/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/05/05 18:12:58.750 [D] [server.go:2694] ::1 - - [05/May/2019 06:12:58] "GET /as/admin/index?param1= HTTP/1.1 200 0" 0.024000 http://localhost:8087/as/admin/index Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/05/05 18:12:59.192 [D] [server.go:2694] ::1 - - [05/May/2019 06:12:59] "GET /as/admin/index?param1= HTTP/1.1 200 0" 0.025000 http://localhost:8087/as/admin/index?param1= Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/05/05 18:12:59.351 [D] [server.go:2694] ::1 - - [05/May/2019 06:12:59] "GET /as/admin/index?param1= HTTP/1.1 200 0" 0.016000 http://localhost:8087/as/admin/index?param1= Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/05/05 18:12:59.542 [D] [server.go:2694] ::1 - - [05/May/2019 06:12:59] "GET /as/admin/index?param1= HTTP/1.1 200 0" 0.032000 http://localhost:8087/as/admin/index?param1= Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/05/05 18:13:08.161 [C] [asm_amd64.s:573] the request url is  /
+2019/05/05 18:13:08.161 [C] [asm_amd64.s:573] Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2019/05/05 18:13:08.161 [C] [asm_amd64.s:573] C:/Go/src/runtime/asm_amd64.s:573
+2019/05/05 18:13:08.161 [C] [asm_amd64.s:573] C:/Go/src/runtime/panic.go:502
+2019/05/05 18:13:08.161 [C] [asm_amd64.s:573] C:/Go/src/runtime/panic.go:63
+2019/05/05 18:13:08.161 [C] [asm_amd64.s:573] C:/Go/src/runtime/signal_windows.go:167
+2019/05/05 18:13:08.161 [C] [asm_amd64.s:573] C:/Go/src/html/template/template.go:95
+2019/05/05 18:13:08.161 [C] [asm_amd64.s:573] C:/Go/src/html/template/template.go:119
+2019/05/05 18:13:08.161 [C] [asm_amd64.s:573] D:/mygo/src/phagego/testlyaui/main.go:28
+2019/05/05 18:13:08.161 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/error.go:444
+2019/05/05 18:13:08.161 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/error.go:432
+2019/05/05 18:13:08.161 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/router.go:740
+2019/05/05 18:13:08.161 [C] [asm_amd64.s:573] C:/Go/src/net/http/server.go:2694
+2019/05/05 18:13:08.161 [C] [asm_amd64.s:573] C:/Go/src/net/http/server.go:1830
+2019/05/05 18:13:08.161 [C] [asm_amd64.s:573] C:/Go/src/runtime/asm_amd64.s:2361
+2019/05/05 18:13:14.900 [C] [asm_amd64.s:573] the request url is  /
+2019/05/05 18:13:14.900 [C] [asm_amd64.s:573] Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2019/05/05 18:13:14.900 [C] [asm_amd64.s:573] C:/Go/src/runtime/asm_amd64.s:573
+2019/05/05 18:13:14.900 [C] [asm_amd64.s:573] C:/Go/src/runtime/panic.go:502
+2019/05/05 18:13:14.900 [C] [asm_amd64.s:573] C:/Go/src/runtime/panic.go:63
+2019/05/05 18:13:14.900 [C] [asm_amd64.s:573] C:/Go/src/runtime/signal_windows.go:167
+2019/05/05 18:13:14.900 [C] [asm_amd64.s:573] C:/Go/src/html/template/template.go:95
+2019/05/05 18:13:14.900 [C] [asm_amd64.s:573] C:/Go/src/html/template/template.go:119
+2019/05/05 18:13:14.900 [C] [asm_amd64.s:573] D:/mygo/src/phagego/testlyaui/main.go:28
+2019/05/05 18:13:14.900 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/error.go:444
+2019/05/05 18:13:14.900 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/error.go:432
+2019/05/05 18:13:14.900 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/router.go:740
+2019/05/05 18:13:14.900 [C] [asm_amd64.s:573] C:/Go/src/net/http/server.go:2694
+2019/05/05 18:13:14.900 [C] [asm_amd64.s:573] C:/Go/src/net/http/server.go:1830
+2019/05/05 18:13:14.900 [C] [asm_amd64.s:573] C:/Go/src/runtime/asm_amd64.s:2361
+2019/05/05 18:14:02.044 [I] [beecache.go:27] Init cache success!! 
+2019/05/05 18:14:02.046 [I] [db.go:46] Auto create db 
+2019/05/05 18:14:02.051 [I] [projectdata.go:18] Init project data 
+2019/05/05 18:14:02.162 [I] [asm_amd64.s:2361] http server Running on http://:8087
+2019/05/05 18:14:03.560 [C] [asm_amd64.s:573] the request url is  /
+2019/05/05 18:14:03.560 [C] [asm_amd64.s:573] Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2019/05/05 18:14:03.560 [C] [asm_amd64.s:573] C:/Go/src/runtime/asm_amd64.s:573
+2019/05/05 18:14:03.560 [C] [asm_amd64.s:573] C:/Go/src/runtime/panic.go:502
+2019/05/05 18:14:03.560 [C] [asm_amd64.s:573] C:/Go/src/runtime/panic.go:63
+2019/05/05 18:14:03.560 [C] [asm_amd64.s:573] C:/Go/src/runtime/signal_windows.go:167
+2019/05/05 18:14:03.560 [C] [asm_amd64.s:573] C:/Go/src/html/template/template.go:95
+2019/05/05 18:14:03.560 [C] [asm_amd64.s:573] C:/Go/src/html/template/template.go:119
+2019/05/05 18:14:03.560 [C] [asm_amd64.s:573] D:/mygo/src/phagego/testlyaui/main.go:28
+2019/05/05 18:14:03.560 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/error.go:444
+2019/05/05 18:14:03.560 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/error.go:432
+2019/05/05 18:14:03.560 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/router.go:740
+2019/05/05 18:14:03.560 [C] [asm_amd64.s:573] C:/Go/src/net/http/server.go:2694
+2019/05/05 18:14:03.560 [C] [asm_amd64.s:573] C:/Go/src/net/http/server.go:1830
+2019/05/05 18:14:03.560 [C] [asm_amd64.s:573] C:/Go/src/runtime/asm_amd64.s:2361
+2019/05/05 18:17:51.143 [W] [login.go:21] LoginController Get from ip: ::1 
+2019/05/05 18:17:51.162 [D] [server.go:2694] ::1 - - [05/May/2019 06:17:51] "GET /as/login HTTP/1.1 200 0" 0.021000  Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/05/05 18:17:51.529 [D] [server.go:2694] ::1 - - [05/May/2019 06:17:51] "GET /captcha/A5DElhx7ilPy34d.png HTTP/1.1 200 0" 0.004000 http://localhost:8087/as/login Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/05/05 18:17:53.261 [W] [login.go:114] LoginController Post from ip: ::1 username: admin 
+2019/05/05 18:17:53.261 [D] [server.go:2694] ::1 - - [05/May/2019 06:17:53] "POST /as/login HTTP/1.1 200 0" 0.010000 http://localhost:8087/as/login Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/05/05 18:17:54.311 [D] [server.go:2694] ::1 - - [05/May/2019 06:17:54] "GET /as/sys/base HTTP/1.1 200 0" 0.040000 http://localhost:8087/as/login Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/05/05 18:17:54.367 [D] [server.go:2694] ::1 - - [05/May/2019 06:17:54] "GET /as/sys/index HTTP/1.1 200 0" 0.029000 http://localhost:8087/as/sys/base Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/05/05 18:17:55.382 [C] [asm_amd64.s:573] the request url is  /
+2019/05/05 18:17:55.382 [C] [asm_amd64.s:573] Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2019/05/05 18:17:55.382 [C] [asm_amd64.s:573] C:/Go/src/runtime/asm_amd64.s:573
+2019/05/05 18:17:55.382 [C] [asm_amd64.s:573] C:/Go/src/runtime/panic.go:502
+2019/05/05 18:17:55.382 [C] [asm_amd64.s:573] C:/Go/src/runtime/panic.go:63
+2019/05/05 18:17:55.382 [C] [asm_amd64.s:573] C:/Go/src/runtime/signal_windows.go:167
+2019/05/05 18:17:55.382 [C] [asm_amd64.s:573] C:/Go/src/html/template/template.go:95
+2019/05/05 18:17:55.382 [C] [asm_amd64.s:573] C:/Go/src/html/template/template.go:119
+2019/05/05 18:17:55.382 [C] [asm_amd64.s:573] D:/mygo/src/phagego/testlyaui/main.go:28
+2019/05/05 18:17:55.382 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/error.go:444
+2019/05/05 18:17:55.382 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/error.go:432
+2019/05/05 18:17:55.382 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/router.go:740
+2019/05/05 18:17:55.382 [C] [asm_amd64.s:573] C:/Go/src/net/http/server.go:2694
+2019/05/05 18:17:55.382 [C] [asm_amd64.s:573] C:/Go/src/net/http/server.go:1830
+2019/05/05 18:17:55.382 [C] [asm_amd64.s:573] C:/Go/src/runtime/asm_amd64.s:2361
+2019/05/05 18:20:29.991 [I] [beecache.go:27] Init cache success!! 
+2019/05/05 18:20:29.992 [I] [db.go:46] Auto create db 
+2019/05/05 18:20:29.999 [I] [projectdata.go:18] Init project data 
+2019/05/05 18:20:30.112 [I] [asm_amd64.s:2361] http server Running on http://:8087
+2019/05/05 18:20:34.474 [C] [asm_amd64.s:573] the request url is  /
+2019/05/05 18:20:34.474 [C] [asm_amd64.s:573] Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2019/05/05 18:20:34.474 [C] [asm_amd64.s:573] C:/Go/src/runtime/asm_amd64.s:573
+2019/05/05 18:20:34.474 [C] [asm_amd64.s:573] C:/Go/src/runtime/panic.go:502
+2019/05/05 18:20:34.474 [C] [asm_amd64.s:573] C:/Go/src/runtime/panic.go:63
+2019/05/05 18:20:34.474 [C] [asm_amd64.s:573] C:/Go/src/runtime/signal_windows.go:167
+2019/05/05 18:20:34.474 [C] [asm_amd64.s:573] C:/Go/src/html/template/template.go:95
+2019/05/05 18:20:34.474 [C] [asm_amd64.s:573] C:/Go/src/html/template/template.go:119
+2019/05/05 18:20:34.474 [C] [asm_amd64.s:573] D:/mygo/src/phagego/testlyaui/main.go:28
+2019/05/05 18:20:34.474 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/error.go:444
+2019/05/05 18:20:34.474 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/error.go:432
+2019/05/05 18:20:34.474 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/router.go:740
+2019/05/05 18:20:34.474 [C] [asm_amd64.s:573] C:/Go/src/net/http/server.go:2694
+2019/05/05 18:20:34.474 [C] [asm_amd64.s:573] C:/Go/src/net/http/server.go:1830
+2019/05/05 18:20:34.474 [C] [asm_amd64.s:573] C:/Go/src/runtime/asm_amd64.s:2361
+2019/05/05 18:20:37.681 [C] [asm_amd64.s:573] the request url is  /
+2019/05/05 18:20:37.681 [C] [asm_amd64.s:573] Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2019/05/05 18:20:37.681 [C] [asm_amd64.s:573] C:/Go/src/runtime/asm_amd64.s:573
+2019/05/05 18:20:37.681 [C] [asm_amd64.s:573] C:/Go/src/runtime/panic.go:502
+2019/05/05 18:20:37.681 [C] [asm_amd64.s:573] C:/Go/src/runtime/panic.go:63
+2019/05/05 18:20:37.681 [C] [asm_amd64.s:573] C:/Go/src/runtime/signal_windows.go:167
+2019/05/05 18:20:37.681 [C] [asm_amd64.s:573] C:/Go/src/html/template/template.go:95
+2019/05/05 18:20:37.681 [C] [asm_amd64.s:573] C:/Go/src/html/template/template.go:119
+2019/05/05 18:20:37.681 [C] [asm_amd64.s:573] D:/mygo/src/phagego/testlyaui/main.go:28
+2019/05/05 18:20:37.681 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/error.go:444
+2019/05/05 18:20:37.681 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/error.go:432
+2019/05/05 18:20:37.681 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/router.go:740
+2019/05/05 18:20:37.681 [C] [asm_amd64.s:573] C:/Go/src/net/http/server.go:2694
+2019/05/05 18:20:37.682 [C] [asm_amd64.s:573] C:/Go/src/net/http/server.go:1830
+2019/05/05 18:20:37.682 [C] [asm_amd64.s:573] C:/Go/src/runtime/asm_amd64.s:2361
+2019/05/05 18:38:44.143 [I] [beecache.go:27] Init cache success!! 
+2019/05/05 18:38:44.144 [I] [router.go:13] ~~~~~~~~~~~~~ /as 
+2019/05/05 18:38:44.144 [I] [db.go:46] Auto create db 
+2019/05/05 18:38:44.151 [I] [projectdata.go:18] Init project data 
+2019/05/05 18:38:44.264 [I] [asm_amd64.s:2361] http server Running on http://:8087
+2019/05/05 18:38:53.463 [W] [login.go:21] LoginController Get from ip: ::1 
+2019/05/05 18:38:53.506 [D] [server.go:2694] ::1 - - [05/May/2019 06:38:53] "GET /as/login HTTP/1.1 200 0" 0.060000  Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/05/05 18:38:53.568 [D] [server.go:2694] ::1 - - [05/May/2019 06:38:53] "GET /captcha/VNw0t65p0r94iXq.png HTTP/1.1 200 0" 0.006000 http://localhost:8087/as/login Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/05/05 18:38:56.572 [D] [server.go:2694] ::1 - - [05/May/2019 06:38:56] "GET / HTTP/1.1 200 0" 0.019000  Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/05/05 18:48:59.590 [D] [server.go:2694] ::1 - - [05/May/2019 06:48:59] "GET / HTTP/1.1 200 0" 0.012000  Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/05/05 18:48:59.626 [C] [asm_amd64.s:573] the request url is  /layui/css/layui.css
+2019/05/05 18:48:59.626 [C] [asm_amd64.s:573] Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2019/05/05 18:48:59.626 [C] [asm_amd64.s:573] C:/Go/src/runtime/asm_amd64.s:573
+2019/05/05 18:48:59.626 [C] [asm_amd64.s:573] C:/Go/src/runtime/panic.go:502
+2019/05/05 18:48:59.626 [C] [asm_amd64.s:573] C:/Go/src/runtime/panic.go:63
+2019/05/05 18:48:59.626 [C] [asm_amd64.s:573] C:/Go/src/runtime/signal_windows.go:167
+2019/05/05 18:48:59.626 [C] [asm_amd64.s:573] C:/Go/src/html/template/template.go:95
+2019/05/05 18:48:59.626 [C] [asm_amd64.s:573] C:/Go/src/html/template/template.go:119
+2019/05/05 18:48:59.626 [C] [asm_amd64.s:573] D:/mygo/src/phagego/testlyaui/main.go:28
+2019/05/05 18:48:59.626 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/error.go:444
+2019/05/05 18:48:59.626 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/error.go:432
+2019/05/05 18:48:59.626 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/router.go:740
+2019/05/05 18:48:59.626 [C] [asm_amd64.s:573] C:/Go/src/net/http/server.go:2694
+2019/05/05 18:48:59.626 [C] [asm_amd64.s:573] C:/Go/src/net/http/server.go:1830
+2019/05/05 18:48:59.626 [C] [asm_amd64.s:573] C:/Go/src/runtime/asm_amd64.s:2361
+2019/05/05 18:48:59.632 [C] [asm_amd64.s:573] the request url is  /css/index.css
+2019/05/05 18:48:59.632 [C] [asm_amd64.s:573] Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2019/05/05 18:48:59.632 [C] [asm_amd64.s:573] C:/Go/src/runtime/asm_amd64.s:573
+2019/05/05 18:48:59.632 [C] [asm_amd64.s:573] C:/Go/src/runtime/panic.go:502
+2019/05/05 18:48:59.632 [C] [asm_amd64.s:573] C:/Go/src/runtime/panic.go:63
+2019/05/05 18:48:59.632 [C] [asm_amd64.s:573] C:/Go/src/runtime/signal_windows.go:167
+2019/05/05 18:48:59.632 [C] [asm_amd64.s:573] C:/Go/src/html/template/template.go:95
+2019/05/05 18:48:59.632 [C] [asm_amd64.s:573] C:/Go/src/html/template/template.go:119
+2019/05/05 18:48:59.632 [C] [asm_amd64.s:573] D:/mygo/src/phagego/testlyaui/main.go:28
+2019/05/05 18:48:59.632 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/error.go:444
+2019/05/05 18:48:59.632 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/error.go:432
+2019/05/05 18:48:59.632 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/router.go:740
+2019/05/05 18:48:59.632 [C] [asm_amd64.s:573] C:/Go/src/net/http/server.go:2694
+2019/05/05 18:48:59.632 [C] [asm_amd64.s:573] C:/Go/src/net/http/server.go:1830
+2019/05/05 18:48:59.633 [C] [asm_amd64.s:573] C:/Go/src/runtime/asm_amd64.s:2361
+2019/05/05 18:48:59.636 [C] [asm_amd64.s:573] the request url is  /layui/layui.js
+2019/05/05 18:48:59.636 [C] [asm_amd64.s:573] Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2019/05/05 18:48:59.636 [C] [asm_amd64.s:573] C:/Go/src/runtime/asm_amd64.s:573
+2019/05/05 18:48:59.636 [C] [asm_amd64.s:573] C:/Go/src/runtime/panic.go:502
+2019/05/05 18:48:59.636 [C] [asm_amd64.s:573] C:/Go/src/runtime/panic.go:63
+2019/05/05 18:48:59.636 [C] [asm_amd64.s:573] C:/Go/src/runtime/signal_windows.go:167
+2019/05/05 18:48:59.636 [C] [asm_amd64.s:573] C:/Go/src/html/template/template.go:95
+2019/05/05 18:48:59.636 [C] [asm_amd64.s:573] C:/Go/src/html/template/template.go:119
+2019/05/05 18:48:59.636 [C] [asm_amd64.s:573] D:/mygo/src/phagego/testlyaui/main.go:28
+2019/05/05 18:48:59.636 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/error.go:444
+2019/05/05 18:48:59.636 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/error.go:432
+2019/05/05 18:48:59.636 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/router.go:740
+2019/05/05 18:48:59.636 [C] [asm_amd64.s:573] C:/Go/src/net/http/server.go:2694
+2019/05/05 18:48:59.636 [C] [asm_amd64.s:573] C:/Go/src/net/http/server.go:1830
+2019/05/05 18:48:59.636 [C] [asm_amd64.s:573] C:/Go/src/runtime/asm_amd64.s:2361
+2019/05/05 18:48:59.643 [C] [asm_amd64.s:573] the request url is  /images/face.jpg
+2019/05/05 18:48:59.643 [C] [asm_amd64.s:573] Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2019/05/05 18:48:59.643 [C] [asm_amd64.s:573] C:/Go/src/runtime/asm_amd64.s:573
+2019/05/05 18:48:59.643 [C] [asm_amd64.s:573] C:/Go/src/runtime/panic.go:502
+2019/05/05 18:48:59.643 [C] [asm_amd64.s:573] C:/Go/src/runtime/panic.go:63
+2019/05/05 18:48:59.643 [C] [asm_amd64.s:573] C:/Go/src/runtime/signal_windows.go:167
+2019/05/05 18:48:59.643 [C] [asm_amd64.s:573] C:/Go/src/html/template/template.go:95
+2019/05/05 18:48:59.643 [C] [asm_amd64.s:573] C:/Go/src/html/template/template.go:119
+2019/05/05 18:48:59.643 [C] [asm_amd64.s:573] D:/mygo/src/phagego/testlyaui/main.go:28
+2019/05/05 18:48:59.643 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/error.go:444
+2019/05/05 18:48:59.643 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/error.go:432
+2019/05/05 18:48:59.643 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/router.go:740
+2019/05/05 18:48:59.643 [C] [asm_amd64.s:573] C:/Go/src/net/http/server.go:2694
+2019/05/05 18:48:59.643 [C] [asm_amd64.s:573] C:/Go/src/net/http/server.go:1830
+2019/05/05 18:48:59.643 [C] [asm_amd64.s:573] C:/Go/src/runtime/asm_amd64.s:2361
+2019/05/05 18:48:59.645 [C] [asm_amd64.s:573] the request url is  /js/index.js
+2019/05/05 18:48:59.645 [C] [asm_amd64.s:573] Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2019/05/05 18:48:59.645 [C] [asm_amd64.s:573] C:/Go/src/runtime/asm_amd64.s:573
+2019/05/05 18:48:59.645 [C] [asm_amd64.s:573] C:/Go/src/runtime/panic.go:502
+2019/05/05 18:48:59.646 [C] [asm_amd64.s:573] C:/Go/src/runtime/panic.go:63
+2019/05/05 18:48:59.646 [C] [asm_amd64.s:573] C:/Go/src/runtime/signal_windows.go:167
+2019/05/05 18:48:59.646 [C] [asm_amd64.s:573] C:/Go/src/html/template/template.go:95
+2019/05/05 18:48:59.646 [C] [asm_amd64.s:573] C:/Go/src/html/template/template.go:119
+2019/05/05 18:48:59.646 [C] [asm_amd64.s:573] D:/mygo/src/phagego/testlyaui/main.go:28
+2019/05/05 18:48:59.646 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/error.go:444
+2019/05/05 18:48:59.646 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/error.go:432
+2019/05/05 18:48:59.646 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/router.go:740
+2019/05/05 18:48:59.646 [C] [asm_amd64.s:573] C:/Go/src/net/http/server.go:2694
+2019/05/05 18:48:59.646 [C] [asm_amd64.s:573] C:/Go/src/net/http/server.go:1830
+2019/05/05 18:48:59.646 [C] [asm_amd64.s:573] C:/Go/src/runtime/asm_amd64.s:2361
+2019/05/05 18:48:59.649 [C] [asm_amd64.s:573] the request url is  /js/cache.js
+2019/05/05 18:48:59.649 [C] [asm_amd64.s:573] Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2019/05/05 18:48:59.649 [C] [asm_amd64.s:573] C:/Go/src/runtime/asm_amd64.s:573
+2019/05/05 18:48:59.649 [C] [asm_amd64.s:573] C:/Go/src/runtime/panic.go:502
+2019/05/05 18:48:59.649 [C] [asm_amd64.s:573] C:/Go/src/runtime/panic.go:63
+2019/05/05 18:48:59.649 [C] [asm_amd64.s:573] C:/Go/src/runtime/signal_windows.go:167
+2019/05/05 18:48:59.649 [C] [asm_amd64.s:573] C:/Go/src/html/template/template.go:95
+2019/05/05 18:48:59.649 [C] [asm_amd64.s:573] C:/Go/src/html/template/template.go:119
+2019/05/05 18:48:59.649 [C] [asm_amd64.s:573] D:/mygo/src/phagego/testlyaui/main.go:28
+2019/05/05 18:48:59.649 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/error.go:444
+2019/05/05 18:48:59.649 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/error.go:432
+2019/05/05 18:48:59.649 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/router.go:740
+2019/05/05 18:48:59.649 [C] [asm_amd64.s:573] C:/Go/src/net/http/server.go:2694
+2019/05/05 18:48:59.649 [C] [asm_amd64.s:573] C:/Go/src/net/http/server.go:1830
+2019/05/05 18:48:59.649 [C] [asm_amd64.s:573] C:/Go/src/runtime/asm_amd64.s:2361
+2019/05/05 18:48:59.650 [C] [asm_amd64.s:573] the request url is  /page/main.html
+2019/05/05 18:48:59.650 [C] [asm_amd64.s:573] Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2019/05/05 18:48:59.650 [C] [asm_amd64.s:573] C:/Go/src/runtime/asm_amd64.s:573
+2019/05/05 18:48:59.650 [C] [asm_amd64.s:573] C:/Go/src/runtime/panic.go:502
+2019/05/05 18:48:59.650 [C] [asm_amd64.s:573] C:/Go/src/runtime/panic.go:63
+2019/05/05 18:48:59.650 [C] [asm_amd64.s:573] C:/Go/src/runtime/signal_windows.go:167
+2019/05/05 18:48:59.650 [C] [asm_amd64.s:573] C:/Go/src/html/template/template.go:95
+2019/05/05 18:48:59.650 [C] [asm_amd64.s:573] C:/Go/src/html/template/template.go:119
+2019/05/05 18:48:59.650 [C] [asm_amd64.s:573] D:/mygo/src/phagego/testlyaui/main.go:28
+2019/05/05 18:48:59.650 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/error.go:444
+2019/05/05 18:48:59.650 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/error.go:432
+2019/05/05 18:48:59.650 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/router.go:740
+2019/05/05 18:48:59.650 [C] [asm_amd64.s:573] C:/Go/src/net/http/server.go:2694
+2019/05/05 18:48:59.650 [C] [asm_amd64.s:573] C:/Go/src/net/http/server.go:1830
+2019/05/05 18:48:59.650 [C] [asm_amd64.s:573] C:/Go/src/runtime/asm_amd64.s:2361
+2019/05/05 19:10:30.659 [I] [beecache.go:27] Init cache success!! 
+2019/05/05 19:10:30.660 [I] [router.go:13] ~~~~~~~~~~~~~ /as 
+2019/05/05 19:10:30.660 [I] [db.go:46] Auto create db 
+2019/05/05 19:10:30.667 [I] [projectdata.go:18] Init project data 
+2019/05/05 19:10:30.765 [E] [template.go:174] parse template err: page/news/newsList.html template: page/news/newsList.html:36: unexpected "#" in command
+2019/05/05 19:10:30.765 [W] [beego.go:97] template: page/news/newsList.html:36: unexpected "#" in command
+2019/05/05 19:11:51.332 [I] [beecache.go:27] Init cache success!! 
+2019/05/05 19:11:51.333 [I] [router.go:13] ~~~~~~~~~~~~~ /as 
+2019/05/05 19:11:51.333 [I] [db.go:46] Auto create db 
+2019/05/05 19:11:51.340 [I] [projectdata.go:18] Init project data 
+2019/05/05 19:11:51.442 [E] [template.go:174] parse template err: page/user/userGrade.html template: page/user/userGrade.html:22: unexpected "#" in command
+2019/05/05 19:11:51.442 [W] [beego.go:97] template: page/user/userGrade.html:22: unexpected "#" in command
+2019/05/07 18:52:27.764 [I] [beecache.go:27] Init cache success!! 
+2019/05/07 18:52:27.765 [I] [router.go:13] ~~~~~~~~~~~~~ /as 
+2019/05/07 18:52:27.765 [I] [db.go:49] Auto create db 
+2019/05/07 18:52:27.781 [I] [projectdata.go:18] Init project data 
+2019/05/07 18:52:27.915 [E] [template.go:174] parse template err: page/user/userGrade.html template: page/user/userGrade.html:22: unexpected "#" in command
+2019/05/07 18:52:27.915 [W] [beego.go:97] template: page/user/userGrade.html:22: unexpected "#" in command
+2019/05/07 18:54:00.103 [I] [beecache.go:27] Init cache success!! 
+2019/05/07 18:54:00.105 [I] [router.go:13] ~~~~~~~~~~~~~ /as 
+2019/05/07 18:54:00.105 [I] [db.go:49] Auto create db 
+2019/05/07 18:54:00.112 [I] [projectdata.go:18] Init project data 
+2019/05/07 18:54:00.226 [I] [asm_amd64.s:2361] http server Running on http://:8087
+2019/05/07 18:54:11.016 [I] [index.go:16] IndexFrontController GET 
+2019/05/07 18:54:11.022 [D] [server.go:2694] ::1 - - [07/May/2019 06:54:10] "GET / HTTP/1.1 200 0" 0.024000  Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/05/07 18:54:11.196 [C] [asm_amd64.s:573] the request url is  /layui/css/layui.css
+2019/05/07 18:54:11.197 [C] [asm_amd64.s:573] Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2019/05/07 18:54:11.197 [C] [asm_amd64.s:573] C:/Go/src/runtime/asm_amd64.s:573
+2019/05/07 18:54:11.197 [C] [asm_amd64.s:573] C:/Go/src/runtime/panic.go:502
+2019/05/07 18:54:11.197 [C] [asm_amd64.s:573] C:/Go/src/runtime/panic.go:63
+2019/05/07 18:54:11.197 [C] [asm_amd64.s:573] C:/Go/src/runtime/signal_windows.go:167
+2019/05/07 18:54:11.197 [C] [asm_amd64.s:573] C:/Go/src/html/template/template.go:95
+2019/05/07 18:54:11.197 [C] [asm_amd64.s:573] C:/Go/src/html/template/template.go:119
+2019/05/07 18:54:11.197 [C] [asm_amd64.s:573] D:/mygo/src/phagego/testlyaui/main.go:28
+2019/05/07 18:54:11.197 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/error.go:444
+2019/05/07 18:54:11.197 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/error.go:432
+2019/05/07 18:54:11.197 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/router.go:740
+2019/05/07 18:54:11.197 [C] [asm_amd64.s:573] C:/Go/src/net/http/server.go:2694
+2019/05/07 18:54:11.197 [C] [asm_amd64.s:573] C:/Go/src/net/http/server.go:1830
+2019/05/07 18:54:11.197 [C] [asm_amd64.s:573] C:/Go/src/runtime/asm_amd64.s:2361
+2019/05/07 18:54:11.200 [C] [asm_amd64.s:573] the request url is  /css/index.css
+2019/05/07 18:54:11.200 [C] [asm_amd64.s:573] Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2019/05/07 18:54:11.200 [C] [asm_amd64.s:573] C:/Go/src/runtime/asm_amd64.s:573
+2019/05/07 18:54:11.200 [C] [asm_amd64.s:573] C:/Go/src/runtime/panic.go:502
+2019/05/07 18:54:11.200 [C] [asm_amd64.s:573] C:/Go/src/runtime/panic.go:63
+2019/05/07 18:54:11.200 [C] [asm_amd64.s:573] C:/Go/src/runtime/signal_windows.go:167
+2019/05/07 18:54:11.200 [C] [asm_amd64.s:573] C:/Go/src/html/template/template.go:95
+2019/05/07 18:54:11.200 [C] [asm_amd64.s:573] C:/Go/src/html/template/template.go:119
+2019/05/07 18:54:11.200 [C] [asm_amd64.s:573] D:/mygo/src/phagego/testlyaui/main.go:28
+2019/05/07 18:54:11.200 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/error.go:444
+2019/05/07 18:54:11.200 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/error.go:432
+2019/05/07 18:54:11.201 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/router.go:740
+2019/05/07 18:54:11.201 [C] [asm_amd64.s:573] C:/Go/src/net/http/server.go:2694
+2019/05/07 18:54:11.201 [C] [asm_amd64.s:573] C:/Go/src/net/http/server.go:1830
+2019/05/07 18:54:11.201 [C] [asm_amd64.s:573] C:/Go/src/runtime/asm_amd64.s:2361
+2019/05/07 18:54:11.201 [C] [asm_amd64.s:573] the request url is  /images/face.jpg
+2019/05/07 18:54:11.201 [C] [asm_amd64.s:573] Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2019/05/07 18:54:11.201 [C] [asm_amd64.s:573] C:/Go/src/runtime/asm_amd64.s:573
+2019/05/07 18:54:11.201 [C] [asm_amd64.s:573] C:/Go/src/runtime/panic.go:502
+2019/05/07 18:54:11.201 [C] [asm_amd64.s:573] C:/Go/src/runtime/panic.go:63
+2019/05/07 18:54:11.201 [C] [asm_amd64.s:573] C:/Go/src/runtime/signal_windows.go:167
+2019/05/07 18:54:11.201 [C] [asm_amd64.s:573] C:/Go/src/html/template/template.go:95
+2019/05/07 18:54:11.201 [C] [asm_amd64.s:573] C:/Go/src/html/template/template.go:119
+2019/05/07 18:54:11.201 [C] [asm_amd64.s:573] D:/mygo/src/phagego/testlyaui/main.go:28
+2019/05/07 18:54:11.201 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/error.go:444
+2019/05/07 18:54:11.201 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/error.go:432
+2019/05/07 18:54:11.201 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/router.go:740
+2019/05/07 18:54:11.201 [C] [asm_amd64.s:573] C:/Go/src/net/http/server.go:2694
+2019/05/07 18:54:11.201 [C] [asm_amd64.s:573] C:/Go/src/net/http/server.go:1830
+2019/05/07 18:54:11.202 [C] [asm_amd64.s:573] C:/Go/src/runtime/asm_amd64.s:2361
+2019/05/07 18:54:11.205 [C] [asm_amd64.s:573] the request url is  /layui/layui.js
+2019/05/07 18:54:11.205 [C] [asm_amd64.s:573] Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2019/05/07 18:54:11.205 [C] [asm_amd64.s:573] C:/Go/src/runtime/asm_amd64.s:573
+2019/05/07 18:54:11.205 [C] [asm_amd64.s:573] C:/Go/src/runtime/panic.go:502
+2019/05/07 18:54:11.205 [C] [asm_amd64.s:573] C:/Go/src/runtime/panic.go:63
+2019/05/07 18:54:11.205 [C] [asm_amd64.s:573] C:/Go/src/runtime/signal_windows.go:167
+2019/05/07 18:54:11.205 [C] [asm_amd64.s:573] C:/Go/src/html/template/template.go:95
+2019/05/07 18:54:11.205 [C] [asm_amd64.s:573] C:/Go/src/html/template/template.go:119
+2019/05/07 18:54:11.205 [C] [asm_amd64.s:573] D:/mygo/src/phagego/testlyaui/main.go:28
+2019/05/07 18:54:11.205 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/error.go:444
+2019/05/07 18:54:11.205 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/error.go:432
+2019/05/07 18:54:11.205 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/router.go:740
+2019/05/07 18:54:11.205 [C] [asm_amd64.s:573] C:/Go/src/net/http/server.go:2694
+2019/05/07 18:54:11.205 [C] [asm_amd64.s:573] C:/Go/src/net/http/server.go:1830
+2019/05/07 18:54:11.205 [C] [asm_amd64.s:573] C:/Go/src/runtime/asm_amd64.s:2361
+2019/05/07 18:54:11.205 [C] [asm_amd64.s:573] the request url is  /js/index.js
+2019/05/07 18:54:11.205 [C] [asm_amd64.s:573] Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2019/05/07 18:54:11.205 [C] [asm_amd64.s:573] C:/Go/src/runtime/asm_amd64.s:573
+2019/05/07 18:54:11.205 [C] [asm_amd64.s:573] C:/Go/src/runtime/panic.go:502
+2019/05/07 18:54:11.205 [C] [asm_amd64.s:573] C:/Go/src/runtime/panic.go:63
+2019/05/07 18:54:11.205 [C] [asm_amd64.s:573] C:/Go/src/runtime/signal_windows.go:167
+2019/05/07 18:54:11.205 [C] [asm_amd64.s:573] C:/Go/src/html/template/template.go:95
+2019/05/07 18:54:11.205 [C] [asm_amd64.s:573] C:/Go/src/html/template/template.go:119
+2019/05/07 18:54:11.206 [C] [asm_amd64.s:573] D:/mygo/src/phagego/testlyaui/main.go:28
+2019/05/07 18:54:11.206 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/error.go:444
+2019/05/07 18:54:11.206 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/error.go:432
+2019/05/07 18:54:11.206 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/router.go:740
+2019/05/07 18:54:11.206 [C] [asm_amd64.s:573] C:/Go/src/net/http/server.go:2694
+2019/05/07 18:54:11.206 [C] [asm_amd64.s:573] C:/Go/src/net/http/server.go:1830
+2019/05/07 18:54:11.206 [C] [asm_amd64.s:573] C:/Go/src/runtime/asm_amd64.s:2361
+2019/05/07 18:54:11.206 [C] [asm_amd64.s:573] the request url is  /js/cache.js
+2019/05/07 18:54:11.206 [C] [asm_amd64.s:573] Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2019/05/07 18:54:11.206 [C] [asm_amd64.s:573] C:/Go/src/runtime/asm_amd64.s:573
+2019/05/07 18:54:11.206 [C] [asm_amd64.s:573] C:/Go/src/runtime/panic.go:502
+2019/05/07 18:54:11.206 [C] [asm_amd64.s:573] C:/Go/src/runtime/panic.go:63
+2019/05/07 18:54:11.206 [C] [asm_amd64.s:573] C:/Go/src/runtime/signal_windows.go:167
+2019/05/07 18:54:11.206 [C] [asm_amd64.s:573] C:/Go/src/html/template/template.go:95
+2019/05/07 18:54:11.206 [C] [asm_amd64.s:573] C:/Go/src/html/template/template.go:119
+2019/05/07 18:54:11.206 [C] [asm_amd64.s:573] D:/mygo/src/phagego/testlyaui/main.go:28
+2019/05/07 18:54:11.206 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/error.go:444
+2019/05/07 18:54:11.206 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/error.go:432
+2019/05/07 18:54:11.206 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/router.go:740
+2019/05/07 18:54:11.206 [C] [asm_amd64.s:573] C:/Go/src/net/http/server.go:2694
+2019/05/07 18:54:11.206 [C] [asm_amd64.s:573] C:/Go/src/net/http/server.go:1830
+2019/05/07 18:54:11.206 [C] [asm_amd64.s:573] C:/Go/src/runtime/asm_amd64.s:2361
+2019/05/07 18:54:11.568 [C] [asm_amd64.s:573] the request url is  /page/main.html
+2019/05/07 18:54:11.568 [C] [asm_amd64.s:573] Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2019/05/07 18:54:11.568 [C] [asm_amd64.s:573] C:/Go/src/runtime/asm_amd64.s:573
+2019/05/07 18:54:11.568 [C] [asm_amd64.s:573] C:/Go/src/runtime/panic.go:502
+2019/05/07 18:54:11.568 [C] [asm_amd64.s:573] C:/Go/src/runtime/panic.go:63
+2019/05/07 18:54:11.568 [C] [asm_amd64.s:573] C:/Go/src/runtime/signal_windows.go:167
+2019/05/07 18:54:11.568 [C] [asm_amd64.s:573] C:/Go/src/html/template/template.go:95
+2019/05/07 18:54:11.568 [C] [asm_amd64.s:573] C:/Go/src/html/template/template.go:119
+2019/05/07 18:54:11.568 [C] [asm_amd64.s:573] D:/mygo/src/phagego/testlyaui/main.go:28
+2019/05/07 18:54:11.568 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/error.go:444
+2019/05/07 18:54:11.568 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/error.go:432
+2019/05/07 18:54:11.568 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/router.go:740
+2019/05/07 18:54:11.568 [C] [asm_amd64.s:573] C:/Go/src/net/http/server.go:2694
+2019/05/07 18:54:11.568 [C] [asm_amd64.s:573] C:/Go/src/net/http/server.go:1830
+2019/05/07 18:54:11.568 [C] [asm_amd64.s:573] C:/Go/src/runtime/asm_amd64.s:2361
+2019/05/07 18:54:11.736 [C] [asm_amd64.s:573] the request url is  /js/index.js
+2019/05/07 18:54:11.736 [C] [asm_amd64.s:573] Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2019/05/07 18:54:11.736 [C] [asm_amd64.s:573] C:/Go/src/runtime/asm_amd64.s:573
+2019/05/07 18:54:11.736 [C] [asm_amd64.s:573] C:/Go/src/runtime/panic.go:502
+2019/05/07 18:54:11.736 [C] [asm_amd64.s:573] C:/Go/src/runtime/panic.go:63
+2019/05/07 18:54:11.736 [C] [asm_amd64.s:573] C:/Go/src/runtime/signal_windows.go:167
+2019/05/07 18:54:11.736 [C] [asm_amd64.s:573] C:/Go/src/html/template/template.go:95
+2019/05/07 18:54:11.736 [C] [asm_amd64.s:573] C:/Go/src/html/template/template.go:119
+2019/05/07 18:54:11.736 [C] [asm_amd64.s:573] D:/mygo/src/phagego/testlyaui/main.go:28
+2019/05/07 18:54:11.736 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/error.go:444
+2019/05/07 18:54:11.736 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/error.go:432
+2019/05/07 18:54:11.736 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/router.go:740
+2019/05/07 18:54:11.736 [C] [asm_amd64.s:573] C:/Go/src/net/http/server.go:2694
+2019/05/07 18:54:11.736 [C] [asm_amd64.s:573] C:/Go/src/net/http/server.go:1830
+2019/05/07 18:54:11.736 [C] [asm_amd64.s:573] C:/Go/src/runtime/asm_amd64.s:2361
+2019/05/07 18:54:11.780 [C] [asm_amd64.s:573] the request url is  /js/cache.js
+2019/05/07 18:54:11.780 [C] [asm_amd64.s:573] Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2019/05/07 18:54:11.780 [C] [asm_amd64.s:573] C:/Go/src/runtime/asm_amd64.s:573
+2019/05/07 18:54:11.780 [C] [asm_amd64.s:573] C:/Go/src/runtime/panic.go:502
+2019/05/07 18:54:11.780 [C] [asm_amd64.s:573] C:/Go/src/runtime/panic.go:63
+2019/05/07 18:54:11.780 [C] [asm_amd64.s:573] C:/Go/src/runtime/signal_windows.go:167
+2019/05/07 18:54:11.780 [C] [asm_amd64.s:573] C:/Go/src/html/template/template.go:95
+2019/05/07 18:54:11.780 [C] [asm_amd64.s:573] C:/Go/src/html/template/template.go:119
+2019/05/07 18:54:11.780 [C] [asm_amd64.s:573] D:/mygo/src/phagego/testlyaui/main.go:28
+2019/05/07 18:54:11.780 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/error.go:444
+2019/05/07 18:54:11.780 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/error.go:432
+2019/05/07 18:54:11.780 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/router.go:740
+2019/05/07 18:54:11.780 [C] [asm_amd64.s:573] C:/Go/src/net/http/server.go:2694
+2019/05/07 18:54:11.780 [C] [asm_amd64.s:573] C:/Go/src/net/http/server.go:1830
+2019/05/07 18:54:11.780 [C] [asm_amd64.s:573] C:/Go/src/runtime/asm_amd64.s:2361
+2019/05/07 18:54:11.828 [C] [asm_amd64.s:573] the request url is  /favicon.ico
+2019/05/07 18:54:11.828 [C] [asm_amd64.s:573] Handler crashed with error runtime error: invalid memory address or nil pointer dereference
+2019/05/07 18:54:11.828 [C] [asm_amd64.s:573] C:/Go/src/runtime/asm_amd64.s:573
+2019/05/07 18:54:11.828 [C] [asm_amd64.s:573] C:/Go/src/runtime/panic.go:502
+2019/05/07 18:54:11.828 [C] [asm_amd64.s:573] C:/Go/src/runtime/panic.go:63
+2019/05/07 18:54:11.828 [C] [asm_amd64.s:573] C:/Go/src/runtime/signal_windows.go:167
+2019/05/07 18:54:11.828 [C] [asm_amd64.s:573] C:/Go/src/html/template/template.go:95
+2019/05/07 18:54:11.828 [C] [asm_amd64.s:573] C:/Go/src/html/template/template.go:119
+2019/05/07 18:54:11.828 [C] [asm_amd64.s:573] D:/mygo/src/phagego/testlyaui/main.go:28
+2019/05/07 18:54:11.828 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/error.go:444
+2019/05/07 18:54:11.828 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/error.go:432
+2019/05/07 18:54:11.828 [C] [asm_amd64.s:573] D:/mygo/src/github.com/astaxie/beego/router.go:740
+2019/05/07 18:54:11.828 [C] [asm_amd64.s:573] C:/Go/src/net/http/server.go:2694
+2019/05/07 18:54:11.828 [C] [asm_amd64.s:573] C:/Go/src/net/http/server.go:1830
+2019/05/07 18:54:11.828 [C] [asm_amd64.s:573] C:/Go/src/runtime/asm_amd64.s:2361
+2019/05/07 18:55:27.466 [I] [index.go:16] IndexFrontController GET 
+2019/05/07 18:55:27.472 [D] [server.go:2694] ::1 - - [07/May/2019 06:55:27] "GET / HTTP/1.1 200 0" 0.008000  Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/05/07 18:55:51.036 [I] [index.go:16] IndexFrontController GET 
+2019/05/07 18:55:51.050 [D] [server.go:2694] ::1 - - [07/May/2019 06:55:51] "GET / HTTP/1.1 200 0" 0.018000  Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36
+
+2019/05/07 18:58:12.612 [I] [beecache.go:27] Init cache success!! 
+2019/05/07 18:58:12.613 [I] [router.go:13] ~~~~~~~~~~~~~ /as 
+2019/05/07 18:58:12.613 [I] [db.go:49] Auto create db 
+2019/05/07 18:58:12.621 [I] [projectdata.go:18] Init project data 
+2019/05/07 18:58:12.751 [I] [asm_amd64.s:2361] http server Running on http://:8087
+2019/05/07 18:58:19.125 [I] [index.go:18] IndexFrontController GET 
+2019/05/07 18:58:19.125 [I] [index.go:20] ~~~~~~~~ indexfront 
+2019/05/07 19:00:30.164 [I] [index.go:18] IndexFrontController GET 
+2019/05/07 19:00:30.164 [I] [index.go:20] ~~~~~~~~ indexfront 
+2019/05/07 19:52:23.919 [I] [beecache.go:27] Init cache success!! 
+2019/05/07 19:52:23.920 [I] [router.go:13] ~~~~~~~~~~~~~ /as 
+2019/05/07 19:52:23.920 [I] [db.go:49] Auto create db 
+2019/05/07 19:52:23.926 [I] [projectdata.go:18] Init project data 
+2019/05/07 19:52:24.037 [I] [asm_amd64.s:2361] http server Running on http://:8087
+2019/05/07 20:01:33.655 [I] [index.go:18] IndexFrontController GET 
+2019/05/07 20:01:33.655 [I] [index.go:20] ~~~~~~~~ indexfront 
+2019/05/07 20:01:33.655 [I] [index.go:22] ip----- [::1]:57413 
+2019/05/07 20:08:22.898 [I] [beecache.go:27] Init cache success!! 
+2019/05/07 20:08:22.899 [I] [router.go:13] ~~~~~~~~~~~~~ /as 
+2019/05/07 20:08:22.899 [I] [db.go:49] Auto create db 
+2019/05/07 20:08:22.909 [I] [projectdata.go:18] Init project data 
+2019/05/07 20:08:23.021 [I] [asm_amd64.s:2361] http server Running on http://:8087
+2019/05/07 20:08:23.066 [I] [index.go:18] IndexFrontController GET 
+2019/05/07 20:08:23.066 [I] [index.go:20] ~~~~~~~~ indexfront 
+2019/05/07 20:08:23.066 [I] [index.go:22] ip----- 127.0.0.1:58649 
+2019/05/07 20:08:23.066 [I] [index.go:24] 127.0.0.1 
+2019/05/07 20:08:24.382 [I] [index.go:18] IndexFrontController GET 
+2019/05/07 20:08:24.382 [I] [index.go:20] ~~~~~~~~ indexfront 
+2019/05/07 20:08:24.382 [I] [index.go:22] ip----- 127.0.0.1:58649 
+2019/05/07 20:08:24.382 [I] [index.go:24] 127.0.0.1 

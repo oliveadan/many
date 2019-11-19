@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	{{template "sysmanage/aalayout/meta.tpl" .}}
+</head>
+<body>
+<div class="layui-fluid">
+	<div class="layui-row layui-col-space10">
+		<div class="layui-col-xs12 layui-col-sm12 layui-col-md12">
+			<!--tab标签-->
+			<div class="layui-tab layui-tab-brief">
+				<ul class="layui-tab-title">
+					<li class=""><a href='{{urlfor "WechatContorller.get"}}'>微信列表</a></li>
+					<li class="layui-this">修改微信</li>
+				</ul>
+				<div class="layui-tab-content">
+					<div class="layui-tab-item layui-show">
+						<form class="layui-form form-container" action='{{urlfor "WechatEditContorller.post"}}' method="post">
+							<input type="hidden" name="Id" value="{{.data.Id}}">
+							{{ .xsrfdata }}
+							<div class="layui-form-item">
+								<label class="layui-form-label">微信账号</label>
+								<div class="layui-input-block">
+									<input type="text" name="WxNo" value="{{.data.WxNo}}" required lay-verify="required" placeholder="请输入微信账号" class="layui-input">
+								</div>
+							</div>
+							<div class="layui-form-item">
+								<label class="layui-form-label">二维码</label>
+								<div class="layui-inline" style="margin-bottom: 0px;">
+									<input type="hidden" name="QrCode" id="Photo" value="{{.data.QrCode}}">
+									<img src='{{or .attr.Value .data.QrCode}}' id="imgreview" width="100px" height="100px">
+									<button type="button" class="layui-btn layui-btn-primary layui-btn-big" id="upphoto">
+										<i class="layui-icon">&#xe61f;</i>上传图片
+									</button>
+								</div>
+							</div>
+							<div class="layui-form-item">
+								<div class="layui-input-block">
+									<button class="layui-btn" lay-submit lay-filter="*">保存</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+{{template "sysmanage/aalayout/footjs.tpl" .}}
+<script>
+	layui.use('upload', function(){
+		var upload = layui.upload;
+
+		var uploadInst = upload.render({
+			elem: '#upphoto',
+			url: '{{urlfor "SyscommonController.Upload"}}',
+			before: function(obj){
+				layer.load(); //上传loading
+			},
+			done: function(res){
+				layer.closeAll('loading');
+				if(res.code==0) {
+					$("#Photo").val(res.data.src);
+					$("#imgreview").attr("src", res.data.src);
+					layer.msg(res.msg);
+				} else {
+					layer.msg(res.msg);
+				}
+			},
+			error: function(){
+				layer.closeAll('loading');
+				layer.msg("图片上传失败，请重试");
+			}
+		});
+	});
+</script>
+</body>
+</html>
